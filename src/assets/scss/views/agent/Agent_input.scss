@@ -1,0 +1,98 @@
+input {
+    width: 100%;
+    padding: 7px 16px;
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    color: var(--black-color);
+    font-size: 16px;
+
+    &:disabled {
+        background-color: #f5f6f6;
+        color: #8f8f8f;
+    }
+
+    &.rt {
+        text-align: right;
+    }
+
+    &[type=date] {
+        position: relative;
+
+        &::-webkit-calendar-picker-indicator {
+            background: transparent;
+            z-index: 1;
+        }
+
+        &::after{
+            content:'';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            background: url('@/assets/images/icon/calendar.svg') no-repeat;
+        }
+    }
+}
+
+.radio-container {
+    margin-right: 16px;
+
+    input[type=radio] {
+        position: fixed;
+        left: -9999px;
+        top: -9999px;
+
+        &:checked {
+            & + span {
+                background-image: url('@/assets/images/icon/item_Radio.svg');
+                background-size: 24px 24px;
+                background-position: center;
+            }
+        }
+    }
+
+    span {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--gray-color);
+        border-radius: 50%;
+    }
+}
+
+.select-container {
+    width: 100%;
+    position: relative;
+
+    select {
+        width: 100%;
+        padding: 7px 16px;
+        background-color: var(--white-color);
+        border: 1px solid var(--gray-color);
+        border-radius: 8px;
+        color: var(--black-color);
+        font-size: 16px;
+    
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &:disabled {
+            background-color: #f5f6f6;
+            color: #8f8f8f;
+        }
+    }
+        
+    &::after {
+        content: '';
+        background-image: url('@/assets/images/icon/dropdown.svg');
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+    }
+}

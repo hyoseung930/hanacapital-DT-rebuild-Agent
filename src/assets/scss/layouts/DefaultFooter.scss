@@ -1,9 +1,32 @@
-.footer {
-  padding: 30px;
-  background-color: #e1e1e1;
-}
-.logo {
-  margin: 0;
-  text-align: center;
-  @include font-size-default(20);
+footer {
+  background-color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px 0px 64px;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .copylight {
+      font-size: 12px;
+      color: var(--black-color);
+      font-weight: 300;
+    }
+
+    .service {
+      color: var(--black-color);
+      font-weight: bold;
+      font-size: 18px;
+
+      span {
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+  }
 }
