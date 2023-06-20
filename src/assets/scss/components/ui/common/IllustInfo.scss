@@ -1,0 +1,30 @@
+.illust-info {
+  display: block;
+
+  .illust-info__object {
+    padding-top: 40px;
+    background-position: 50% 50%;
+  }
+
+  &__title {
+    margin: 0;
+    @include font-size-head(32);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    @include font-size-head(18);
+    font-weight: 300;
+    text-align: center;
+
+    strong {
+      font-weight: 500;
+    }
+
+    .illust-info__title + & {
+      margin-top: 8px;
+    }
+  }
+}

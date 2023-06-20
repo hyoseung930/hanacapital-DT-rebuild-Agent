@@ -1,0 +1,31 @@
+.illust-object {
+  display: block;
+  width: 225px;
+  height: 180px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-bottom: 40px;
+  background: url('@/assets/images/illustration/img-1qcapital.png') no-repeat
+    50% 0 / 100% auto;
+
+  &--type {
+    &-complete {
+      background-image: url('@/assets/images/illustration/img-complete.png');
+    }
+    &-error {
+      background-image: url('@/assets/images/illustration/img-error.png');
+    }
+    &-fail {
+      background-image: url('@/assets/images/illustration/img-fail.png');
+    }
+    &-license {
+      background-image: url('@/assets/images/illustration/img-license.png');
+    }
+    &-certification {
+      background-image: url('@/assets/images/illustration/img-certification.png');
+    }
+    &-appfree {
+      background-image: url('@/assets/images/illustration/img-appfree.png');
+    }
+  }
+}

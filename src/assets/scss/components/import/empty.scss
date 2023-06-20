@@ -1,0 +1,19 @@
+.empty {
+  padding: 60px 0;
+  margin: auto 0;
+  text-align: center;
+
+  &__text {
+    margin: 0;
+    @include font-size-default(14);
+    font-weight: 300;
+    padding-bottom: 12px;
+  }
+
+  &--secondary {
+    border-top: 2px solid $color-gray-60;
+    border-bottom: 1px solid $color-gray-30;
+    padding: 97px 0;
+    margin: 0;
+  }
+}
