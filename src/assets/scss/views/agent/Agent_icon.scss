@@ -4,8 +4,11 @@
     &-plus {
         width: 16px;
         height: 16px;
-        background-image: url('@/assets/images/icon/add-black.svg');
-        background-size: cover;
+        mask-image: url('@/assets/images/icon/add-black.svg');
+        -webkit-mask-image: url('@/assets/images/icon/add-black.svg');
+        mask-size: cover;
+        -webkit-mask-size: cover;
+        background-color: var(--main-color);
     }
 
     &-nchecked {
@@ -27,7 +30,8 @@
         height: 24px;
         mask-image: url('@/assets/images/icon/download.svg');
         -webkit-mask-image: url('@/assets/images/icon/download.svg');
-        background-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: cover;
         background-color: var(--main-color);
     }
 
@@ -37,5 +41,19 @@
         background-image: url('@/assets/images/common/close.svg');
         background-size: cover;
         cursor: pointer;
+    }
+
+    &-warning {
+        width: 24px;
+        height: 24px;
+        background-image: url('@/assets/images/icon/text-error.svg');
+        background-size: cover;
+    }
+
+    &-reset {
+        width: 14px;
+        height: 14px;
+        background-image: url('@/assets/images/icon/reset.svg');
+        background-size: cover;
     }
 }

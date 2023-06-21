@@ -121,6 +121,14 @@ export default {
         </div>
       </div>
 
+      <table class="table-type-01 none-search">
+        <tbody>
+          <tr>
+            <td>조회된 내용이 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
       <table class="table-type-01">
         <colgroup>
           <col width="7%" />
@@ -137,106 +145,106 @@ export default {
           <col width="15%" />
         </colgroup>
         <thead>
-        <tr>
-          <th>상담일</th>
-          <th>구분</th>
-          <th>고객명</th>
-          <th>주민/사업자번호</th>
-          <th>판정결과</th>
-          <th>신청금액</th>
-          <th>한도금액</th>
-          <th>상담결과</th>
-          <th>AG손배조건부</th>
-          <th>제휴점</th>
-          <th>품목</th>
-          <th>판매점</th>
-        </tr>
+          <tr>
+            <th>상담일</th>
+            <th>구분</th>
+            <th>고객명</th>
+            <th>주민/사업자번호</th>
+            <th>판정결과</th>
+            <th>신청금액</th>
+            <th>한도금액</th>
+            <th>상담결과</th>
+            <th>AG손배조건부</th>
+            <th>제휴점</th>
+            <th>품목</th>
+            <th>판매점</th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
-        <tr>
-          <td class="txt-center">2023.01.01</td>
-          <td class="txt-center">이용자</td>
-          <td class="txt-center">김하나</td>
-          <td class="txt-center">123456-1******</td>
-          <td class="txt-center">정상</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center">999,999,999</td>
-          <td class="txt-center cGreen">승인</td>
-          <td class="txt-center">N</td>
-          <td class="txt-center">케이네트웍스</td>
-          <td class="txt-center">식기세척기</td>
-          <td class="txt-center"></td>
-        </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
+          <tr>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">이용자</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">123456-1******</td>
+            <td class="txt-center">정상</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center">999,999,999</td>
+            <td class="txt-center cGreen">승인</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">케이네트웍스</td>
+            <td class="txt-center">식기세척기</td>
+            <td class="txt-center"></td>
+          </tr>
         </tbody>
       </table>
 

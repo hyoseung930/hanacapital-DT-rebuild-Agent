@@ -90,8 +90,8 @@ export default {
           <colgroup>
             <col width="7%" />
             <col width="9%" />
-            <col width="12%" />
-            <col width="10%" />
+            <col width="13%" />
+            <col width="11%" />
             <col width="7%" />
             <col width="12%" />
             <col width="8%" />

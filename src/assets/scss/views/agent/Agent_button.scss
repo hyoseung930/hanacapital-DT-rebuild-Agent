@@ -58,6 +58,20 @@ button {
             border: 1px solid var(--primary-color);
         }
 
+        &-send {
+            width: 212px;
+            color: var(--white-color);
+            background-color: var(--main-color);
+            border: 1px solid var(--main-color);
+        }
+
+        &-address {
+            width: 103px;
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
         &-search {
             width: 290px;
         }

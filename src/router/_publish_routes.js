@@ -120,11 +120,6 @@ const routes = [
     component: () => import('@/views/agent/Agent_P00_l002.vue'),
   },
   {
-    path: '/agent/Agent_P00_l003',
-    name: '/agent/Agent_P00_l003',
-    component: () => import('@/views/agent/Agent_P00_l003.vue'),
-  },
-  {
     path: '/agent/Agent_P03_p002',
     name: '/agent/Agent_P03_p002',
     component: () => import('@/views/agent/Agent_P03_p002.vue'),
@@ -223,6 +218,31 @@ const routes = [
     path: '/agent/Agent_P10_p004',
     name: '/agent/Agent_P10_p004',
     component: () => import('@/views/agent/Agent_P10_p004.vue'),
+  },
+  {
+    path: '/agent/Agent_P03_l001',
+    name: '/agent/Agent_P03_l001',
+    component: () => import('@/views/agent/Agent_P03_l001.vue'),
+  },
+  {
+    path: '/agent/Agent_P03_l002',
+    name: '/agent/Agent_P03_l002',
+    component: () => import('@/views/agent/Agent_P03_l002.vue'),
+  },
+  {
+    path: '/agent/Agent_P03_l003',
+    name: '/agent/Agent_P03_l003',
+    component: () => import('@/views/agent/Agent_P03_l003.vue'),
+  },
+  {
+    path: '/agent/Agent_P03_l004',
+    name: '/agent/Agent_P03_l004',
+    component: () => import('@/views/agent/Agent_P03_l004.vue'),
+  },
+  {
+    path: '/agent/Agent_P00_l003',
+    name: '/agent/Agent_P00_l003',
+    component: () => import('@/views/agent/Agent_P00_l003.vue'),
   },
 ];
 
