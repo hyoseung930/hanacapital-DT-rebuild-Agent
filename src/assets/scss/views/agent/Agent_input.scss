@@ -47,7 +47,6 @@ input {
 
         &:checked {
             & + span {
-                background-image: url('@/assets/images/icon/item_Radio.svg');
                 background-size: 24px 24px;
                 background-position: center;
             }
