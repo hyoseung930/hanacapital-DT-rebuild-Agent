@@ -294,7 +294,7 @@ const datas = () => [
         depth6: '',
         path: '/agent/Agent_P03_p001',
         status: 'end',
-        create: '',
+        create: '2023.06.19',
         log: [],
       },
       {
@@ -305,7 +305,7 @@ const datas = () => [
         depth6: '',
         path: '/agent/Agent_P00_l003',
         status: 'end',
-        create: '',
+        create: '2023.06.20',
         log: [],
       },
       {
@@ -316,7 +316,7 @@ const datas = () => [
         depth6: '',
         path: '/agent/Agent_P03_p002',
         status: 'end',
-        create: '',
+        create: '2023.06.19',
         log: [],
       },
       {
