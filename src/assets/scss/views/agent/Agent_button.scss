@@ -3,6 +3,13 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    &.bottom {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 button {

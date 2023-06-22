@@ -271,6 +271,7 @@ ul {
 .address {
   &--wrap {
     &__container {
+      position: relative;
       width: 50%;
       padding: 30px;
       border-radius: 10px;

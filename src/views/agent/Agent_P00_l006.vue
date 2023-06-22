@@ -16,6 +16,7 @@ export default {
     const address = ref('-');
     const isAddress = ref(false);
     const isSelectAddress = ref(false);
+    const isTab = ref(1);
 
     function addressClick() {
       address.value = '서울 강서구 화곡동';
@@ -41,6 +42,7 @@ export default {
       address,
       isAddress,
       isSelectAddress,
+      isTab,
 
       addressClick,
       addressCheck,
@@ -58,12 +60,12 @@ export default {
     <template #contents>
       <div class="container">
         <div class="flex-container under-tab jcfs">
-          <div class="on">지번주소</div>
-          <div>도로명주소</div>
+          <div :class="{ on: isTab === 1 }" @click="isTab = 1">지번주소</div>
+          <div :class="{ on: isTab === 2 }" @click="isTab = 2">도로명주소</div>
         </div>
 
         <div class="flex-container address--wrap">
-          <div class="bg-gary address--wrap__container">
+          <div class="bg-gary address--wrap__container" v-if="isTab === 1">
             <div class="flex-container">
               <div class="address--wrap__container-title">읍면동</div>
               <input type="text" />
@@ -82,10 +84,60 @@ export default {
               <i class="ico ico-explan"></i> 3-15대로의 경우 -> (-)은 ㄱ +
               한자키를 누른 후 8번을 선택해 주세요.
             </div>
+
+            <div class="btn-container bottom">
+              <button class="btn btn-primary btn-search">조회</button>
+            </div>
           </div>
+
+          <div class="bg-gary address--wrap__container" v-if="isTab === 2">
+            <div class="flex-container">
+              <div class="address--wrap__container-title">시도</div>
+              <div class="select-container">
+                <select>
+                  <option>서울</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="address--wrap__container-title">시군구</div>
+              <input type="text" />
+            </div>
+            <div class="flex-container">
+              <div class="address--wrap__container-title">도로명</div>
+              <input type="text" />
+            </div>
+            <div class="flex-container">
+              <div class="address--wrap__container-title">건물번호</div>
+              <div class="flex-container">
+                <input type="text" /> -
+                <input type="text" />
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="address--wrap__container-title">건물번호</div>
+              <input type="text" />
+            </div>
+            <div class="explan">
+              <i class="ico ico-explan"></i> [주소조회] 거래시 찾고자 하는
+              지역의 '동이름'을 입력해 주십시오.<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(예: 서울시 강남구
+              삼성1동 -> '삼성1')
+              <br />
+              <br />
+              <i class="ico ico-explan"></i> 3-15대로의 경우 -> (-)은 ㄱ +
+              한자키를 누른 후 8번을 선택해 주세요.
+            </div>
+
+            <div class="btn-container bottom">
+              <button class="btn btn-primary btn-search">조회</button>
+            </div>
+          </div>
+
           <div class="address--wrap__container-02" v-if="!isSelectAddress">
-            <div class="title">주소선택</div>
-            <table class="table-type-01 none-search-small">
+            <div class="title" v-if="isTab === 1">주소선택</div>
+            <div class="title" v-else-if="isTab === 2">주소확인</div>
+            <table class="table-type-01 none-search-small" v-if="isTab === 1">
               <thead>
                 <tr>
                   <th>주소</th>
@@ -97,7 +149,7 @@ export default {
                 </tr>
               </tbody>
             </table>
-            <table class="table-type-01">
+            <table class="table-type-01" v-if="isTab === 1">
               <thead>
                 <tr>
                   <th>주소</th>
@@ -110,7 +162,70 @@ export default {
                   </td>
                 </tr>
                 <tr>
-                  <td class="txt-center">서울 강서구 화곡동</td>
+                  <td class="txt-center" @click="addressClick">
+                    서울 강서구 화곡동
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table-type-01" v-if="isTab === 2">
+              <colgroup>
+                <col width="17%" />
+                <col width="30%" />
+                <col width="12%" />
+                <col width="20%" />
+                <col width="27%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>우편번호</th>
+                  <th>주소</th>
+                  <th>지하</th>
+                  <th>건물번호</th>
+                  <th>건물명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5" class="txt-center">
+                    조회된 내용이 없습니다.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table-type-01" v-if="isTab === 2">
+              <colgroup>
+                <col width="17%" />
+                <col width="30%" />
+                <col width="12%" />
+                <col width="20%" />
+                <col width="27%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>우편번호</th>
+                  <th>주소</th>
+                  <th>지하</th>
+                  <th>건물번호</th>
+                  <th>건물명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr @click="addressClick">
+                  <td class="txt-center">077111</td>
+                  <td class="txt-center">서울 강서구 화곡로</td>
+                  <td class="txt-center">-</td>
+                  <td class="txt-center">22</td>
+                  <td class="txt-center">스카이 빌딩</td>
+                </tr>
+                <tr @click="addressClick">
+                  <td class="txt-center">077111</td>
+                  <td class="txt-center">서울 강서구 화곡로</td>
+                  <td class="txt-center">-</td>
+                  <td class="txt-center">22</td>
+                  <td class="txt-center">스카이 빌딩</td>
                 </tr>
               </tbody>
             </table>
