@@ -1,29 +1,29 @@
 <script>
-// Agent_P00_l003
 import { ref } from 'vue';
+// Agent_P00_l003
 
 import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    AgentPopup
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
+    const agentPopup = ref(true);
     const startDate = '2022-01-01';
     const endDate = '2022-01-01';
 
     return {
-      layer,
       startDate,
       endDate,
+      agentPopup,
     };
   },
 };
 </script>
 
 <template>
-  <AgentPopup>
+  <AgentPopup :isAgent="agentPopup">
     <template #title>
       <div class="agent--container__title">상담등록내역</div>
     </template>
