@@ -260,6 +260,10 @@ table {
             &:nth-child(2n) {
                 padding-right: 40px;
             }
+
+            &:last-child {
+                padding-right: 0;
+            }
         }
     }
 

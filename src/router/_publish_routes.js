@@ -259,6 +259,31 @@ const routes = [
     name: '/agent/Agent_P00_l006',
     component: () => import('@/views/agent/Agent_P00_l006.vue'),
   },
+  {
+    path: '/agent/Agent_P00_l007',
+    name: '/agent/Agent_P00_l007',
+    component: () => import('@/views/agent/Agent_P00_l007.vue'),
+  },
+  {
+    path: '/agent/Agent_P00_l008',
+    name: '/agent/Agent_P00_l008',
+    component: () => import('@/views/agent/Agent_P00_l008.vue'),
+  },
+  {
+    path: '/agent/Agent_P00_l009',
+    name: '/agent/Agent_P00_l009',
+    component: () => import('@/views/agent/Agent_P00_l009.vue'),
+  },
+  {
+    path: '/agent/Agent_P00_l010',
+    name: '/agent/Agent_P00_l010',
+    component: () => import('@/views/agent/Agent_P00_l010.vue'),
+  },
+  {
+    path: '/agent/Agent_P00_l011',
+    name: '/agent/Agent_P00_l011',
+    component: () => import('@/views/agent/Agent_P00_l011.vue'),
+  },
 ];
 
 export default routes;

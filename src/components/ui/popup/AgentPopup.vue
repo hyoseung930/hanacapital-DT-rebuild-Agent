@@ -3,11 +3,15 @@ import { ref } from 'vue';
 export default {
   props: {
     isAgent: Boolean,
+    isClassList: String,
   },
   setup(props) {
     const agentPopup = ref(props.isAgent);
+    const classList = ref(props.isClassList);
+
     return {
       agentPopup,
+      classList,
     };
   },
 };
@@ -15,7 +19,10 @@ export default {
 
 <template>
   <div class="agent" v-if="agentPopup">
-    <div class="agent--container scroll-container">
+    <div
+      class="agent--container scroll-container"
+      :class="{ 'agent--container__small': classList === 'small' }"
+    >
       <i class="ico ico-close" @click="agentPopup = false"></i>
       <slot name="title" />
       <slot name="contents" />

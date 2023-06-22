@@ -47,6 +47,10 @@ ul {
     flex-wrap: nowrap;
     gap: 8px;
 
+    &.no-gap {
+      gap: 0px;
+    }
+
     &.address--wrap {
       gap: 60px;
       align-items: flex-start;
