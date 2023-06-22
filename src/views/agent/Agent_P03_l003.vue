@@ -1,5 +1,6 @@
 <script>
 // Agent_P00_l003
+import { ref } from 'vue';
 
 import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
@@ -8,13 +9,16 @@ export default {
     AgentPopup,
   },
   setup() {
-    return {};
+    const agentPopup = ref(true);
+    return {
+      agentPopup,
+    };
   },
 };
 </script>
 
 <template>
-  <AgentPopup>
+  <AgentPopup :isAgent="agentPopup">
     <template #title>
       <div class="agent--container__title">
         하나캐피탈 채무승계 확약 URL 발송

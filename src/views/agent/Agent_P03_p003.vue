@@ -912,6 +912,14 @@ export default {
 
         <div class="title">연대보증인 내역</div>
 
+        <table class="table-type-01 none-search-small">
+          <tbody>
+            <tr>
+              <td>조회된 내용이 없습니다.</td>
+            </tr>
+          </tbody>
+        </table>
+
         <table class="table-type-01">
           <colgroup>
             <col width="5%" />

@@ -14,6 +14,13 @@ table {
                 color: var(--black-color);
                 font-width: 300;
             }
+
+            &-small {
+                td {
+                    padding: 50px 0;
+                    text-align: center;
+                }
+            }
         }
 
         td {

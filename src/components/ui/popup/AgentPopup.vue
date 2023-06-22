@@ -1,15 +1,22 @@
 <script>
+import { ref } from 'vue';
 export default {
-  setup() {
-    return {};
+  props: {
+    isAgent: Boolean,
+  },
+  setup(props) {
+    const agentPopup = ref(props.isAgent);
+    return {
+      agentPopup,
+    };
   },
 };
 </script>
 
 <template>
-  <div class="agent">
+  <div class="agent" v-if="agentPopup">
     <div class="agent--container scroll-container">
-      <i class="ico ico-close"></i>
+      <i class="ico ico-close" @click="agentPopup = false"></i>
       <slot name="title" />
       <slot name="contents" />
     </div>

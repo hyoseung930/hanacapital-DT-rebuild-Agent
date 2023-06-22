@@ -1,69 +1,191 @@
 <script>
-// Agent_P00_l004
+// Agent_P00_l003
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
+    AgentPopup
   },
   setup() {
     const layer = ref(null);
+    const startDate = '2022-01-01';
+    const endDate = '2022-01-01';
 
     return {
       layer,
+      startDate,
+      endDate,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>타이틀</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup>
+    <template #title>
+      <div class="agent--container__title">상담등록내역</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="search-container">
+          <table class="table-type-search">
+            <colgroup>
+              <col width="6%" />
+              <col width="44%" />
+              <col width="6%" />
+              <col width="44%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>상담일자</td>
+                <td>
+                  <div class="flex-container">
+                    <input type="date" v-model="startDate" />
+                    <span>-</span>
+                    <input type="date" v-model="endDate" />
+                  </div>
+                </td>
+                <td>검색조건</td>
+                <td>
+                  <div class="flex-container">
+                    <div class="select-container">
+                      <select>
+                        <option>고객명</option>
+                      </select>
+                    </div>
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>판매점</td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <section>// contents</section>
+          <div class="btn-container">
+            <button class="btn btn-primary btn-search">조회</button>
+          </div>
+        </div>
 
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+        <div class="search-count">
+          <span>
+            합계 : <span class="cGreen">85</span>건 /
+            <span class="cGreen">2,700,462,280</span>원
+          </span>
+
+          <div class="btn-container">
+            <button class="btn btn-s02">
+              <i class="ico ico-excel f-main-color"></i>엑셀변환
+            </button>
+          </div>
+        </div>
+
+        <table class="table-type-01">
+          <colgroup>
+            <col width="7%" />
+            <col width="9%" />
+            <col width="13%" />
+            <col width="11%" />
+            <col width="7%" />
+            <col width="12%" />
+            <col width="8%" />
+            <col width="8%" />
+            <col width="7%" />
+            <col width="10%" />
+            <col width="8%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>상담일</th>
+              <th>구분</th>
+              <th>상담채널</th>
+              <th>신용정보동의</th>
+              <th>고객명</th>
+              <th>주민/사업자번호</th>
+              <th>신청금액</th>
+              <th>상담결과</th>
+              <th>AG손배</th>
+              <th>품목</th>
+              <th>판매점</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="txt-center">2023.01.01</td>
+              <td class="txt-center">이용자</td>
+              <td class="txt-center">홈페이지(AG)</td>
+              <td class="txt-center">온라인(SMS)</td>
+              <td class="txt-center">김하나</td>
+              <td class="txt-center">123456-1******</td>
+              <td class="txt-center">999,999,999</td>
+              <td class="txt-center cGreen">승인</td>
+              <td class="txt-center">N</td>
+              <td class="txt-center">식기세척기</td>
+              <td class="txt-center"></td>
+            </tr>
+            <tr>
+              <td class="txt-center">2023.01.01</td>
+              <td class="txt-center">연대보증인</td>
+              <td class="txt-center">스마트폰(모바일웹)</td>
+              <td class="txt-center">휴대폰(핀테크)</td>
+              <td class="txt-center">김하나</td>
+              <td class="txt-center">123456-1******</td>
+              <td class="txt-center">999,999,999</td>
+              <td class="txt-center cGreen">승인</td>
+              <td class="txt-center">N</td>
+              <td class="txt-center">식기세척기</td>
+              <td class="txt-center"></td>
+            </tr>
+            <tr>
+              <td class="txt-center">2023.01.01</td>
+              <td class="txt-center">연대보증인</td>
+              <td class="txt-center">스마트폰(모바일웹)</td>
+              <td class="txt-center">휴대폰(핀테크)</td>
+              <td class="txt-center">김하나</td>
+              <td class="txt-center">123456-1******</td>
+              <td class="txt-center">999,999,999</td>
+              <td class="txt-center cGreen">승인</td>
+              <td class="txt-center">N</td>
+              <td class="txt-center">식기세척기</td>
+              <td class="txt-center"></td>
+            </tr>
+            <tr>
+              <td class="txt-center">2023.01.01</td>
+              <td class="txt-center">연대보증인</td>
+              <td class="txt-center">스마트폰(모바일웹)</td>
+              <td class="txt-center">휴대폰(핀테크)</td>
+              <td class="txt-center">김하나</td>
+              <td class="txt-center">123456-1******</td>
+              <td class="txt-center">999,999,999</td>
+              <td class="txt-center cGreen">승인</td>
+              <td class="txt-center">N</td>
+              <td class="txt-center">식기세척기</td>
+              <td class="txt-center"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul class="paging">
+          <li class="first">&lt;</li>
+          <li class="on">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li class="dot"></li>
+          <li>25</li>
+          <li class="last">&gt;</li>
+        </ul>
+      </div>
+    </template>
+  </AgentPopup>
 </template>

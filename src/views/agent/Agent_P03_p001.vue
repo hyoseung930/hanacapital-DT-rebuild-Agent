@@ -286,7 +286,14 @@ export default {
         </thead>
         <tbody>
           <tr>
-            <td className="txt-center"><i className="ico ico-checked"></i></td>
+            <td className="txt-center">
+              <div class="check-container w10p">
+                <label class="flex-container">
+                  <input type="checkbox" name="ok" />
+                  <span></span>
+                </label>
+              </div>
+            </td>
             <td className="txt-center">이용자</td>
             <td className="txt-center">본인</td>
             <td className="txt-center">㈜고은푸드</td>
@@ -294,7 +301,14 @@ export default {
             <td className="txt-center">거절</td>
           </tr>
           <tr>
-            <td className="txt-center"><i className="ico ico-nchecked"></i></td>
+            <td className="txt-center">
+              <div class="check-container w10p">
+                <label class="flex-container">
+                  <input type="checkbox" name="ok" />
+                  <span></span>
+                </label>
+              </div>
+            </td>
             <td className="txt-center">이용자</td>
             <td className="txt-center">본인</td>
             <td className="txt-center">㈜고은푸드</td>

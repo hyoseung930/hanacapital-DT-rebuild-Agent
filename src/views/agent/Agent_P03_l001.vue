@@ -9,13 +9,16 @@ export default {
     AgentPopup,
   },
   setup() {
-    return {};
+    const agentPopup = ref(true);
+    return {
+      agentPopup,
+    };
   },
 };
 </script>
 
 <template>
-  <AgentPopup>
+  <AgentPopup :isAgent="agentPopup">
     <template #title>
       <div class="agent--container__title">승계 전 이용자 조회</div>
     </template>
