@@ -135,8 +135,7 @@ export default {
           </div>
 
           <div class="address--wrap__container-02" v-if="!isSelectAddress">
-            <div class="title" v-if="isTab === 1">주소선택</div>
-            <div class="title" v-else-if="isTab === 2">주소확인</div>
+            <div class="title">주소선택</div>
             <table class="table-type-01 none-search-small" v-if="isTab === 1">
               <thead>
                 <tr>
