@@ -160,6 +160,17 @@ const datas = () => [
         create: '2023.06.22',
         log: [],
       },
+      {
+        depth2: '팝업',
+        depth3: '우편번호 검색\nAgent_P00_l006',
+        depth4: '',
+        depth5: '',
+        depth6: '',
+        path: '/agent/Agent_P00_l006',
+        status: 'end',
+        create: '2023.06.22',
+        log: [],
+      },
     ],
   },
   {

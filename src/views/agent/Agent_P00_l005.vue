@@ -25,7 +25,7 @@ export default {
 <template>
   <AgentPopup :isAgent="agentPopup">
     <template #title>
-      <div class="agent--container__title">승계 전 이용자 조회</div>
+      <div class="agent--container__title">상담/사전승이 내역 조회</div>
     </template>
     <template #contents>
       <div class="container">

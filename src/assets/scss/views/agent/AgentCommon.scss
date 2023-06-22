@@ -47,6 +47,14 @@ ul {
     flex-wrap: nowrap;
     gap: 8px;
 
+    &.address--wrap {
+      gap: 60px;
+    }
+
+    &.under-tab {
+      gap: 20px;
+    }
+
     &.jcsb {
       justify-content: space-between;
     }
@@ -180,6 +188,26 @@ ul {
   font-size: 14px;
 }
 
+.under-tab {
+  margin-bottom: 40px;
+  height: 50px;
+  border-bottom: 1px solid var(--light-gray-color);
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    height: 100%;
+    color: var(--disabled-color);
+
+    &.on {
+      border-bottom: 3px solid var(--black-color);
+      color: var(--black-color);
+      font-weight: bold;
+    }
+  }
+}
 
 .tab {
   margin-bottom: 24px;
@@ -211,4 +239,32 @@ ul {
 
 .bg-gary {
   background-color: var(--light-gray-color);
+}
+
+.address {
+  &--wrap {
+    &__container {
+      width: 50%;
+      padding: 30px;
+      border-radius: 10px;
+      height: auto;
+      min-height: 573px;
+
+      .flex-container {
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-title {
+        width: 100px;
+        color: var(--black-color);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }

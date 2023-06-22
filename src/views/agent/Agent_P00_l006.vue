@@ -1,69 +1,63 @@
 <script>
-// Agent_P00_l006
+// Agent_P00_l003
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
+    const agentPopup = ref(true);
+    const startDate = '2022-01-01';
+    const endDate = '2022-01-01';
 
     return {
-      layer,
+      agentPopup,
+      startDate,
+      endDate,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>타이틀</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup">
+    <template #title>
+      <div class="agent--container__title">신주소 팝업</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="flex-container under-tab jcfs">
+          <div class="on">지번주소</div>
+          <div>도로명주소</div>
+        </div>
 
-      <section>// contents</section>
-
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+        <div class="flex-container address--wrap">
+          <div class="bg-gary address--wrap__container">
+            <div class="flex-container">
+              <div class="address--wrap__container-title">읍면동</div>
+              <input type="text" />
+            </div>
+            <div class="flex-container">
+              <div class="address--wrap__container-title">우편번호</div>
+              <input type="text" />
+            </div>
+            <div class="explan">
+              <i class="ico ico-explan"></i> [주소조회] 거래시 찾고자 하는
+              지역의 '동이름'을 입력해 주십시오.<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(예: 서울시 강남구
+              삼성1동 -> '삼성1')
+              <br />
+              <br />
+              <i class="ico ico-explan"></i> 3-15대로의 경우 -> (-)은 ㄱ +
+              한자키를 누른 후 8번을 선택해 주세요.
+            </div>
+          </div>
+          <div class="address--wrap__container"></div>
+        </div>
+      </div>
+    </template>
+  </AgentPopup>
 </template>
