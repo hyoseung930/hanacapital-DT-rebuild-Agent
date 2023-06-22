@@ -14,10 +14,14 @@ export default {
     const endDate = '2022-01-01';
     const isOpen = ref(false);
     const address = ref('-');
+    const isAddress = ref(false);
 
     function addressClick() {
       address.value = '서울 강서구 화곡동';
       isOpen.value = true;
+    }
+    function addressCheck() {
+      isAddress.value = true;
     }
 
     return {
@@ -26,8 +30,10 @@ export default {
       endDate,
       isOpen,
       address,
+      isAddress,
 
       addressClick,
+      addressCheck,
     };
   },
 };
@@ -139,7 +145,7 @@ export default {
                   <td>
                     <div class="flex-container">
                       <div class="radio-container">
-                        <label class="flex-container jcfs">
+                        <label class="flex-container jcfs" @click="addressCheck">
                           <input type="radio" name="a1" />
                           <span></span>
                         </label>
@@ -159,7 +165,7 @@ export default {
                   <td>
                     <div class="flex-container">
                       <div class="radio-container">
-                        <label class="flex-container jcfs">
+                        <label class="flex-container jcfs" @click="addressCheck">
                           <input type="radio" name="a1" />
                           <span></span>
                         </label>
@@ -178,8 +184,18 @@ export default {
               </tbody>
             </table>
             <div class="btn-container">
-              <button class="btn btn-s04 w50p">취소</button>
-              <button class="btn btn-s05 w50p">다음</button>
+              <button
+                class="btn w50p"
+                :class="{ 'btn-s04': !isAddress, 'btn-s03': isAddress }"
+              >
+                취소
+              </button>
+              <button
+                class="btn w50p"
+                :class="{ 'btn-s05': !isAddress, 'btn-s02': isAddress }"
+              >
+                다음
+              </button>
             </div>
           </div>
         </div>
