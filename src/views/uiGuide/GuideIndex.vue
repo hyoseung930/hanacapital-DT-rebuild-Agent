@@ -167,7 +167,7 @@ const datas = () => [
         depth5: '',
         depth6: '',
         path: '/agent/Agent_P00_l006',
-        status: 'end',
+        status: 'ing',
         create: '2023.06.22',
         log: [],
       },
