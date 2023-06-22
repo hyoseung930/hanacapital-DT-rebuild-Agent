@@ -1,5 +1,6 @@
 .ico {
     display: inline-block;
+    margin-right: 10px;
 
     &-plus {
         width: 16px;
@@ -63,6 +64,13 @@
         width: 14px;
         height: 14px;
         background-image: url('@/assets/images/icon/reset.svg');
+        background-size: cover;
+    }
+
+    &-success {
+        width: 16px;
+        height: 16px;
+        background-image: url('@/assets/images/icon/complete.svg');
         background-size: cover;
     }
 }

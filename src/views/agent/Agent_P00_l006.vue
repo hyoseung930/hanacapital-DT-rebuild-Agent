@@ -15,6 +15,7 @@ export default {
     const isOpen = ref(false);
     const address = ref('-');
     const isAddress = ref(false);
+    const isSelectAddress = ref(false);
 
     function addressClick() {
       address.value = '서울 강서구 화곡동';
@@ -24,6 +25,14 @@ export default {
       isAddress.value = true;
     }
 
+    function nextPart() {
+      if (isAddress.value !== true) {
+        alert('주소를 선택해 주세요.');
+        return;
+      }
+      isSelectAddress.value = true;
+    }
+
     return {
       agentPopup,
       startDate,
@@ -31,9 +40,11 @@ export default {
       isOpen,
       address,
       isAddress,
+      isSelectAddress,
 
       addressClick,
       addressCheck,
+      nextPart,
     };
   },
 };
@@ -72,7 +83,7 @@ export default {
               한자키를 누른 후 8번을 선택해 주세요.
             </div>
           </div>
-          <div class="address--wrap__container-02">
+          <div class="address--wrap__container-02" v-if="!isSelectAddress">
             <div class="title">주소선택</div>
             <table class="table-type-01 none-search-small">
               <thead>
@@ -145,7 +156,10 @@ export default {
                   <td>
                     <div class="flex-container">
                       <div class="radio-container">
-                        <label class="flex-container jcfs" @click="addressCheck">
+                        <label
+                          class="flex-container jcfs"
+                          @click="addressCheck"
+                        >
                           <input type="radio" name="a1" />
                           <span></span>
                         </label>
@@ -165,7 +179,10 @@ export default {
                   <td>
                     <div class="flex-container">
                       <div class="radio-container">
-                        <label class="flex-container jcfs" @click="addressCheck">
+                        <label
+                          class="flex-container jcfs"
+                          @click="addressCheck"
+                        >
                           <input type="radio" name="a1" />
                           <span></span>
                         </label>
@@ -193,9 +210,53 @@ export default {
               <button
                 class="btn w50p"
                 :class="{ 'btn-s05': !isAddress, 'btn-s02': isAddress }"
+                @click="nextPart"
               >
                 다음
               </button>
+            </div>
+          </div>
+          <div class="address--wrap__container-02" v-if="isSelectAddress">
+            <div class="title">주소 확인</div>
+            <div class="explan explan-success">
+              <i class="ico ico-success"></i>
+              입력새길에 1:1 지번매칭성공.
+            </div>
+            <div class="flex-container fw address--wrap__container-box">
+              <div class="address--wrap__container-02-address">
+                <div class="title">입력주소</div>
+                <div class="content">
+                  <span>07687</span>
+                  <span class="bar"></span>
+                  <span>서울 강서구 화곡동</span>
+                  <span class="bar"></span>
+                  <span>987-1</span>
+                </div>
+              </div>
+              <div class="address--wrap__container-02-address on">
+                <div class="title">표준화지번주소</div>
+                <div class="content">
+                  <span>07687</span>
+                  <span class="bar"></span>
+                  <span>서울 강서구 화곡동</span>
+                  <span class="bar"></span>
+                  <span>987-1번지</span>
+                </div>
+              </div>
+              <div class="address--wrap__container-02-address">
+                <div class="title">도로명주소</div>
+                <div class="content">
+                  <span>07687</span>
+                  <span class="bar"></span>
+                  <span>서울 강서구 화곡동297</span>
+                  <span class="bar"></span>
+                  <span>(화곡동)</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-s03 w50p">취소</button>
+              <button class="btn btn-s02 w50p">확인</button>
             </div>
           </div>
         </div>
