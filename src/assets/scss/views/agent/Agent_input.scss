@@ -40,6 +40,10 @@ input {
 .radio-container {
     margin-right: 16px;
 
+    &:last-child {
+        margin-right: 0;
+    }
+
     input[type=radio] {
         position: fixed;
         left: -9999px;

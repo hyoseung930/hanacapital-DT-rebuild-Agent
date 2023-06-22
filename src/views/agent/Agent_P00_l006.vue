@@ -12,11 +12,22 @@ export default {
     const agentPopup = ref(true);
     const startDate = '2022-01-01';
     const endDate = '2022-01-01';
+    const isOpen = ref(false);
+    const address = ref('-');
+
+    function addressClick() {
+      address.value = '서울 강서구 화곡동';
+      isOpen.value = true;
+    }
 
     return {
       agentPopup,
       startDate,
       endDate,
+      isOpen,
+      address,
+
+      addressClick,
     };
   },
 };
@@ -55,7 +66,122 @@ export default {
               한자키를 누른 후 8번을 선택해 주세요.
             </div>
           </div>
-          <div class="address--wrap__container"></div>
+          <div class="address--wrap__container-02">
+            <div class="title">주소선택</div>
+            <table class="table-type-01 none-search-small">
+              <thead>
+                <tr>
+                  <th>주소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>조회된 내용이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-type-01">
+              <thead>
+                <tr>
+                  <th>주소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="txt-center" @click="addressClick">
+                    서울 강서구 화곡동
+                  </td>
+                </tr>
+                <tr>
+                  <td class="txt-center">서울 강서구 화곡동</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-type-02">
+              <colgroup>
+                <col width="20%" />
+                <col width="80%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="title">검색된 주소</td>
+                  <td class="txt-right">{{ address }}</td>
+                </tr>
+                <tr>
+                  <td class="title">나머지주소</td>
+                  <td>
+                    <div class="flex-container">
+                      <input type="text" :disabled="!isOpen" />
+                      <button
+                        class="btn"
+                        :class="{ 'btn-s04': !isOpen, 'btn-primary': isOpen }"
+                      >
+                        검증
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-type-03 none-search-small">
+              <tbody>
+                <tr>
+                  <td>조회된 내용이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-type-03">
+              <colgroup>
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="flex-container">
+                      <div class="radio-container">
+                        <label class="flex-container jcfs">
+                          <input type="radio" name="a1" />
+                          <span></span>
+                        </label>
+                      </div>
+                      <div class="depth2 w10p">
+                        <div>지번</div>
+                        <div>도로명</div>
+                      </div>
+                      <div class="w80p">
+                        <div>서울 강서구 화곡동 987-1번지</div>
+                        <div>서울 강서구 화곡로 279(화곡동)</div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-container">
+                      <div class="radio-container">
+                        <label class="flex-container jcfs">
+                          <input type="radio" name="a1" />
+                          <span></span>
+                        </label>
+                      </div>
+                      <div class="depth2 w10p">
+                        <div>지번</div>
+                        <div>도로명</div>
+                      </div>
+                      <div class="w80p">
+                        <div>서울 강서구 화곡동 987-1번지</div>
+                        <div>서울 강서구 화곡로 279(화곡동)</div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btn-container">
+              <button class="btn btn-s04 w50p">취소</button>
+              <button class="btn btn-s05 w50p">다음</button>
+            </div>
+          </div>
         </div>
       </div>
     </template>

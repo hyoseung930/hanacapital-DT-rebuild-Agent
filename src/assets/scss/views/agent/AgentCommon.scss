@@ -49,6 +49,11 @@ ul {
 
     &.address--wrap {
       gap: 60px;
+      align-items: flex-start;
+
+      .table-type-01 {
+        margin-bottom: 40px;
+      }
     }
 
     &.under-tab {
@@ -167,6 +172,12 @@ ul {
 .w75p {
   width: 75%;
 }
+.w80p {
+  width: 80%;
+}
+.w85p {
+  width: 85%;
+}
 
 .w90p {
   width: 90%;
@@ -250,6 +261,11 @@ ul {
       height: auto;
       min-height: 573px;
 
+      &-02 {
+        padding: 0 30px;
+        width: 50%;
+      }
+
       .flex-container {
         margin-bottom: 24px;
 
@@ -265,6 +281,20 @@ ul {
         display: flex;
         align-items: center;
       }
+
+      > .title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
     }
   }
+}
+
+.depth2 {
+  color: var(--disabled-color);
 }
