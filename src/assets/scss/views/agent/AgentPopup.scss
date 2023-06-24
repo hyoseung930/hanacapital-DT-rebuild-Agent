@@ -21,8 +21,11 @@
     border-radius: 20px;
     background-color: var(--white-color);
     position: relative;
-    padding: 30px;
-    overflow: auto;
+    overflow: hidden;
+
+    .scroll-container {
+      height: calc(100% - 100px);
+    }
 
     &__small {
       max-width: 800px;
@@ -37,7 +40,7 @@
       letter-spacing: -0.48px;
       text-align: left;
       color: var(--black-color);
-      margin-bottom: 32px;
+      padding: 30px;
     }
 
     .ico-close {
@@ -46,5 +49,17 @@
       top: 30px;
       display: inline-block;
     }
+
+    .container {
+      padding: 30px;
+      padding-top: 0;
+    }
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }

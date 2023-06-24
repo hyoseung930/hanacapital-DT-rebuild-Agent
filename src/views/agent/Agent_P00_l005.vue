@@ -125,7 +125,7 @@ export default {
               <td class="txt-center">123456-1******</td>
               <td class="txt-center">LED전광판</td>
               <td class="txt-center">일반할부</td>
-              <td class="txt-center">승인</td>
+              <td class="txt-center cGreen">승인</td>
               <td class="txt-center">999,999,999</td>
               <td class="txt-center">2023.01.01</td>
             </tr>
@@ -137,7 +137,7 @@ export default {
               <td class="txt-center">123456-1******</td>
               <td class="txt-center">LED전광판</td>
               <td class="txt-center">일반할부</td>
-              <td class="txt-center">승인</td>
+              <td class="txt-center cGreen">승인</td>
               <td class="txt-center">999,999,999</td>
               <td class="txt-center">2023.01.01</td>
             </tr>
@@ -149,7 +149,7 @@ export default {
               <td class="txt-center">123456-1******</td>
               <td class="txt-center">LED전광판</td>
               <td class="txt-center">일반할부</td>
-              <td class="txt-center">승인</td>
+              <td class="txt-center cGreen">승인</td>
               <td class="txt-center">999,999,999</td>
               <td class="txt-center">2023.01.01</td>
             </tr>
@@ -161,7 +161,7 @@ export default {
               <td class="txt-center">123456-1******</td>
               <td class="txt-center">LED전광판</td>
               <td class="txt-center">일반할부</td>
-              <td class="txt-center">승인</td>
+              <td class="txt-center cGreen">승인</td>
               <td class="txt-center">999,999,999</td>
               <td class="txt-center">2023.01.01</td>
             </tr>
@@ -173,7 +173,7 @@ export default {
               <td class="txt-center">123456-1******</td>
               <td class="txt-center">LED전광판</td>
               <td class="txt-center">일반할부</td>
-              <td class="txt-center">승인</td>
+              <td class="txt-center cGreen">승인</td>
               <td class="txt-center">999,999,999</td>
               <td class="txt-center">2023.01.01</td>
             </tr>

@@ -80,7 +80,7 @@ export default {
             <tr>
               <td class="title">전화번호</td>
               <td colspan="3">
-                <input type="tel" />
+                <input type="tel" class="w25p" />
               </td>
             </tr>
           </tbody>
@@ -123,6 +123,7 @@ export default {
               <td class="title">사전신용정보조회<br />동의 녹취 스크립트</td>
               <td>
                 <textarea class="textarea"></textarea>
+                <div class="flex-container jcfe"><strong>0</strong>Byte</div>
               </td>
             </tr>
           </tbody>

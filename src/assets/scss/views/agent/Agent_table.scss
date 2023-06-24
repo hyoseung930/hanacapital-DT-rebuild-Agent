@@ -6,11 +6,31 @@ table {
         border-top: 2px solid #8f8f8f;
         margin-bottom: 60px;
 
+        &.none-bottom {
+            margin-bottom: 0;
+        }
+
+        &.body {
+            border-top: none;
+        }
+
+        tr {
+            &.on {
+                td {
+                    background-color: rgba(20, 59, 117, 0.08);
+                }
+            }
+        }
+
         td {
             padding: 16px;
             color: var(--black-color);
             border-bottom: 1px solid var(--gray-color);
             border-right: 1px solid var(--gray-color);
+
+            &.on {
+                background-color: rgba(20, 59, 117, 0.08);
+            }
 
             &.title {
                 color: var(--table-title);

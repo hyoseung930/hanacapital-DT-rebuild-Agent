@@ -63,52 +63,108 @@ export default {
           </tbody>
         </table>
 
-        <table class="table-type-01">
-          <thead>
-            <tr>
-              <th>은행코드</th>
-              <th>은행명</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-            <tr>
-              <td class="txt-center">060</td>
-              <td class="txt-center">BOA은행</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="scroll-container">
+          <div class="scroll-container mxh-378">
+            <div class="flex-container">
+              <table class="table-type-01 none-bottom">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>은행코드</th>
+                    <th>은행명</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <div class="scroll-container mxh-378">
+            <div class="flex-container">
+              <table class="table-type-01 body">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">060</td>
+                    <td class="txt-center">BOA은행</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </template>
   </AgentPopup>

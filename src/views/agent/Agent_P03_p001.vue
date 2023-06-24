@@ -10,6 +10,19 @@ export default {
     PageHead,
     PageTitle,
   },
+  setup() {
+    function select(e) {
+      if (e.target.parentNode.parentNode.parentNode.parentNode.classList.contains('on') === false) {
+        e.target.parentNode.parentNode.parentNode.parentNode.classList.add('on');
+      } else {
+        e.target.parentNode.parentNode.parentNode.parentNode.classList.remove('on');
+      }
+    }
+
+    return {
+      select,
+    };
+  },
 };
 </script>
 
@@ -290,7 +303,7 @@ export default {
               <div class="check-container w10p">
                 <label class="flex-container">
                   <input type="checkbox" name="ok" />
-                  <span></span>
+                  <span @click="select($event)"></span>
                 </label>
               </div>
             </td>

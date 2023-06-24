@@ -252,7 +252,7 @@ export default {
             <col width="9%" />
             <col width="16%" />
             <col width="10%" />
-            <col width="8%" />
+            <col width="7.2%" />
           </colgroup>
           <thead>
             <tr>

@@ -136,7 +136,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l003',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: 'fadeout 변경, 스크롤 추가' }],
       },
       {
         depth2: '팝업',
@@ -147,7 +148,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l004',
         status: 'end',
         create: '2023.06.20',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '테이블 수정' }],
       },
       {
         depth2: '팝업',
@@ -158,7 +160,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l005',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '승인 컬러 변경' }],
       },
       {
         depth2: '팝업',
@@ -169,7 +172,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l006',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '클릭시 색상 추가' }],
       },
       {
         depth2: '팝업',
@@ -180,7 +184,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l007',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '스크롤 추가' }],
       },
       {
         depth2: '팝업',
@@ -202,7 +207,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l009',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '텍스트 필드 글자수 추가' }],
       },
       {
         depth2: '팝업',
@@ -213,7 +219,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l010',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.06.24',
+        log: [{ date: '2023.06.24', text: '테이블 간격 조정' }],
       },
       {
         depth2: '팝업',
@@ -406,8 +413,11 @@ const datas = () => [
         path: '/agent/Agent_P03_l002',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.22',
-        log: [{ date: '2023.06.22', text: '닫기 버튼 활성화' }],
+        update: '2023.06.24',
+        log: [
+          { date: '2023.06.22', text: '닫기 버튼 활성화' },
+          { date: '2023.06.24', text: '이미지 영역 수정, 내부 스크롤 추가' },
+        ],
       },
       {
         depth2: '할부승계',
@@ -418,8 +428,14 @@ const datas = () => [
         path: '/agent/Agent_P03_l003',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.22',
-        log: [{ date: '2023.06.22', text: '닫기 버튼 활성화' }],
+        update: '2023.06.24',
+        log: [
+          { date: '2023.06.22', text: '닫기 버튼 활성화' },
+          {
+            date: '2023.06.24',
+            text: '텍스트 필드 글자수 추가, 전화번호 input 크기 수정',
+          },
+        ],
       },
       {
         depth2: '할부승계',
@@ -430,8 +446,11 @@ const datas = () => [
         path: '/agent/Agent_P03_l004',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.22',
-        log: [{ date: '2023.06.22', text: '닫기 버튼 활성화' }],
+        update: '2023.06.24',
+        log: [
+          { date: '2023.06.22', text: '닫기 버튼 활성화' },
+          { date: '2023.06.24', text: '전화번호 input 크기 수정' },
+        ],
       },
       {
         depth2: '할부승계',
@@ -442,8 +461,11 @@ const datas = () => [
         path: '/agent/Agent_P03_p001',
         status: 'end',
         create: '2023.06.19',
-        update: '2023.06.22',
-        log: [{ date: '2023.06.22', text: '체크박스 버튼 활성화' }],
+        update: '2023.06.24',
+        log: [
+          { date: '2023.06.22', text: '체크박스 버튼 활성화' },
+          { date: '2023.06.24', text: '체크박스 선택시 배경 색상 변경' },
+        ],
       },
       {
         depth2: '할부승계',
@@ -465,7 +487,11 @@ const datas = () => [
         path: '/agent/Agent_P03_p003',
         status: 'end',
         create: '2023.06.21',
-        log: [{ date: '2023.06.22', text: '조회내역 없음 추가' }],
+        update: '2023.06.24',
+        log: [
+          { date: '2023.06.22', text: '조회내역 없음 추가' },
+          { date: '2023.06.24', text: '버튼 위치 수정' },
+        ],
       },
       {
         depth2: '할부승계',

@@ -156,7 +156,7 @@ export default {
               </thead>
               <tbody>
                 <tr>
-                  <td class="txt-center" @click="addressClick">
+                  <td class="txt-center on" @click="addressClick">
                     서울 강서구 화곡동
                   </td>
                 </tr>
@@ -212,7 +212,7 @@ export default {
                 </tr>
               </thead>
               <tbody>
-                <tr @click="addressClick">
+                <tr class="on" @click="addressClick">
                   <td class="txt-center">077111</td>
                   <td class="txt-center">서울 강서구 화곡로</td>
                   <td class="txt-center">-</td>

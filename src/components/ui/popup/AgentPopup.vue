@@ -18,16 +18,20 @@ export default {
 </script>
 
 <template>
-  <div class="agent" v-if="agentPopup">
-    <div
-      class="agent--container scroll-container"
-      :class="{ 'agent--container__small': classList === 'small' }"
-    >
-      <i class="ico ico-close" @click="agentPopup = false"></i>
-      <slot name="title" />
-      <slot name="contents" />
+  <transition name="fade">
+    <div class="agent" v-if="agentPopup">
+      <div
+        class="agent--container"
+        :class="{ 'agent--container__small': classList === 'small' }"
+      >
+        <i class="ico ico-close" @click="agentPopup = false"></i>
+        <slot name="title" />
+        <div class="scroll-container">
+          <slot name="contents" />
+        </div>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <style lang="scss">
