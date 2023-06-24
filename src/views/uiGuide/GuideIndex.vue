@@ -387,7 +387,7 @@ const datas = () => [
         depth4: '',
         depth5: '',
         depth6: '',
-        path: '/guide/agent-004',
+        path: '',
         status: '',
         create: '',
         log: [],
