@@ -6,6 +6,10 @@ table {
         border-top: 2px solid #8f8f8f;
         margin-bottom: 60px;
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         &.none-bottom {
             margin-bottom: 0;
         }
@@ -23,7 +27,7 @@ table {
         }
 
         td {
-            padding: 16px;
+            padding: 24px;
             color: var(--black-color);
             border-bottom: 1px solid var(--gray-color);
             border-right: 1px solid var(--gray-color);
@@ -90,7 +94,7 @@ table {
         th {
             font-weight: normal;
             color: #757575;
-            padding: 16px;
+            padding: 12px;
             border-bottom: 1px solid var(--gray-color);
             border-right: 1px solid var(--gray-color);
 
@@ -270,12 +274,40 @@ table {
             &:first-child {
                 td {
                     padding-top: 0px;
+                    &.title {
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            background-color: var(--black-color);
+                            width: 4px;
+                            height: 4px;
+                            left: -4px;
+                            top: calc(50% - 8px);
+                            transition: transformY(-50%);
+                            border-radius: 50%;
+                        }
+                    }
                 }
             }
         }
 
         td {
             padding: 8px;
+            position: relative;
+
+            &.title {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-color: var(--black-color);
+                    width: 4px;
+                    height: 4px;
+                    left: -4px;
+                    top: calc(50% - 4px);
+                    transition: transformY(-50%);
+                    border-radius: 50%;
+                }
+            }
 
             &:nth-child(2n) {
                 padding-right: 40px;

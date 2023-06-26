@@ -39,7 +39,7 @@ export default {
             </colgroup>
             <tbody>
               <tr>
-                <td>상담일자</td>
+                <td class="title">상담일자</td>
                 <td>
                   <div class="flex-container">
                     <input type="date" v-model="startDate" />
@@ -47,7 +47,7 @@ export default {
                     <input type="date" v-model="endDate" />
                   </div>
                 </td>
-                <td>검색조건</td>
+                <td class="title">검색조건</td>
                 <td>
                   <div class="flex-container">
                     <div class="select-container">
@@ -60,9 +60,9 @@ export default {
                 </td>
               </tr>
               <tr>
-                <td>판매점</td>
+                <td class="title">판매점</td>
                 <td>
-                  <input type="text" />
+                  <input type="text" class="w50p" />
                 </td>
               </tr>
             </tbody>
