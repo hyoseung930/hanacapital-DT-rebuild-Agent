@@ -121,7 +121,9 @@ export default {
               <td class="title">내용</td>
               <td>
                 <textarea class="textarea"></textarea>
-                <div class="flex-container jcfe"><strong>0</strong>Byte</div>
+                <div class="flex-container jcfe cDisabled">
+                  <strong>0</strong>Byte
+                </div>
               </td>
             </tr>
           </tbody>

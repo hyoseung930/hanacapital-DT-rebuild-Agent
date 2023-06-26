@@ -13,6 +13,26 @@ const routes = [
     meta: { layout: 'NoneLayout' },
   },
   {
+    path: '/business/BF_P02_p001',
+    name: '/business/BF_P02_p001',
+    component: () => import('@/views/business/BF_P02_p001.vue'),
+  },
+  {
+    path: '/business/BF_P01_l001',
+    name: '/business/BF_P01_l001',
+    component: () => import('@/views/business/BF_P01_l001.vue'),
+  },
+  {
+    path: '/business/BF_P03_p001',
+    name: '/business/BF_P03_p001',
+    component: () => import('@/views/business/BF_P03_p001.vue'),
+  },
+  {
+    path: '/business/BF_P05_p001',
+    name: '/business/BF_P05_p001',
+    component: () => import('@/views/business/BF_P05_p001.vue'),
+  },
+  {
     path: '/guide/component',
     name: '/guide/component',
     component: () => import('@/views/uiGuide/GuideComponent.vue'),

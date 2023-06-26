@@ -62,14 +62,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" checked />
-                      <span></span>
+                      <span class="small"></span>
                       본인명의 휴대폰 녹취동의
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       신분증 본인확인 녹취동의
                     </label>
                   </div>

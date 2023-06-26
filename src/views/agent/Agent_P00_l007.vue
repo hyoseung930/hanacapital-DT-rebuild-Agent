@@ -66,7 +66,7 @@ export default {
         <div class="scroll-container">
           <div class="scroll-container mxh-378">
             <div class="flex-container">
-              <table class="table-type-01 none-bottom">
+              <table class="table-type-04 none-bottom">
                 <colgroup>
                   <col width="50%" />
                   <col width="50%" />
@@ -82,7 +82,7 @@ export default {
           </div>
           <div class="scroll-container mxh-378">
             <div class="flex-container">
-              <table class="table-type-01 body">
+              <table class="table-type-04 body">
                 <colgroup>
                   <col width="50%" />
                   <col width="50%" />

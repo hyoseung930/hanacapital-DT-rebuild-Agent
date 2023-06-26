@@ -115,15 +115,15 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span></span>
+                      <input type="radio" name="type" checked />
+                      <span class="small"></span>
                       Y
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       N
                     </label>
                   </div>
@@ -305,15 +305,15 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span></span>
+                      <input type="radio" name="type" checked />
+                      <span class="small"></span>
                       사업자번호
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       생년월일
                     </label>
                   </div>
@@ -378,8 +378,8 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="newProduct" />
-                      <span></span>
+                      <input type="radio" name="newProduct" checked />
+                      <span class="small"></span>
                       신품
                     </label>
                   </div>
@@ -401,15 +401,15 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="newProduct" />
-                      <span></span>
+                      <input type="radio" name="newProduct" checked />
+                      <span class="small"></span>
                       내구재 온라인 약정서
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="newProduct" />
-                      <span></span>
+                      <span class="small"></span>
                       내구재 오프라인 약정서
                     </label>
                   </div>
@@ -435,15 +435,15 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="newProduct" />
-                      <span></span>
+                      <input type="radio" name="newProduct" checked />
+                      <span class="small"></span>
                       내구재 온라인 약정서
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="newProduct" />
-                      <span></span>
+                      <span class="small"></span>
                       내구재 오프라인 약정서
                     </label>
                   </div>
@@ -494,14 +494,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="before" checked />
-                      <span></span>
+                      <span class="small"></span>
                       선취
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="before" />
-                      <span></span>
+                      <span class="small"></span>
                       후취
                     </label>
                   </div>
@@ -517,14 +517,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="hold" checked />
-                      <span></span>
+                      <span class="small"></span>
                       고정
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="hold" />
-                      <span></span>
+                      <span class="small"></span>
                       변동
                     </label>
                   </div>
@@ -539,14 +539,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="return" checked />
-                      <span></span>
+                      <span class="small"></span>
                       원리금균등분할상환
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="return" />
-                      <span></span>
+                      <span class="small"></span>
                       원금균등분할상환
                     </label>
                   </div>
@@ -558,14 +558,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="date" checked />
-                      <span></span>
+                      <span class="small"></span>
                       회차
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="date" />
-                      <span></span>
+                      <span class="small"></span>
                       기간
                     </label>
                   </div>
@@ -650,14 +650,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="agyn" checked />
-                      <span></span>
+                      <span class="small"></span>
                       Y
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="agyn" />
-                      <span></span>
+                      <span class="small"></span>
                       N
                     </label>
                   </div>
@@ -783,15 +783,15 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span></span>
+                      <input type="radio" name="type" checked />
+                      <span class="small"></span>
                       Y
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       N
                     </label>
                   </div>
@@ -880,7 +880,7 @@ export default {
               <td class="title required">휴대전화</td>
               <td>
                 <div class="flex-container jcfs">
-                  <div class="check-container w50p">
+                  <div class="check-container w55p">
                     <label class="flex-container jcfs">
                       <input type="checkbox" name="me" />
                       <span></span>

@@ -148,22 +148,22 @@ export default {
               <div className="flex-container jcfs">
                 <div className="radio-container">
                   <label className="flex-container jcfs">
-                    <input type="radio" name="type" />
-                    <span></span>
+                    <input type="radio" name="type" checked />
+                    <span class="small"></span>
                     개인
                   </label>
                 </div>
                 <div className="radio-container">
                   <label className="flex-container jcfs">
                     <input type="radio" name="type" />
-                    <span></span>
+                    <span class="small"></span>
                     사업자
                   </label>
                 </div>
                 <div className="radio-container">
                   <label className="flex-container jcfs">
                     <input type="radio" name="type" />
-                    <span></span>
+                    <span class="small"></span>
                     법인
                   </label>
                 </div>
@@ -222,15 +222,15 @@ export default {
               <div className="flex-container jcfs">
                 <div className="radio-container">
                   <label className="flex-container jcfs">
-                    <input type="radio" name="a1" />
-                    <span></span>
+                    <input type="radio" name="a1" checked />
+                    <span class="small"></span>
                     Y
                   </label>
                 </div>
                 <div className="radio-container">
                   <label className="flex-container jcfs">
                     <input type="radio" name="a1" />
-                    <span></span>
+                    <span class="small"></span>
                     N
                   </label>
                 </div>
@@ -391,5 +391,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/Agent_P03_p001.scss';
+@import '@/assets/scss/views/agent/AgentCommon.scss';
 </style>

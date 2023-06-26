@@ -67,78 +67,80 @@ export default {
           </tbody>
         </table>
 
-        <table class="table-type-01">
-          <colgroup>
-            <col width="8%" />
-            <col width="9%" />
-            <col width="13%" />
-            <col width="11%" />
-            <col width="7%" />
-            <col width="12%" />
-            <col width="8%" />
-            <col />
-            <col />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>채권상태</th>
-              <th>성명/상호</th>
-              <th>주민/사업번호</th>
-              <th>실행일자</th>
-              <th>실행금액</th>
-              <th>원금잔액</th>
-              <th>총회차</th>
-              <th>품목</th>
-              <th>판매점</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="txt-center">정상</td>
-              <td class="txt-center">홍길동</td>
-              <td class="txt-center">123456-1******</td>
-              <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">20개월</td>
-              <td class="txt-center">이온수기_온누리헬스케어_무</td>
-              <td class="txt-center">㈜온누리헬스케어</td>
-            </tr>
-            <tr>
-              <td class="txt-center">정상</td>
-              <td class="txt-center">홍길동</td>
-              <td class="txt-center">123456-1******</td>
-              <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">20개월</td>
-              <td class="txt-center">이온수기_온누리헬스케어_무</td>
-              <td class="txt-center">㈜온누리헬스케어</td>
-            </tr>
-            <tr>
-              <td class="txt-center">정상</td>
-              <td class="txt-center">홍길동</td>
-              <td class="txt-center">123456-1******</td>
-              <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">20개월</td>
-              <td class="txt-center">이온수기_온누리헬스케어_무</td>
-              <td class="txt-center">㈜온누리헬스케어</td>
-            </tr>
-            <tr>
-              <td class="txt-center">정상</td>
-              <td class="txt-center">홍길동</td>
-              <td class="txt-center">123456-1******</td>
-              <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">20개월</td>
-              <td class="txt-center">이온수기_온누리헬스케어_무</td>
-              <td class="txt-center">㈜온누리헬스케어</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="scroll-container over-h">
+          <table class="table-type-01">
+            <colgroup>
+              <col width="8%" />
+              <col width="9%" />
+              <col width="13%" />
+              <col width="11%" />
+              <col width="7%" />
+              <col width="12%" />
+              <col width="8%" />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>채권상태</th>
+                <th>성명/상호</th>
+                <th>주민/사업번호</th>
+                <th>실행일자</th>
+                <th>실행금액</th>
+                <th>원금잔액</th>
+                <th>총회차</th>
+                <th>품목</th>
+                <th>판매점</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="txt-center">정상</td>
+                <td class="txt-center">홍길동</td>
+                <td class="txt-center">123456-1******</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">20개월</td>
+                <td class="txt-center">이온수기_온누리헬스케어_무</td>
+                <td class="txt-center">㈜온누리헬스케어</td>
+              </tr>
+              <tr>
+                <td class="txt-center">정상</td>
+                <td class="txt-center">홍길동</td>
+                <td class="txt-center">123456-1******</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">20개월</td>
+                <td class="txt-center">이온수기_온누리헬스케어_무</td>
+                <td class="txt-center">㈜온누리헬스케어</td>
+              </tr>
+              <tr>
+                <td class="txt-center">정상</td>
+                <td class="txt-center">홍길동</td>
+                <td class="txt-center">123456-1******</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">20개월</td>
+                <td class="txt-center">이온수기_온누리헬스케어_무</td>
+                <td class="txt-center">㈜온누리헬스케어</td>
+              </tr>
+              <tr>
+                <td class="txt-center">정상</td>
+                <td class="txt-center">홍길동</td>
+                <td class="txt-center">123456-1******</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">20개월</td>
+                <td class="txt-center">이온수기_온누리헬스케어_무</td>
+                <td class="txt-center">㈜온누리헬스케어</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <ul class="paging">
           <li class="first">&lt;</li>

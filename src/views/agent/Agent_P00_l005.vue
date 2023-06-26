@@ -87,7 +87,7 @@ export default {
           </tbody>
         </table>
 
-        <table class="table-type-01">
+        <table class="table-type-04">
           <colgroup>
             <col width="10%" />
             <col width="8%" />

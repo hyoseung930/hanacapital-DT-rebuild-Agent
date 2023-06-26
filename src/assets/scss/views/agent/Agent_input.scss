@@ -62,7 +62,7 @@ input {
                     height: 24px;
                     left: 0;
                     top: 0;
-                    border-radius: 50%;
+                    border-radius: 50px;
                 }
 
                 &::before {
@@ -77,6 +77,21 @@ input {
                     transform: translate(-50%, -50%);
                     border-radius: 50%;
                 }
+
+                &.small {
+                    width: 18px;
+                    height: 18px;
+
+                    &::after {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    &::before {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
             }
         }
     }
@@ -87,6 +102,11 @@ input {
         height: 24px;
         border: 1px solid var(--gray-color);
         border-radius: 50%;
+
+        &.small {
+            width: 18px;
+            height: 18px;
+        }
     }
 }
 

@@ -85,6 +85,17 @@ ul {
     color: var(--main-color);
     font-weight: 500;
   }
+  .cRed {
+    color: var(--red-color);
+    font-weight: 500;
+  }
+  .cDisabled {
+    color: var(--disabled-color);
+
+    strong {
+      color: var(--black-color);
+    }
+  }
 
   th, td {
     font-size: 14px;
@@ -122,6 +133,11 @@ ul {
   height: 100%;
   padding: 0;
   overflow-y: scroll;
+
+  &.auto {
+    height: auto;
+    max-height: 100%;
+  }
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -378,4 +394,8 @@ ul {
 
 .mxh-300 {
   max-height: 300px;
+}
+
+.mt40 {
+  margin-top: 40px;
 }

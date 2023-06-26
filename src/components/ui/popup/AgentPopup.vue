@@ -4,14 +4,17 @@ export default {
   props: {
     isAgent: Boolean,
     isClassList: String,
+    isScrollHeight: String,
   },
   setup(props) {
     const agentPopup = ref(props.isAgent);
     const classList = ref(props.isClassList);
+    const scrollList = ref(props.isScrollHeight);
 
     return {
       agentPopup,
       classList,
+      scrollList,
     };
   },
 };
@@ -22,11 +25,14 @@ export default {
     <div class="agent" v-if="agentPopup">
       <div
         class="agent--container"
-        :class="{ 'agent--container__small': classList === 'small' }"
+        :class="{
+          'agent--container__small': classList === 'small',
+          auto: scrollList === 'auto',
+        }"
       >
         <i class="ico ico-close" @click="agentPopup = false"></i>
         <slot name="title" />
-        <div class="scroll-container">
+        <div class="scroll-container" :class="scrollList">
           <slot name="contents" />
         </div>
       </div>

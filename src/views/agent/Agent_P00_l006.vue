@@ -34,6 +34,12 @@ export default {
       isSelectAddress.value = true;
     }
 
+    function changeTab(n) {
+      isTab.value = n;
+      isAddress.value = false;
+      isSelectAddress.value = false;
+    }
+
     return {
       agentPopup,
       startDate,
@@ -47,6 +53,7 @@ export default {
       addressClick,
       addressCheck,
       nextPart,
+      changeTab,
     };
   },
 };
@@ -60,8 +67,10 @@ export default {
     <template #contents>
       <div class="container">
         <div class="flex-container under-tab jcfs">
-          <div :class="{ on: isTab === 1 }" @click="isTab = 1">지번주소</div>
-          <div :class="{ on: isTab === 2 }" @click="isTab = 2">도로명주소</div>
+          <div :class="{ on: isTab === 1 }" @click="changeTab(1)">지번주소</div>
+          <div :class="{ on: isTab === 2 }" @click="changeTab(2)">
+            도로명주소
+          </div>
         </div>
 
         <div class="flex-container address--wrap">
