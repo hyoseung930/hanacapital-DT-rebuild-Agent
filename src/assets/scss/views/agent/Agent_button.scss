@@ -25,8 +25,12 @@ button {
     text-align: center;
     cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     &.btn {
         &-s01 {

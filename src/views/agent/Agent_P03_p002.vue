@@ -108,6 +108,14 @@ export default {
         </div>
       </div>
 
+      <table class="table-type-01 none-search">
+        <tbody>
+          <tr>
+            <td>조회된 내용이 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
       <div class="search-count">
         <span>
           합계 : <span class="cGreen">85</span>건 /
@@ -120,14 +128,6 @@ export default {
           </button>
         </div>
       </div>
-
-      <table class="table-type-01 none-search">
-        <tbody>
-          <tr>
-            <td>조회된 내용이 없습니다.</td>
-          </tr>
-        </tbody>
-      </table>
 
       <div class="scroll-container over-h">
         <table class="table-type-01">

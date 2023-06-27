@@ -115,14 +115,14 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" checked />
+                      <input type="radio" name="a6" checked />
                       <span class="small"></span>
                       Y
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
+                      <input type="radio" name="a6" />
                       <span class="small"></span>
                       N
                     </label>
@@ -222,8 +222,8 @@ export default {
                   <input type="tel" />
                 </div>
               </td>
-              <td class="title required">자택전화</td>
-              <td colspan="5"><input type="tel" /></td>
+              <td class="title required">자택전화</td>              <td colspan="5"><input type="tel" class="w35p" /></td>
+
             </tr>
             <tr>
               <td class="title">이메일</td>
@@ -305,14 +305,14 @@ export default {
                 <div class="flex-container jcfs">
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" checked />
+                      <input type="radio" name="business" checked />
                       <span class="small"></span>
                       사업자번호
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
+                      <input type="radio" name="business" />
                       <span class="small"></span>
                       생년월일
                     </label>
@@ -880,7 +880,7 @@ export default {
               <td class="title required">휴대전화</td>
               <td>
                 <div class="flex-container jcfs">
-                  <div class="check-container w55p">
+                  <div class="check-container w60p">
                     <label class="flex-container jcfs">
                       <input type="checkbox" name="me" />
                       <span></span>
@@ -891,7 +891,7 @@ export default {
                 </div>
               </td>
               <td class="title required">자택전화</td>
-              <td colspan="5"><input type="tel" /></td>
+              <td colspan="5"><input type="tel" class="w35p" /></td>
             </tr>
             <tr>
               <td class="title">이메일</td>

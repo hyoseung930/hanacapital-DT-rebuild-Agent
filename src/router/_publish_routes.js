@@ -304,6 +304,11 @@ const routes = [
     name: '/agent/Agent_P00_l011',
     component: () => import('@/views/agent/Agent_P00_l011.vue'),
   },
+  {
+    path: '/agent/Agent_P00_l012',
+    name: '/agent/Agent_P00_l012',
+    component: () => import('@/views/agent/Agent_P00_l012.vue'),
+  },
 ];
 
 export default routes;

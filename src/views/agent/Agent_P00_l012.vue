@@ -1,69 +1,122 @@
 <script>
-// Agent_P00_l012
 import { ref } from 'vue';
+// Agent_P00_l003
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
+    const agentPopup = ref(true);
+    const classList = ref('small');
 
     return {
-      layer,
+      agentPopup,
+      classList,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>타이틀</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup" :isClassList="classList">
+    <template #title>
+      <div class="agent--container__title">국적 조회</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="search-container">
+          <table class="table-type-search">
+            <colgroup>
+              <col width="15%" />
+              <col width="85%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title">국가명</td>
+                <td>
+                  <div class="flex-container">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <section>// contents</section>
+          <div class="btn-container">
+            <button class="btn btn-primary btn-search">검색</button>
+          </div>
+        </div>
 
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+        <div class="scroll-container">
+          <div class="scroll-container mxh-378">
+            <div class="flex-container">
+              <table class="table-type-04 bt none-bottom">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>국가코드</th>
+                    <th>국가명</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <div class="scroll-container mxh-378">
+            <div class="flex-container">
+              <table class="table-type-04 body">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                  <tr>
+                    <td class="txt-center">AD</td>
+                    <td class="txt-center">안도라</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </AgentPopup>
 </template>
