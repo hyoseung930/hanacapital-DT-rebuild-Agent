@@ -163,6 +163,12 @@ ul {
     table-layout: unset;
     white-space: nowrap;
   }
+
+  > .table-type-04 {
+    width: auto;
+    table-layout: unset;
+    white-space: nowrap;
+  }
 }
 
 .w10p {
@@ -398,4 +404,41 @@ ul {
 
 .mt40 {
   margin-top: 40px;
+}
+
+.status-check {
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-bottom: 60px;
+  font-size: 18px;
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+
+    .count {
+      color: var(--main-color);
+      width: 100%;
+      text-align: center;
+      padding: 6px 0;
+    }
+
+    .subject {
+      font-size: 16px;
+      color: var(--disabled-color);
+    }
+
+    &.on {
+      border-bottom: 2px solid var(--black-color);
+
+      .subject {
+        font-weight: bold;
+      color: var(--black-color);
+      }
+    }
+  }
 }

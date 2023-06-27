@@ -11,9 +11,23 @@ export default {
   setup() {
     const agentPopup = ref(true);
     const scrollList = ref('auto');
+    function selectedData(e) {
+      const a = e.currentTarget
+      const b = e.currentTarget.parentNode.parentNode
+
+      document.querySelectorAll('tr').forEach(ele => {
+        ele.classList.remove('on');
+      })
+      if (b.classList.contains('on') === true){
+        b.classList.remove('on')
+      } else {
+        b.classList.add('on')
+      }
+    }
     return {
       agentPopup,
       scrollList,
+      selectedData,
     };
   },
 };
@@ -46,9 +60,9 @@ export default {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="on">
               <td class="txt-center">
-                <div class="radio-container">
+                <div class="radio-container" @click="selectedData($event)">
                   <label class="flex-container jcfs">
                     <input type="radio" name="a1" checked />
                     <span></span>
@@ -63,9 +77,9 @@ export default {
             </tr>
             <tr>
               <td class="txt-center">
-                <div class="radio-container">
+                <div class="radio-container" @click="selectedData($event)">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -80,7 +94,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -95,7 +109,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -110,7 +124,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -125,7 +139,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -140,7 +154,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>
@@ -155,7 +169,7 @@ export default {
               <td class="txt-center">
                 <div class="radio-container">
                   <label class="flex-container jcfs">
-                    <input type="radio" name="a1" checked />
+                    <input type="radio" name="a1" />
                     <span></span>
                   </label>
                 </div>

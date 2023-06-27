@@ -28,6 +28,34 @@ export default {
     </PageHead>
 
     <div class="container">
+      <div class="status-check">
+        <div class="flex-container">
+          <div class="item on">
+            <div class="count">0</div>
+            <div class="subject">전체</div>
+          </div>
+          <div class="item">
+            <div class="count">0</div>
+            <div class="subject">신용동의</div>
+          </div>
+          <div class="item">
+            <div class="count">0</div>
+            <div class="subject">상담</div>
+          </div>
+          <div class="item">
+            <div class="count">0</div>
+            <div class="subject">계약</div>
+          </div>
+          <div class="item">
+            <div class="count">0</div>
+            <div class="subject">심사</div>
+          </div>
+          <div class="item">
+            <div class="count">0</div>
+            <div class="subject">송금</div>
+          </div>
+        </div>
+      </div>
       <div class="search-container">
         <table class="table-type-search">
           <colgroup>
