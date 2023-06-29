@@ -1,69 +1,147 @@
 <script>
-// Agent_P02_l004
+// Agent_P00_l003
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
-
+    const agentPopup = ref(true);
     return {
-      layer,
+      agentPopup,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>타이틀</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup">
+    <template #title>
+      <div class="agent--container__title">본인확인(본의명의 휴대폰소지자)</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="title">계약내용</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="35%" />
+            <col width="15%" />
+            <col width="35%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">AG명</td>
+              <td><input type="text" /></td>
+              <td class="title">고객명</td>
+              <td><input type="text" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="title">계약내용</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">본인확인</td>
+              <td>
+                <div class="flex-container jcfs">
+                  <div class="select-container w15p">
+                    <select>
+                      <option>SKT</option>
+                    </select>
+                  </div>
+                  <input type="text" class="w30p" />
+                  <button class="btn btn-s03">SMS발송</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="title">스크립트</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">본인확인</td>
+              <td>
+                본인명의 핸드폰이 맞으신가요? 제가 지금 손님 핸드폰으로 보내드린
+                인증번호를 말씀해 주시겠습니까? 주민번호 앞 7자리 : $고객
+                주민번호 앞 7자리 – 뒷자리 중 첫번째 자리$
+                본인명의 핸드폰이 맞으신가요? 제가 지금 손님 핸드폰으로 보내드린
+                인증번호를 말씀해 주시겠습니까? 주민번호 앞 7자리 : $고객
+                주민번호 앞 7자리 – 뒷자리 중 첫번째 자리$
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="title">인증번호 확인</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">본인확인</td>
+              <td>
+                <div class="flex-container jcfs">
+                  <input type="text" class="w30p" />
+                  <button class="btn btn-s03">인증확인</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="title">손님상담</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">1차상담업로드</td>
+              <td>
+                <button class="btn btn-s03">손님상담</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="title">
+          ARS 전송
 
-      <section>// contents</section>
-
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+          <div class="btn-container">
+            <button class="btn btn-primary">ARS</button>
+          </div>
+        </div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">ARS전송</td>
+              <td>
+                기타 계약사항 안내는 ARS로 진행될 예정입니다. 전화를 끊으시고
+                “02-1800-9540” 번호로 전화오면, 끝까지 들어주시고 전화가
+                자동으로 끊겨야 완료 됩니다. 잠시 후 연결해드리겠습니다.
+                감사합니다.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </template>
+  </AgentPopup>
 </template>

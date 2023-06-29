@@ -80,6 +80,11 @@ const routes = [
   },
   // agent
   {
+    path: '/agent/Agent_P01_l001',
+    name: '/agent/Agent_P01_l001',
+    component: () => import('@/views/agent/Agent_P01_l001.vue'),
+  },
+  {
     path: '/agent/Agent_P01_p001',
     name: '/agent/Agent_P01_p001',
     component: () => import('@/views/agent/Agent_P01_p001.vue'),
@@ -88,6 +93,31 @@ const routes = [
     path: '/agent/Agent_P02_l002',
     name: '/agent/Agent_P02_l002',
     component: () => import('@/views/agent/Agent_P02_l002.vue'),
+  },
+  {
+    path: '/agent/Agent_P02_l003',
+    name: '/agent/Agent_P02_l003',
+    component: () => import('@/views/agent/Agent_P02_l003.vue'),
+  },
+  {
+    path: '/agent/Agent_P02_l004',
+    name: '/agent/Agent_P02_l004',
+    component: () => import('@/views/agent/Agent_P02_l004.vue'),
+  },
+  {
+    path: '/agent/Agent_P02_l005',
+    name: '/agent/Agent_P02_l005',
+    component: () => import('@/views/agent/Agent_P02_l005.vue'),
+  },
+  {
+    path: '/agent/Agent_P02_l006',
+    name: '/agent/Agent_P02_l006',
+    component: () => import('@/views/agent/Agent_P02_l006.vue'),
+  },
+  {
+    path: '/agent/Agent_P02_l007',
+    name: '/agent/Agent_P02_l007',
+    component: () => import('@/views/agent/Agent_P02_l007.vue'),
   },
   {
     path: '/agent/Agent_P02_p001',

@@ -10,6 +10,16 @@
         mask-size: cover;
         -webkit-mask-size: cover;
         background-color: var(--main-color);
+
+        &-black {
+            width: 16px;
+            height: 16px;
+            mask-image: url('@/assets/images/icon/add-black.svg');
+            -webkit-mask-image: url('@/assets/images/icon/add-black.svg');
+            mask-size: cover;
+            -webkit-mask-size: cover;
+            background-color: var(--black-color);
+        }
     }
 
     &-nchecked {
@@ -74,10 +84,30 @@
         background-size: cover;
     }
 
-	&-print {
-		width: 24px;
-		height: 24px;
-		background-image: url('@/assets/images/icon/print.svg');
-		background-size: cover;
-	}
+    &-print {
+        width: 24px;
+        height: 24px;
+        background-image: url('@/assets/images/icon/print.svg');
+        background-size: cover;
+    }
+
+    &-arrow {
+        width: 24px;
+        height: 24px;
+        background-image: url('@/assets/images/icon/pagination-next.svg');
+        background-size: cover;
+        margin-right: 0;
+    }
+
+    &-image {
+        width: 36px;
+        height: 36px;
+        background-image: url('@/assets/images/icon/img-color.svg');
+
+        &-no {
+            width: 36px;
+            height: 36px;
+            background-image: url('@/assets/images/icon/img.svg');
+        }
+    }
 }

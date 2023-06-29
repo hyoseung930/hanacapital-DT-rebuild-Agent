@@ -31,6 +31,10 @@
     .scroll-container {
       height: calc(100% - 100px);
 
+      .none-image-container {
+        height: 100%;
+      }
+
       &.auto {
         height: auto;
         max-height: 100%;
@@ -39,6 +43,20 @@
 
     &__small {
       max-width: 800px;
+    }
+
+    &__little {
+      max-width: 500px;
+      max-height: 600px;
+
+      .scroll-container {
+        height: calc(100% - 100px);
+
+        &.auto {
+          height: auto;
+          max-height: 100%;
+        }
+      }
     }
 
     &__title {

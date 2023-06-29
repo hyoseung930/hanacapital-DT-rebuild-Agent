@@ -78,7 +78,7 @@ export default {
             <tr>
               <td class="title">전화번호</td>
               <td colspan="3">
-                <input type="tel" />
+                <input type="tel" class="w25p" />
               </td>
             </tr>
           </tbody>

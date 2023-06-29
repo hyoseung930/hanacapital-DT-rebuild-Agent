@@ -1,117 +1,102 @@
 <script>
-// Agent_P02_l003
+// Agent_P00_l003
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
-
+    const agentPopup = ref(true);
     return {
-      layer,
+      agentPopup,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup size="large">
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>상환스케줄</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup">
+    <template #title>
+      <div class="agent--container__title">상환스케줄</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="title">계약내용</div>
+        <table class="table-type-01">
+          <colgroup>
+            <col width="13%" />
+            <col width="20%" />
+            <col width="13%" />
+            <col width="20%" />
+            <col width="13%" />
+            <col width="20%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="title">이용자</td>
+              <td>김하나</td>
+              <td class="title">계약번호</td>
+              <td>D12345-12345-11111</td>
+              <td class="title">할부원금</td>
+              <td>2,564,000원</td>
+            </tr>
+            <tr>
+              <td class="title">주민/사업번호</td>
+              <td>545-**-*****</td>
+              <td class="title">실행일자</td>
+              <td>2023.01.01</td>
+              <td class="title">취급수수료</td>
+              <td>999,999,999원</td>
+            </tr>
+            <tr>
+              <td class="title">상품종류</td>
+              <td>일반할부_일반할부</td>
+              <td class="title">할부기간</td>
+              <td>36개월</td>
+              <td class="title">유예원금</td>
+              <td>999,999,999원</td>
+            </tr>
+            <tr>
+              <td class="title">품목명</td>
+              <td colspan="5">카드/포스 단말기</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <section>
-        <h3 class="text-title-1 row-margin-contents">계약내용</h3>
-
-        <div :class="$style['basic-table']">
-          <table>
-            <colgroup>
-              <col style="width: 160px" />
-              <col />
-              <col style="width: 160px" />
-              <col />
-              <col style="width: 160px" />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <th class="align-left">이용자</th>
-                <td class="align-left">김하나</td>
-                <th class="align-left">계약번호</th>
-                <td class="align-left">Data</td>
-                <th class="align-left">할부원금</th>
-                <td class="align-left">999,999,999 원</td>
-              </tr>
-              <tr>
-                <th class="align-left">주민/사업번호</th>
-                <td class="align-left">123-12-12345</td>
-                <th class="align-left">실행일자</th>
-                <td class="align-left">2023.01.01</td>
-                <th class="align-left">취급수수료</th>
-                <td class="align-left">999,999,999 원</td>
-              </tr>
-              <tr>
-                <th class="align-left">상품종류</th>
-                <td class="align-left">Data</td>
-                <th class="align-left">할부기간</th>
-                <td class="align-left">12개월</td>
-                <th class="align-left">유예원금</th>
-                <td class="align-left">999,999,999 원</td>
-              </tr>
-              <tr>
-                <th class="align-left">품목명</th>
-                <td colspan="5" class="align-left">Data</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="row-margin-block-small">
-        <div class="flex-box row-margin-contents">
-          <div class="flex-box__cell flex-1">
-            <h3 class="text-title-1">상환스케쥴</h3>
-          </div>
-          <div class="flex-box__cell">
-            <BasicButton theme="quaternary" size="small">
+        <div class="title">
+          상한스케줄
+          <div class="btn-container">
+            <button class="btn btn-s03">
+              <i class="ico ico-print"></i>
               인쇄하기
-            </BasicButton>
+            </button>
           </div>
         </div>
 
-        <div :class="$style['basic-table']">
-          <table>
+        <table class="table-type-01 none-search">
+          <tbody>
+            <tr>
+              <td>조회된 내용이 없습니다.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="scroll-container over-h">
+          <table class="table-type-01">
             <colgroup>
-              <col style="width: 76px" />
-              <col style="width: 114px" />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
+              <col width="6%" />
+              <col width="9%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
             </colgroup>
-            <tbody>
+            <thead>
               <tr>
                 <th>회차</th>
                 <th>납부계획일</th>
@@ -122,134 +107,22 @@ export default {
                 <th>납부금액(①+②)</th>
                 <th>미회수원금</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>1</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>2022.03.04</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
-                <td>999,999,999 원</td>
+                <td class="txt-center">1</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </section>
-    </ModalPopup>
-  </UiLayer>
+      </div>
+    </template>
+  </AgentPopup>
 </template>
-
-<style lang="scss" module>
-@import '@/assets/scss/views/agent/Agent_P02_l003.scss';
-</style>

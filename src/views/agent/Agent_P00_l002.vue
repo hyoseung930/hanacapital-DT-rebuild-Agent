@@ -1,298 +1,90 @@
 <script>
-// Agent_P00_l002
 import { ref } from 'vue';
+// Agent_P00_l003
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
-
-import IconImg from '@/assets/images/icon/img.svg?component';
-import IconImgColor from '@/assets/images/icon/img-color.svg?component';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
-    IconImg,
-    IconImgColor,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
+    const agentPopup = ref(true);
+    const startDate = '2022-01-01';
+    const endDate = '2022-01-01';
+    const scrollList = ref('auto');
 
     return {
-      layer,
+      startDate,
+      endDate,
+      agentPopup,
+      scrollList,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup size="large">
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>서류등록</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup" :isScrollHeight="scrollList">
+    <template #title>
+      <div class="agent--container__title">서류등록</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <table class="table-type-04 none-search-small bt">
+          <tbody>
+            <tr>
+              <td>등록된 게시글이 없습니다.</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <div class="row-margin-block-small">
-        <div :class="$style['basic-table']">
-          <table>
-            <colgroup>
-              <col style="width: 120px" />
-              <col style="width: 500px" />
-              <col />
-              <col />
-            </colgroup>
-            <thead>
-              <tr>
-                <th>등록일시</th>
-                <th>실제파일명</th>
-                <th>고객명</th>
-                <th>서류유효절차</th>
-              </tr>
-            </thead>
-          </table>
+        <div class="file-send">
+          <div class="flex-container jcsb">
+            <div class="flex-container jcfs">
+              <i class="ico ico-image-no"></i>
+              파일첨부
+            </div>
+            <i class="ico ico-plus-black"></i>
+          </div>
         </div>
 
-        <div :class="$style['empty']">
-          <p :class="$style['empty__text']">조회된 내용이 없습니다.</p>
+        <div class="file-list">
+          <div class="flex-container jcsb">
+            <div class="flex-container jcfs">
+              <i class="ico ico-image"></i>
+              파일명.jpg
+            </div>
+            <button class="btn btn-s05">삭제</button>
+          </div>
+          <div class="flex-container jcsb">
+            <div class="flex-container jcfs">
+              <i class="ico ico-image"></i>
+              파일명.jpg
+            </div>
+            <button class="btn btn-s05">삭제</button>
+          </div>
+          <div class="flex-container jcsb">
+            <div class="flex-container jcfs">
+              <i class="ico ico-image"></i>
+              파일명.jpg
+            </div>
+            <button class="btn btn-s05">삭제</button>
+          </div>
+        </div>
+
+        <div class="explan mt40">
+          <p>
+            서류등록 파일은 이미지 파일만 가능합니다. (jpg, jpge, png, gif, tif,
+            pdf 파일)
+          </p>
+          <p>서류등록 파일은 최대 5개까지 등록 가능합니다.</p>
+        </div>
+
+        <div class="btn-container mt40">
+          <button class="btn btn-s01 btn-search">저장</button>
         </div>
       </div>
-
-      <ul class="reset-list">
-        <li class="row-margin-container-medium">
-          <div :class="$style['upload-button']">
-            <input
-              type="file"
-              id="Agent_P00_l002_upload"
-              :class="$style['upload-button__input']"
-            />
-            <div :class="$style['upload-button__block']">
-              <span :class="$style['upload-button__img']">
-                <IconImg />
-              </span>
-              <label
-                for="Agent_P00_l002_upload"
-                :class="$style['upload-button__label']"
-                >파일첨부</label
-              >
-            </div>
-          </div>
-
-          <!-- Case : 파일 첨부 후 -->
-          <div
-            :class="[
-              $style['upload-file'],
-              $style['upload-file--inside'],
-              'row-margin-contents',
-            ]"
-          >
-            <ul :class="$style['upload-file__list']">
-              <li :class="$style['upload-file__item']">
-                <div :class="$style['upload-file__icon']">
-                  <IconImgColor />
-                </div>
-                <div :class="$style['upload-file__content']">
-                  <div :class="$style['upload-file__name']">첨부파일명.jpg</div>
-                </div>
-                <div :class="$style['upload-file__button']">
-                  <BasicButton line="true" theme="quaternary" size="small">
-                    삭제
-                  </BasicButton>
-                </div>
-              </li>
-              <li :class="$style['upload-file__item']">
-                <div :class="$style['upload-file__icon']">
-                  <IconImgColor />
-                </div>
-                <div :class="$style['upload-file__content']">
-                  <div :class="$style['upload-file__name']">첨부파일명.png</div>
-                </div>
-                <div :class="$style['upload-file__button']">
-                  <BasicButton line="true" theme="quaternary" size="small">
-                    삭제
-                  </BasicButton>
-                </div>
-              </li>
-              <li :class="$style['upload-file__item']">
-                <div :class="$style['upload-file__icon']">
-                  <IconImgColor />
-                </div>
-                <div :class="$style['upload-file__content']">
-                  <div :class="$style['upload-file__name']">첨부파일명.gif</div>
-                </div>
-                <div :class="$style['upload-file__button']">
-                  <BasicButton line="true" theme="quaternary" size="small">
-                    삭제
-                  </BasicButton>
-                </div>
-              </li>
-              <li :class="$style['upload-file__item']">
-                <div :class="$style['upload-file__icon']">
-                  <IconImgColor />
-                </div>
-                <div :class="$style['upload-file__content']">
-                  <div :class="$style['upload-file__name']">
-                    첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명_첨부파일명.jpeg
-                  </div>
-                </div>
-                <div :class="$style['upload-file__button']">
-                  <BasicButton line="true" theme="quaternary" size="small">
-                    삭제
-                  </BasicButton>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- //Case : 파일 첨부 후 -->
-        </li>
-
-        <li>
-          <div :class="$style['upload-button']">
-            <input
-              type="file"
-              id="Agent_P00_l002_upload"
-              :class="$style['upload-button__input']"
-            />
-            <div :class="$style['upload-button__block']">
-              <span :class="$style['upload-button__img']">
-                <IconImg />
-              </span>
-              <label
-                for="Agent_P00_l002_upload"
-                :class="$style['upload-button__label']"
-                >파일첨부</label
-              >
-            </div>
-          </div>
-        </li>
-
-        <li class="row-margin-contents">
-          <div :class="$style['upload-button']">
-            <input
-              type="file"
-              id="Agent_P00_l002_upload"
-              :class="$style['upload-button__input']"
-            />
-            <div :class="$style['upload-button__block']">
-              <span :class="$style['upload-button__img']">
-                <IconImg />
-              </span>
-              <label
-                for="Agent_P00_l002_upload"
-                :class="$style['upload-button__label']"
-                >파일첨부</label
-              >
-            </div>
-          </div>
-        </li>
-
-        <li class="row-margin-contents">
-          <div :class="$style['upload-button']">
-            <input
-              type="file"
-              id="Agent_P00_l002_upload"
-              :class="$style['upload-button__input']"
-            />
-            <div :class="$style['upload-button__block']">
-              <span :class="$style['upload-button__img']">
-                <IconImg />
-              </span>
-              <label
-                for="Agent_P00_l002_upload"
-                :class="$style['upload-button__label']"
-                >파일첨부</label
-              >
-            </div>
-          </div>
-        </li>
-
-        <li class="row-margin-contents">
-          <div :class="$style['upload-button']">
-            <input
-              type="file"
-              id="Agent_P00_l002_upload"
-              :class="$style['upload-button__input']"
-            />
-            <div :class="$style['upload-button__block']">
-              <span :class="$style['upload-button__img']">
-                <IconImg />
-              </span>
-              <label
-                for="Agent_P00_l002_upload"
-                :class="$style['upload-button__label']"
-                >파일첨부</label
-              >
-            </div>
-          </div>
-        </li>
-      </ul>
-
-      <ul
-        :class="[
-          $style['basic-list'],
-          $style['basic-list--regular-margin'],
-          'row-margin-container-medium',
-        ]"
-      >
-        <li :class="$style['basic-list__item']">
-          <div :class="$style['basic-list__symbol']"></div>
-          <div :class="$style['basic-list__content']">
-            서류등록 파일은 이미지 파일만 가능합니다. (jpg, jpeg, png, gif 파일)
-          </div>
-        </li>
-        <li :class="$style['basic-list__item']">
-          <div :class="$style['basic-list__symbol']"></div>
-          <div :class="$style['basic-list__content']">
-            서류등록 파일은 1회 접속 시 최대 5개까지 등록 가능하며 추가적인
-            서류등록을 원하실 경우 서류등록 메뉴에 재접속하시어 추가등록을
-            해주시기 바랍니다.
-          </div>
-        </li>
-        <li :class="$style['basic-list__item']">
-          <div :class="$style['basic-list__symbol']"></div>
-          <div :class="$style['basic-list__content']">
-            고객님께서 제출하신 서류는 본 금융 거래 이외의 다른 목적으로
-            사용되지 않습니다.
-          </div>
-        </li>
-      </ul>
-
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          :col="4"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" @click="layerSlotProps.close()">
-              저장
-            </BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+    </template>
+  </AgentPopup>
 </template>
-
-<style lang="scss" module>
-@import '@/assets/scss/views/agent/Agent_P00_l002.scss';
-</style>

@@ -1,53 +1,34 @@
 <script>
-// Agent_P01_l001
 import { ref } from 'vue';
+// Agent_P00_l003
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
+    const agentPopup = ref(true);
+    const classList = ref('little');
 
     return {
-      layer,
+      agentPopup,
+      classList,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>공지 팝업 제목</PopupTitle>
-        </ModalPopupHead>
-      </template>
-
-      <div :class="$style['image-view']">
-        <img
-          src="@/assets/images/_dummy/box-detail-full.png"
-          alt="샘플 이미지"
-        />
+  <AgentPopup :isAgent="agentPopup" :isClassList="classList">
+    <template #title>
+      <div class="agent--container__title">공지팝업 제목</div>
+    </template>
+    <template #contents>
+      <div class="container none-image-container">
+        <div class="none-image">Img area</div>
       </div>
-    </ModalPopup>
-  </UiLayer>
+    </template>
+  </AgentPopup>
 </template>
-
-<style lang="scss" module>
-@import '@/assets/scss/views/agent/Agent_P01_l001.scss';
-</style>

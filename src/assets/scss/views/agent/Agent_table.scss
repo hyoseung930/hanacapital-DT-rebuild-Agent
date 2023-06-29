@@ -332,6 +332,10 @@ table {
                 background-color: rgba(20, 59, 117, 0.08);
             }
 
+            .date {
+                color: var(--disabled-color);
+            }
+
             &.title {
                 color: var(--table-title);
                 background-color: #f5f6f6;
@@ -356,6 +360,11 @@ table {
                         border-radius: 50%;
                     }
                 }
+            }
+
+            &.none-border {
+                padding: 100px 0;
+                border: none;
             }
 
             &.h-72 {

@@ -27,6 +27,7 @@ export default {
         class="agent--container"
         :class="{
           'agent--container__small': classList === 'small',
+          'agent--container__little': classList === 'little',
           auto: scrollList === 'auto',
         }"
       >
