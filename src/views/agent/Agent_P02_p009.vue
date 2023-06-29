@@ -32,9 +32,9 @@ export default {
       <div className="search-container">
         <table className="table-type-search">
           <colgroup>
-            <col width="7%" />
+            <col width="5%" />
             <col width="20%" />
-            <col width="7%" />
+            <col width="4%" />
             <col width="7%" />
             <col width="20%" />
             <col width="7%" />
@@ -93,16 +93,7 @@ export default {
       </table>
 
       <div className="search-count">
-        <span>
-          합계 : <span className="cGreen">85</span>건 /
-          <span className="cGreen">2,700,462,280</span>원
-        </span>
-
-        <div className="btn-container">
-          <button className="btn btn-s02">
-            <i className="ico ico-excel"></i>엑셀변환
-          </button>
-        </div>
+        <span> 합계 : <span className="cGreen">85</span>건 </span>
       </div>
 
       <div className="scroll-container over-h">
@@ -140,6 +131,34 @@ export default {
           <tbody>
             <tr>
               <td className="txt-center cGreen">처리완료</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">김하나</td>
+              <td className="txt-center">123456-1******</td>
+              <td className="txt-center">연체</td>
+              <td className="txt-center">999,999,999원</td>
+              <td className="txt-center">1/200</td>
+              <td className="txt-center">DATA</td>
+              <td className="txt-center">신용도 영향</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">2023.01.01</td>
+            </tr>
+            <tr>
+              <td className="txt-center cRed">오류</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">김하나</td>
+              <td className="txt-center">123456-1******</td>
+              <td className="txt-center">연체</td>
+              <td className="txt-center">999,999,999원</td>
+              <td className="txt-center">1/200</td>
+              <td className="txt-center">DATA</td>
+              <td className="txt-center">신용도 영향</td>
+              <td className="txt-center">2023.01.01</td>
+              <td className="txt-center">2023.01.01</td>
+            </tr>
+            <tr>
+              <td className="txt-center">처리중</td>
               <td className="txt-center">2023.01.01</td>
               <td className="txt-center">2023.01.01</td>
               <td className="txt-center">김하나</td>

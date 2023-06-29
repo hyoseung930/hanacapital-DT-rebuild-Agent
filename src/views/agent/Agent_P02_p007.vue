@@ -34,7 +34,7 @@ export default {
           <colgroup>
             <col width="7%" />
             <col width="20%" />
-            <col width="7%" />
+            <col width="6%" />
             <col width="60%" />
           </colgroup>
           <tbody>
@@ -49,7 +49,7 @@ export default {
               </td>
               <td className="title">검색조건</td>
               <td>
-                <div className="flex-container">
+                <div className="flex-container jcfs">
                   <div className="select-container w20p">
                     <select>
                       <option>선택</option>

@@ -117,13 +117,13 @@ export default {
           <table class="table-type-search">
             <colgroup>
               <col width="8%" />
+              <col width="2%" />
+              <col width="10%" />
+              <col width="3%" />
+              <col width="5%" />
               <col width="4%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="7%" />
-              <col width="13%" />
-              <col width="10%" />
-              <col width="10%" />
+              <col width="6%" />
+              <col width="5%" />
               <col width="10%" />
               <col width="10%" />
               <col width="10%" />
@@ -131,13 +131,13 @@ export default {
             <tbody>
               <tr>
                 <td class="title" colspan="2">내구재선취수수료율</td>
-                <td colspan="3">
+                <td colspan="2">
                   <div class="flex-container">
                     <input type="text" class="rt" disabled />%
                   </div>
                 </td>
                 <td class="title" colspan="2">내구재선취수수료율</td>
-                <td colspan="3">
+                <td colspan="2">
                   <div class="flex-container">
                     <input type="text" class="rt" disabled />원
                   </div>
@@ -147,7 +147,17 @@ export default {
           </table>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">조회</button>
+            <button class="btn btn-primary btn-search">산출</button>
+          </div>
+        </div>
+
+        <div class="title">
+          상한스케줄
+          <div class="btn-container">
+            <button class="btn btn-s03">
+              <i class="ico ico-print"></i>
+              인쇄하기
+            </button>
           </div>
         </div>
 
@@ -197,21 +207,6 @@ export default {
             </tbody>
           </table>
         </div>
-
-        <ul class="paging">
-          <li class="first">&lt;</li>
-          <li class="on">1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li class="dot"></li>
-          <li>25</li>
-          <li class="last">&gt;</li>
-        </ul>
       </div>
     </template>
   </AgentPopup>

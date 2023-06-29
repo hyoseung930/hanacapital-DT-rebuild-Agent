@@ -149,7 +149,7 @@ ul {
   width: 100%;
   height: 100%;
   padding: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &.auto {
     height: auto;
@@ -424,10 +424,17 @@ ul {
   max-height: 578px;
 }
 
-.mxh-678 {
-  max-height: 678px;
+.mxh-680 {
+  max-height: 680px;
 }
 
+.mxh-700 {
+  max-height: 700px;
+}
+
+.mxh-770 {
+  max-height: 770px;
+}
 .mxh-650 {
   max-height: 650px;
 }
@@ -507,4 +514,16 @@ ul {
     background-color: rgba(236, 112, 15, 0.1);
     color: #ec700f;
   }
+}
+
+.bdrbt {
+	border-bottom: 1px solid var(--gray-color);
+}
+
+.bdrlf {
+	border-left: 1px solid var(--gray-color);
+}
+
+.bdrrt {
+	border-right: 1px solid var(--gray-color);
 }

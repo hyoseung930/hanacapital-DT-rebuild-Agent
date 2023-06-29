@@ -32,7 +32,7 @@ export default {
       <div class="search-container">
         <table class="table-type-search">
           <colgroup>
-            <col width="7%" />
+            <col width="6%" />
             <col width="20%" />
             <col width="7%" />
             <col width="20%" />
@@ -41,9 +41,9 @@ export default {
           </colgroup>
           <tbody>
             <tr>
-              <td class="title">상담일자</td>
+              <td class="title">일자선택</td>
               <td colspan="3">
-                <div class="flex-container">
+                <div class="flex-container jcfs">
                   <div class="radio-container w60p">
                     <label class="flex-container jcfs">
                       <input type="radio" name="a3" checked />
@@ -76,15 +76,19 @@ export default {
               </td>
             </tr>
             <tr>
-              <td class="title">품목</td>
-              <td>
-                <input type="text" />
+              <td class="title" colspan="2">
+                <div class="flex-container jcfs">
+                  품목&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" class="w70p" />
+                </div>
               </td>
-              <td class="title">판매점</td>
-              <td>
-                <input type="text" />
+              <td class="title" colspan="2">
+                <div class="flex-container jcfs">
+                  판매점&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" class="w80p" />
+                </div>
               </td>
-              <td class="title">상담결과</td>
+              <td class="title">결제상태</td>
               <td>
                 <div class="flex-container jcfs">
                   <div class="radio-container">

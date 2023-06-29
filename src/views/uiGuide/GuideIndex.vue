@@ -231,7 +231,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l011',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '스크롤 버그 수정' }],
       },
       {
         depth2: '팝업',
@@ -242,7 +243,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l012',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '페이지 간격 수정' }],
       },
     ],
   },
@@ -258,7 +260,8 @@ const datas = () => [
         path: '/business/LM_P01_l001',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '설명 간격 수정' }],
       },
       {
         depth2: '빠른상담신청 내역',
@@ -291,7 +294,8 @@ const datas = () => [
         path: '/business/LM_P05_p001',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '타이틀 변경' }],
       },
     ],
   },
@@ -351,7 +355,11 @@ const datas = () => [
         path: '/agent/Agent_P02_l002',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.29',
+        log: [
+          { date: '2023.06.29', text: '검색 간격수정' },
+          { date: '2023.06.29', text: '타이틀 추가 및 버튼 추가' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -362,7 +370,8 @@ const datas = () => [
         path: '/agent/Agent_P02_p001',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '설명 위치 변경' }],
       },
       {
         depth2: '내구재할부',
@@ -373,7 +382,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p002',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.29',
+        log: [
+          { date: '2023.06.29', text: '상담등록 버튼 디자인 수정' },
+          { date: '2023.06.29', text: '하단 디자인 수정' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -428,7 +441,8 @@ const datas = () => [
         path: '/agent/Agent_P02_p007',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '검색 간격수정' }],
       },
       {
         depth2: '내구재할부',
@@ -439,7 +453,8 @@ const datas = () => [
         path: '/agent/Agent_P02_p008',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '검색 간격수정' }],
       },
       {
         depth2: '내구재할부',
@@ -450,7 +465,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p009',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.29',
+        log: [
+          { date: '2023.06.29', text: '검색 간격수정' },
+          { date: '2023.06.29', text: '엑셀 버튼 삭제 및 민원상태 색상 추가' },
+        ],
       },
       {
         depth2: '할부승계',
@@ -573,7 +592,8 @@ const datas = () => [
         path: '/agent/Agent_P03_p004',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.29',
+        log: [{ date: '2023.06.29', text: '검색 간격 수정' }],
       },
       {
         depth2: '공지사항',

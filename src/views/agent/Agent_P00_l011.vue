@@ -27,7 +27,7 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="flex-container aifs no-gap fw">
+        <div class="flex-container aifs no-gap fw bdrbt">
           <table class="table-type-04 w100p bt">
             <colgroup>
               <col width="25%" />
@@ -44,7 +44,7 @@ export default {
               </tr>
             </thead>
           </table>
-          <div class="scroll-container mxh-640 w25p">
+          <div class="scroll-container mxh-770 w25p bdrrt">
             <table class="table-type-04 w100p">
               <tbody>
                 <tr class="on">
@@ -86,7 +86,7 @@ export default {
               </tbody>
             </table>
           </div>
-          <div class="scroll-container mxh-640 w25p">
+          <div class="scroll-container mxh-770 w25p bdrlf bdrrt">
             <table class="table-type-04 w100p">
               <tbody class="scroll-container mxh-678">
                 <tr class="on">
@@ -122,7 +122,7 @@ export default {
               </tbody>
             </table>
           </div>
-          <div class="scroll-container mxh-640 w25p">
+          <div class="scroll-container mxh-770 w25p bdrlf bdrrt">
             <table class="table-type-04 w100p">
               <tbody>
                 <tr>
@@ -170,7 +170,7 @@ export default {
               </tbody>
             </table>
           </div>
-          <div class="scroll-container mxh-640 w25p">
+          <div class="scroll-container mxh-770 w25p bdrlf">
             <table class="table-type-04 w100p">
               <tbody>
                 <tr class="on">

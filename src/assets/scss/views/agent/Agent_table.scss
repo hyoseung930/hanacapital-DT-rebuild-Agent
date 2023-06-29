@@ -462,6 +462,11 @@ table {
             font-size: 14px;
             color: var(--black-color);
             font-weight: 300;
+
+			&:last-child {
+				border-right: none;
+				border-left: none;
+			}
         }
 
         &-small {
