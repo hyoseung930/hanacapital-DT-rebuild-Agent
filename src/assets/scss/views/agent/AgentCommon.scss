@@ -33,6 +33,12 @@ ul {
         position: absolute;
         bottom: 20px;
       }
+      > .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--black-color);
+        margin-bottom: 16px;
+	  }
     }
 
     &-count {

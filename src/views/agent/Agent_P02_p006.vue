@@ -46,14 +46,14 @@ export default {
                 <div class="flex-container">
                   <div class="radio-container w60p">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="a1" checked />
+                      <input type="radio" name="a3" checked />
                       <span class="small"></span>
                       품의일자
                     </label>
                   </div>
                   <div class="radio-container w60p">
                     <label class="flex-container jcfs">
-                      <input type="radio" name="a1" checked />
+                      <input type="radio" name="a3" checked />
                       <span class="small"></span>
                       실행일자
                     </label>

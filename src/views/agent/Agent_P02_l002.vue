@@ -1,69 +1,218 @@
 <script>
-// Agent_P02_l002
+// Agent_P00_l003
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
 
 export default {
   components: {
-    UiLayer,
-    PopupTitle,
-    PopupButton,
-    ModalPopup,
-    ModalPopupHead,
-    BasicButton,
-    ButtonList,
-    ButtonListItem,
+    AgentPopup,
   },
   setup() {
-    const layer = ref(null);
-
+    const agentPopup = ref(true);
     return {
-      layer,
+      agentPopup,
     };
   },
 };
 </script>
 
 <template>
-  <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
-      <template v-slot:head>
-        <ModalPopupHead>
-          <template v-slot:right>
-            <PopupButton @click="layerSlotProps.close()" />
-          </template>
-          <PopupTitle>타이틀</PopupTitle>
-        </ModalPopupHead>
-      </template>
+  <AgentPopup :isAgent="agentPopup">
+    <template #title>
+      <div class="agent--container__title">상환스케줄 시뮬레이터</div>
+    </template>
+    <template #contents>
+      <div class="container">
+        <div class="search-container">
+          <div class="title">상환정보입력</div>
+          <table class="table-type-search">
+            <colgroup>
+              <col width="8%" />
+              <col width="4%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="7%" />
+              <col width="13%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title">할부원금</td>
+                <td colspan="3">
+                  <div class="flex-container">
+                    <input type="text" class="rt" />원
+                  </div>
+                </td>
+                <td class="title">대출일자</td>
+                <td colspan="2">
+                  <input type="date" />
+                </td>
+                <td class="title">초회납입일자</td>
+                <td colspan="2">
+                  <input type="date" />
+                </td>
+              </tr>
+              <tr>
+                <td class="title" colspan="2">상환기간/금리</td>
+                <td colspan="3">
+                  <div class="flex-container jcfs">
+                    <input type="text" class="rt w40p" />개월
+                    <input type="text" class="rt w35p" />%
+                  </div>
+                </td>
+                <td class="title">내구재이자부과구분</td>
+                <td colspan="3">
+                  <div class="flex-container jcfs">
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" checked />
+                        <span class="small"></span>
+                        이자부과
+                      </label>
+                    </div>
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" />
+                        <span class="small"></span>
+                        부분이자
+                      </label>
+                    </div>
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" />
+                        <span class="small"></span>
+                        무이자
+                      </label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="title" colspan="2">내구재선취수수료율</td>
+                <td colspan="2">
+                  <div class="flex-container">
+                    <input type="text" class="rt" />%
+                  </div>
+                </td>
+                <td class="title">결제일자</td>
+                <td>
+                  <div class="flex-container">
+                    <div class="select-container">
+                      <select>
+                        <option>선택</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <section>// contents</section>
+          <div class="title">선취수수료</div>
+          <table class="table-type-search">
+            <colgroup>
+              <col width="8%" />
+              <col width="4%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="7%" />
+              <col width="13%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+              <col width="10%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title" colspan="2">내구재선취수수료율</td>
+                <td colspan="3">
+                  <div class="flex-container">
+                    <input type="text" class="rt" disabled />%
+                  </div>
+                </td>
+                <td class="title" colspan="2">내구재선취수수료율</td>
+                <td colspan="3">
+                  <div class="flex-container">
+                    <input type="text" class="rt" disabled />원
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
-    </ModalPopup>
-  </UiLayer>
+          <div class="btn-container">
+            <button class="btn btn-primary btn-search">조회</button>
+          </div>
+        </div>
+
+        <table class="table-type-01 none-search">
+          <tbody>
+            <tr>
+              <td>조회된 내용이 없습니다.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="scroll-container over-h">
+          <table class="table-type-01">
+            <colgroup>
+              <col width="6%" />
+              <col width="9%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>회차</th>
+                <th>납부계획일</th>
+                <th>원금</th>
+                <th>이자</th>
+                <th>① 매회납부금</th>
+                <th>② 기타금액</th>
+                <th>납부금액(①+②)</th>
+                <th>미회수원금</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="txt-center">1</td>
+                <td class="txt-center">2023.01.01</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+                <td class="txt-center">999,999,999</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="paging">
+          <li class="first">&lt;</li>
+          <li class="on">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li class="dot"></li>
+          <li>25</li>
+          <li class="last">&gt;</li>
+        </ul>
+      </div>
+    </template>
+  </AgentPopup>
 </template>

@@ -73,4 +73,11 @@
         background-image: url('@/assets/images/icon/complete.svg');
         background-size: cover;
     }
+
+	&-print {
+		width: 24px;
+		height: 24px;
+		background-image: url('@/assets/images/icon/print.svg');
+		background-size: cover;
+	}
 }

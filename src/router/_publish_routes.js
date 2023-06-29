@@ -85,6 +85,11 @@ const routes = [
     component: () => import('@/views/agent/Agent_P01_p001.vue'),
   },
   {
+    path: '/agent/Agent_P02_l002',
+    name: '/agent/Agent_P02_l002',
+    component: () => import('@/views/agent/Agent_P02_l002.vue'),
+  },
+  {
     path: '/agent/Agent_P02_p001',
     name: '/agent/Agent_P02_p001',
     component: () => import('@/views/agent/Agent_P02_p001.vue'),
