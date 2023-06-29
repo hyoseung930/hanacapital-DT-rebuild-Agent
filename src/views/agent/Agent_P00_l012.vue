@@ -30,8 +30,8 @@ export default {
         <div class="search-container">
           <table class="table-type-search">
             <colgroup>
-              <col width="15%" />
-              <col width="85%" />
+              <col width="10%" />
+              <col width="90%" />
             </colgroup>
             <tbody>
               <tr>
@@ -51,7 +51,7 @@ export default {
         </div>
 
         <div class="scroll-container">
-          <div class="scroll-container mxh-378">
+          <div class="scroll-container">
             <div class="flex-container">
               <table class="table-type-04 bt none-bottom">
                 <colgroup>
@@ -67,7 +67,7 @@ export default {
               </table>
             </div>
           </div>
-          <div class="scroll-container mxh-378">
+          <div class="scroll-container">
             <div class="flex-container">
               <table class="table-type-04 body">
                 <colgroup>

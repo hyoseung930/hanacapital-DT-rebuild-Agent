@@ -40,7 +40,7 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <table class="table-type-01">
+        <table class="table-type-01 mb10">
           <colgroup>
             <col width="5%" />
             <col width="19%" />

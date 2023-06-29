@@ -12,10 +12,18 @@ export default {
   },
   setup() {
     function select(e) {
-      if (e.target.parentNode.parentNode.parentNode.parentNode.classList.contains('on') === false) {
-        e.target.parentNode.parentNode.parentNode.parentNode.classList.add('on');
+      if (
+        e.target.parentNode.parentNode.parentNode.parentNode.classList.contains(
+          'on'
+        ) === false
+      ) {
+        e.target.parentNode.parentNode.parentNode.parentNode.classList.add(
+          'on'
+        );
       } else {
-        e.target.parentNode.parentNode.parentNode.parentNode.classList.remove('on');
+        e.target.parentNode.parentNode.parentNode.parentNode.classList.remove(
+          'on'
+        );
       }
     }
 
@@ -154,7 +162,11 @@ export default {
               </div>
             </td>
             <td class="title">물품구입금액</td>
-            <td><input type="text" class="rt" disabled value="400,000" />원</td>
+            <td>
+              <div class="flex-container">
+                <input type="text" class="rt" disabled value="400,000" />원
+              </div>
+            </td>
           </tr>
           <tr>
             <td class="title required">거래구분/관계</td>
@@ -190,7 +202,11 @@ export default {
           </tr>
           <tr>
             <td class="title">할부신청금액</td>
-            <td><input type="text" class="rt" value="400,000" />원</td>
+            <td>
+              <div class="flex-container jcfs">
+                <input type="text" class="rt" value="400,000" />원
+              </div>
+            </td>
             <td class="title">할부기간</td>
             <td>
               <div class="select-container">
@@ -226,7 +242,7 @@ export default {
         승인결과 내역
 
         <div class="btn-container">
-          <button class="btn btn-s03">
+          <button class="btn btn-s02">
             <i class="ico ico-plus"></i>상담등록
           </button>
         </div>
@@ -349,7 +365,7 @@ export default {
         <colgroup>
           <col width="10%" />
           <col width="10%" />
-          <col width="15%" />
+          <col width="7%" />
           <col />
           <col />
         </colgroup>
@@ -367,10 +383,21 @@ export default {
             <td class="txt-center">상담의견</td>
             <td class="txt-center">심사요청</td>
             <td class="txt-center">2022.10.26 14:15:15</td>
-            <td>
-              <input type="text" value="승인" />
+            <td class="h-150">
+              <div class="scroll-container">
+                조건부 승인 내역이 해당 영역에 노출될 예정입니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.
+              </div>
             </td>
-            <td class="txt-center h-72" rowSpan="2">
+            <td class="txt-center" rowSpan="2">
               <div class="scroll-container">
                 조건부 승인 내역이 해당 영역에 노출될 예정입니다.<br />
                 높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
@@ -385,7 +412,20 @@ export default {
             <td class="txt-center">상담의견</td>
             <td class="txt-center">심사요청</td>
             <td class="txt-center">2022.10.26 14:15:15</td>
-            <td class="bdr">일반심사건입니다.</td>
+            <td class="h-150">
+              <div class="scroll-container">
+                조건부 승인 내역이 해당 영역에 노출될 예정입니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
+                높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>

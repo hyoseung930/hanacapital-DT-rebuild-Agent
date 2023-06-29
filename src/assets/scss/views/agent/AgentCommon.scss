@@ -31,7 +31,8 @@ ul {
 
       .explan {
         position: absolute;
-        bottom: 20px;
+        bottom: -40px;
+        left: 0;
       }
       > .title {
         font-size: 16px;
@@ -416,6 +417,9 @@ ul {
   max-height: 300px;
 }
 
+.mxh-478 {
+  max-height: 478px;
+}
 .mxh-578 {
   max-height: 578px;
 }
@@ -433,6 +437,10 @@ ul {
 
 .mt40 {
   margin-top: 40px;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
 }
 
 .mb40 {

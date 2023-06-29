@@ -24,7 +24,7 @@ export default {
 <template>
   <PageContents>
     <PageHead>
-      <PageTitle>SMS상담요청 내역</PageTitle>
+      <PageTitle>현황조회</PageTitle>
     </PageHead>
 
     <div class="container">

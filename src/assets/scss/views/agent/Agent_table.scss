@@ -82,6 +82,10 @@ table {
                 height: 72px;
             }
 
+			&.h-150 {
+				height: 150px;
+			}
+
             &.txt {
                 &-center {
                     text-align: center;
@@ -98,6 +102,7 @@ table {
 
             &:last-child {
                 border-right: none;
+				border-left: 1px solid var(--gray-color);
             }
 
             &.bdr {
@@ -152,6 +157,10 @@ table {
             &.h-72 {
                 height: 72px;
             }
+
+			&.h-150 {
+				height: 150px;
+			}
 
             &.txt {
                 &-center {
