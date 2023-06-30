@@ -3,6 +3,12 @@ table {
     border-collapse: collapse;
     font-size: 14px;
 
+	.flex-container {
+		&.cDisabled {
+			font-size: 12px;
+		}
+	}
+
     &.table-type-01 {
         border-top: 2px solid #8f8f8f;
         margin-bottom: 60px;
@@ -110,6 +116,10 @@ table {
                     border-right: 1px solid var(--gray-color);
                 }
             }
+
+			&.nbrl {
+				border-left: none;
+			}
         }
 
         th {

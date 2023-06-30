@@ -92,7 +92,7 @@ export default {
         <tbody>
           <tr>
             <td class="title required">성명(상호)</td>
-            <td>홍길동</td>
+            <td><input type="text" /></td>
             <td class="title">주민등록번호</td>
             <td>
               <div class="flex-container">

@@ -46,7 +46,7 @@ export default {
             <td>작성중</td>
           </tr>
           <tr>
-            <td class="warning" colspan="6">
+            <td class="warning nbrl" colspan="6">
               <div class="flex-container jcfs fs14">
                 <i class="ico ico-warning"></i> 표기된 정보는 KCB 상세내역으로,
                 확인 후 저장해 주시기 바랍니다.
@@ -443,7 +443,7 @@ export default {
               </td>
             </tr>
             <tr>
-              <td class="title required">수령/설치 주소</td>
+              <td class="title">수령/설치 주소</td>
               <td>
                 <div class="flex-container jcfs">
                   <input type="text" class="w60p" disabled />
@@ -467,11 +467,6 @@ export default {
 
         <div class="title">
           금융정보
-
-          <div class="btn-container">
-            <button class="btn btn-s03">전 이용자 온라인 인증 SMS발송</button>
-            <button class="btn btn-s03">후 이용자 온라인 인증 SMS발송</button>
-          </div>
         </div>
 
         <table class="table-type-01">
@@ -772,13 +767,6 @@ export default {
                       <option>선택</option>
                     </select>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="bg-gary" colspan="6">
-                <div class="flex-container jcfe">
-                  <button class="btn btn-s01">계약등록</button>
                 </div>
               </td>
             </tr>

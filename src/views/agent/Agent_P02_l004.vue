@@ -24,7 +24,7 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="title">계약내용</div>
+        <div class="title">고객정보</div>
         <table class="table-type-01">
           <colgroup>
             <col width="15%" />
@@ -41,7 +41,7 @@ export default {
             </tr>
           </tbody>
         </table>
-        <div class="title">계약내용</div>
+        <div class="title">통신사선택</div>
         <table class="table-type-01">
           <colgroup>
             <col width="15%" />

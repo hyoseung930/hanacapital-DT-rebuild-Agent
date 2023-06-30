@@ -35,7 +35,7 @@ export default {
             </colgroup>
             <tbody>
               <tr>
-                <td>조회조건</td>
+                <td class="title">조회조건</td>
                 <td>
                   <div class="flex-container">
                     <div class="select-container w40p">

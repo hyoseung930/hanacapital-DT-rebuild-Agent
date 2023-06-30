@@ -86,7 +86,7 @@ export default {
               </tbody>
             </table>
           </div>
-          <div class="scroll-container mxh-770 w25p bdrlf bdrrt">
+          <div class="scroll-container mxh-770 w25p bdrlf">
             <table class="table-type-04 w100p">
               <tbody class="scroll-container mxh-678">
                 <tr class="on">

@@ -231,7 +231,10 @@ const datas = () => [
         status: 'end',
         create: '2023.06.22',
         update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: '테이블 간격 조정' }],
+        log: [
+          { date: '2023.06.24', text: '테이블 간격 조정' },
+          { date: '2023.06.30', text: '검색 제목 불릿 추가' },
+        ],
       },
       {
         depth2: '팝업',
@@ -333,7 +336,12 @@ const datas = () => [
         path: '/agent/Agent_P01_p001',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        log: [
+          {
+            date: '2023.06.30',
+            text: '각 타이틀 변경 및 타이틀과 컨텐츠 간격 수정',
+          },
+        ],
       },
       {
         depth2: '메인',
@@ -403,7 +411,8 @@ const datas = () => [
         path: '/agent/Agent_P02_l004',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [{ date: '2023.06.30', text: '타이틀명 수정' }],
       },
       {
         depth2: '내구재할부',
@@ -414,7 +423,10 @@ const datas = () => [
         path: '/agent/Agent_P02_l005',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.30', text: '라디오 버튼 크기 수정, 전송버튼 고정' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -425,7 +437,10 @@ const datas = () => [
         path: '/agent/Agent_P02_l006',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.30', text: '라디오 버튼 크기 수정, 전송버튼 고정' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -436,7 +451,10 @@ const datas = () => [
         path: '/agent/Agent_P02_l007',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.30', text: '라디오 버튼 크기 수정, 전송버튼 고정' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -448,7 +466,10 @@ const datas = () => [
         status: 'end',
         create: '2023.06.27',
         update: '2023.06.29',
-        log: [{ date: '2023.06.29', text: '설명 위치 변경' }],
+        log: [
+          { date: '2023.06.29', text: '설명 위치 변경' },
+          { date: '2023.06.30', text: '타이틀 변경 및 조회 버튼 추가' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -463,6 +484,7 @@ const datas = () => [
         log: [
           { date: '2023.06.29', text: '상담등록 버튼 디자인 수정' },
           { date: '2023.06.29', text: '하단 디자인 수정' },
+          { date: '2023.06.30', text: '성명(상호) input 추가' },
         ],
       },
       {
@@ -485,7 +507,12 @@ const datas = () => [
         path: '/agent/Agent_P02_p004',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.30', text: '수령/설치주소 필수표시 제거' },
+          { date: '2023.06.30', text: '금융정보 타이틀 버튼 제거' },
+          { date: '2023.06.30', text: '계약등록 버튼 제거' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -507,7 +534,8 @@ const datas = () => [
         path: '/agent/Agent_P02_p006',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.30',
+        log: [{ date: '2023.06.30', text: '항목별 타이틀 간격 수정' }],
       },
       {
         depth2: '내구재할부',
@@ -518,8 +546,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p007',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.29',
-        log: [{ date: '2023.06.29', text: '검색 간격수정' }],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.29', text: '검색 간격수정' },
+          { date: '2023.06.30', text: '항목별 타이틀 간격 수정' },
+        ],
       },
       {
         depth2: '내구재할부',

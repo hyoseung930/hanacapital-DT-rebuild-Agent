@@ -101,14 +101,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" checked />
-                      <span></span>
+                      <span class="small"></span>
                       URL 동의
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       ARS 동의
                     </label>
                   </div>
@@ -131,7 +131,7 @@ export default {
           </tbody>
         </table>
 
-        <div class="btn-container">
+        <div class="btn-container fixed">
           <button class="btn btn-send">전송하기</button>
         </div>
       </div>

@@ -23,6 +23,9 @@ ul {
   &.main {
     .flex-container {
       gap: 0 80px;
+      > .title {
+        margin-bottom: 24px;
+      }
     }
   }
 

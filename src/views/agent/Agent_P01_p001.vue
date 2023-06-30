@@ -65,7 +65,7 @@ export default {
       <div class="flex-container main-container aifs">
         <div class="flex-container fw">
           <div class="title w100p">
-            공지사항
+            업무절차
 
             <div class="btn-container">
               <button class="btn btn-snone">
@@ -92,7 +92,7 @@ export default {
 
         <div class="flex-container fw">
           <div class="title w100p">
-            교육정보
+            각종서식다운로드
 
             <div class="btn-container">
               <button class="btn btn-snone">

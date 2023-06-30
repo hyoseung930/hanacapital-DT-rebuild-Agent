@@ -25,7 +25,7 @@ export default {
 <template>
   <PageContents>
     <PageHead>
-      <PageTitle>상담등록내역</PageTitle>
+      <PageTitle>사전동의리스트</PageTitle>
     </PageHead>
 
     <div class="container">
@@ -106,6 +106,10 @@ export default {
         <div class="explan">
           <i class="ico ico-explan"></i>
           모바일 웹 ARS : 1800-9559, ARS : 1800-9550
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-primary btn-search">조회</button>
         </div>
       </div>
 
