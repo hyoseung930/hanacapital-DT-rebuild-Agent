@@ -95,7 +95,7 @@ export default {
         </div>
 
         <div class="scroll-container over-h">
-          <table class="table-type-04">
+          <table class="table-type-04 bt">
             <colgroup>
               <col width="7%" />
               <col width="9%" />

@@ -75,7 +75,7 @@ export default {
               <th>물품명</th>
               <th>판매점코드</th>
               <th>적용금리</th>
-              <th>등록일</th>
+              <th>등록일자</th>
               <th>적용일자</th>
               <th>적용종료일자</th>
               <th>이자부과여부</th>

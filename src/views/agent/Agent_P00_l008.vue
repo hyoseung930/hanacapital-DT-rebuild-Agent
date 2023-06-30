@@ -61,7 +61,7 @@ export default {
           </tbody>
         </table>
 
-        <table class="table-type-04">
+        <table class="table-type-04 bt">
           <colgroup>
             <col width="20%" />
             <col width="15%" />

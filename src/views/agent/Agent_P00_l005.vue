@@ -87,14 +87,14 @@ export default {
           </tbody>
         </table>
 
-        <table class="table-type-04">
+        <table class="table-type-04 bt">
           <colgroup>
             <col width="10%" />
-            <col width="8%" />
+            <col width="9%" />
             <col width="8%" />
             <col width="10%" />
             <col width="15%" />
-            <col width="8%" />
+            <col width="10%" />
             <col width="10%" />
             <col width="7%" />
             <col width="12%" />

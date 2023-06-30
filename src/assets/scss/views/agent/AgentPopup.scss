@@ -69,6 +69,10 @@
       text-align: left;
       color: var(--black-color);
       padding: 30px;
+
+		&.min-padding-bottom {
+			padding-bottom: 16px;
+		}
     }
 
     .ico-close {

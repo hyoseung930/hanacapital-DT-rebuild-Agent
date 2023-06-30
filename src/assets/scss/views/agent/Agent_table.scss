@@ -108,7 +108,6 @@ table {
 
             &:last-child {
                 border-right: none;
-				border-left: 1px solid var(--gray-color);
             }
 
             &.bdr {
@@ -458,7 +457,7 @@ table {
                     width: 4px;
                     height: 4px;
                     left: -4px;
-                    top: calc(50% - 4px);
+                    top: calc(50% - 2px);
                     transition: transformY(-50%);
                     border-radius: 50%;
                 }

@@ -66,7 +66,7 @@ export default {
         <div class="scroll-container">
           <div class="scroll-container mxh-378">
             <div class="flex-container">
-              <table class="table-type-04 none-bottom">
+              <table class="table-type-04 bt none-bottom">
                 <colgroup>
                   <col width="50%" />
                   <col width="50%" />

@@ -50,7 +50,7 @@ export default {
                   <input type="date" v-model="endDate" />
                 </div>
               </td>
-              <td className="title">고객구분</td>
+              <td className="title">검색조건</td>
               <td colspan="3">
                 <div className="flex-container jcfs">
                   <div className="select-container w20p">
