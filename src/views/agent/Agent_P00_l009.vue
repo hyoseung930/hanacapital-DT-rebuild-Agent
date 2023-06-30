@@ -99,14 +99,14 @@ export default {
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" checked />
-                      <span></span>
+                      <span class="small"></span>
                       URL 동의
                     </label>
                   </div>
                   <div class="radio-container">
                     <label class="flex-container jcfs">
                       <input type="radio" name="type" />
-                      <span></span>
+                      <span class="small"></span>
                       ARS 동의
                     </label>
                   </div>

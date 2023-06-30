@@ -41,7 +41,7 @@ export default {
             </colgroup>
             <tbody>
               <tr>
-                <td>상품코드</td>
+                <td class="title">상품코드</td>
                 <td>
                   <div class="select-container">
                     <select>
@@ -49,7 +49,7 @@ export default {
                     </select>
                   </div>
                 </td>
-                <td>승인일자</td>
+                <td class="title">승인일자</td>
                 <td>
                   <div class="flex-container">
                     <input type="date" v-model="startDate" />
@@ -59,7 +59,7 @@ export default {
                 </td>
               </tr>
               <tr>
-                <td>검색조건</td>
+                <td class="title">검색조건</td>
                 <td colspan="3">
                   <div class="flex-container jcfs">
                     <div class="select-container w20p">

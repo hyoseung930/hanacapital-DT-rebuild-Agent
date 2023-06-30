@@ -45,7 +45,7 @@ export default {
               <i class="ico ico-image-no"></i>
               파일첨부
             </div>
-            <i class="ico ico-plus-black"></i>
+            <i class="ico ico-plus-gray"></i>
           </div>
         </div>
 

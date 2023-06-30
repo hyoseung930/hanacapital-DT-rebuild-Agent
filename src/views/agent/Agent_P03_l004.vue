@@ -123,12 +123,15 @@ export default {
               <td class="title">사전신용정보조회<br />동의 녹취 스크립트</td>
               <td>
                 <textarea class="textarea"></textarea>
+                <div class="flex-container jcfe cDisabled">
+                  <strong>0</strong>Byte
+                </div>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <div class="btn-container">
+        <div class="btn-container fixed">
           <button class="btn btn-send">전송하기</button>
         </div>
       </div>

@@ -20,6 +20,16 @@
             -webkit-mask-size: cover;
             background-color: var(--black-color);
         }
+
+        &-gray {
+            width: 16px;
+            height: 16px;
+            mask-image: url('@/assets/images/icon/add-black.svg');
+            -webkit-mask-image: url('@/assets/images/icon/add-black.svg');
+            mask-size: cover;
+            -webkit-mask-size: cover;
+            background-color: #e0e0e0;
+        }
     }
 
     &-nchecked {

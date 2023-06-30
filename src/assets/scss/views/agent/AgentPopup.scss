@@ -23,21 +23,11 @@
     position: relative;
     overflow: hidden;
 
-    &.auto {
-      height: auto;
-      max-height: calc(100% - 120px);
-    }
-
     .scroll-container {
       height: calc(100% - 100px);
 
       .none-image-container {
         height: 100%;
-      }
-
-      &.auto {
-        height: auto;
-        max-height: 100%;
       }
     }
 

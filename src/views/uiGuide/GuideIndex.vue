@@ -326,14 +326,14 @@ const datas = () => [
     depth1: '에이전트 홈페이지 (영업용)',
     datas: [
       {
-        depth2: '공통',
-        depth3: '팝업',
+        depth2: '메인\nAgent_P00_p001',
+        depth3: '오류 페이지',
         depth4: '',
         depth5: '',
         depth6: '',
-        path: '/guide/agent-001',
+        path: '/agent/Agent_P00_p001',
         status: 'end',
-        create: '2023.06.14',
+        create: '2023.06.30',
         log: [],
       },
       {
@@ -373,17 +373,6 @@ const datas = () => [
             text: '타이틀과 컨텐츠 간격 수정',
           },
         ],
-      },
-      {
-        depth2: '메인\nAgent_P01_p001',
-        depth3: '팝업',
-        depth4: '',
-        depth5: '',
-        depth6: '',
-        path: '/guide/agent-002',
-        status: '',
-        create: '',
-        log: [],
       },
       {
         depth2: '내구재할부',

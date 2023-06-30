@@ -399,7 +399,7 @@ export default {
                 높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.
               </div>
             </td>
-            <td class="txt-center" rowSpan="2">
+            <td rowSpan="2">
               <div class="scroll-container">
                 조건부 승인 내역이 해당 영역에 노출될 예정입니다.<br />
                 높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
@@ -414,7 +414,7 @@ export default {
             <td class="txt-center">상담의견</td>
             <td class="txt-center">심사요청</td>
             <td class="txt-center">2022.10.26 14:15:15</td>
-            <td class="h-150">
+            <td class="h-150 bdr">
               <div class="scroll-container">
                 조건부 승인 내역이 해당 영역에 노출될 예정입니다.<br />
                 높이는 고정이며, 길어질 경우 스크롤이 생성됩니다.<br />
