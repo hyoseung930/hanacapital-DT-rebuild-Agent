@@ -63,7 +63,7 @@ export default {
         </table>
 
         <div className="btn-container">
-          <button className="btn btn-primary btn-search">조회</button>
+          <button class="btn btn-primary btn-search-02">조회</button>
         </div>
       </div>
 

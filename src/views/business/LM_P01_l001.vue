@@ -11,22 +11,24 @@ export default {
   setup() {
     const agentPopup = ref(true);
     const scrollList = ref('auto');
+    const isClassList = ref('auto-min');
     function selectedData(e) {
-      const a = e.currentTarget
-      const b = e.currentTarget.parentNode.parentNode
+      const a = e.currentTarget;
+      const b = a.parentNode.parentNode;
 
-      document.querySelectorAll('tr').forEach(ele => {
+      document.querySelectorAll('tr').forEach((ele) => {
         ele.classList.remove('on');
-      })
-      if (b.classList.contains('on') === true){
-        b.classList.remove('on')
+      });
+      if (b.classList.contains('on') === true) {
+        b.classList.remove('on');
       } else {
-        b.classList.add('on')
+        b.classList.add('on');
       }
     }
     return {
       agentPopup,
       scrollList,
+      isClassList,
       selectedData,
     };
   },
@@ -34,7 +36,7 @@ export default {
 </script>
 
 <template>
-  <AgentPopup :isAgent="agentPopup" :isScrollHeight="scrollList">
+  <AgentPopup :isAgent="agentPopup" :isClassList="isClassList" :isScrollHeight="scrollList">
     <template #title>
       <div class="agent--container__title">한도 · 금리 확인</div>
     </template>

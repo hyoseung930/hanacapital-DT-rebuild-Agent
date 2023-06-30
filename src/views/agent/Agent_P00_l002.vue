@@ -30,7 +30,7 @@ export default {
       <div class="agent--container__title">서류등록</div>
     </template>
     <template #contents>
-      <div class="container">
+      <div class="container pb80">
         <table class="table-type-04 none-search-small bt">
           <tbody>
             <tr>
@@ -104,7 +104,7 @@ export default {
           <p>서류등록 파일은 최대 5개까지 등록 가능합니다.</p>
         </div>
 
-        <div class="btn-container mt40">
+        <div class="btn-container fixed">
           <button class="btn btn-s01 btn-search">저장</button>
         </div>
       </div>

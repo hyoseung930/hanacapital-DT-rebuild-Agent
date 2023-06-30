@@ -129,7 +129,7 @@ export default {
           </tbody>
         </table>
 
-        <div class="btn-container">
+        <div class="btn-container fixed">
           <button class="btn btn-send">전송하기</button>
         </div>
       </div>

@@ -23,6 +23,11 @@
     position: relative;
     overflow: hidden;
 
+    &.auto-min {
+      height: auto;
+      max-height: calc(100% - 120px);
+    }
+
     .scroll-container {
       height: calc(100% - 100px);
 

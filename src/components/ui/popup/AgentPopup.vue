@@ -29,6 +29,7 @@ export default {
           'agent--container__small': classList === 'small',
           'agent--container__little': classList === 'little',
           auto: scrollList === 'auto',
+          'auto-min': classList === 'auto-min',
         }"
       >
         <i class="ico ico-close" @click="agentPopup = false"></i>

@@ -154,7 +154,7 @@ export default {
         </table>
 
         <div class="btn-container">
-          <button class="btn btn-primary btn-search">조회</button>
+          <button class="btn btn-primary btn-search-02">조회</button>
         </div>
       </div>
 
