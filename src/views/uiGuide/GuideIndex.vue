@@ -139,6 +139,7 @@ const datas = () => [
         update: '2023.06.30',
         log: [
           { date: '2023.06.30', text: '파일이 5개 넘어갈 경우 스크롤 생성' },
+          { date: '2023.06.30', text: '저장하기 버튼 고정' },
         ],
       },
       {
@@ -224,8 +225,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l009',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: '텍스트 필드 글자수 추가' }],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.24', text: '텍스트 필드 글자수 추가' },
+          { date: '2023.06.30', text: '전송하기 버튼 고정' },
+        ],
       },
       {
         depth2: '팝업',
@@ -283,8 +287,11 @@ const datas = () => [
         path: '/business/LM_P01_l001',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.29',
-        log: [{ date: '2023.06.29', text: '설명 간격 수정' }],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.29', text: '설명 간격 수정' },
+          { date: '2023.06.30', text: '하단 간격 수정' }
+        ],
       },
       {
         depth2: '빠른상담신청 내역',
@@ -474,10 +481,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p001',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.29',
+        update: '2023.06.30',
         log: [
           { date: '2023.06.29', text: '설명 위치 변경' },
           { date: '2023.06.30', text: '타이틀 변경 및 조회 버튼 추가' },
+          { date: '2023.06.30', text: '조회버튼 크기 수정' },
         ],
       },
       {
@@ -489,13 +497,17 @@ const datas = () => [
         path: '/agent/Agent_P02_p002',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.29',
+        update: '2023.06.30',
         log: [
           { date: '2023.06.29', text: '상담등록 버튼 디자인 수정' },
           { date: '2023.06.29', text: '하단 디자인 수정' },
           {
             date: '2023.06.30',
             text: '성명(상호) input 추가, AG손배조건부 타이틀 추가',
+          },
+          {
+            date: '2023.06.30',
+            text: '상담/심사 table 선 추가',
           },
         ],
       },
@@ -508,7 +520,8 @@ const datas = () => [
         path: '/agent/Agent_P02_p003',
         status: 'end',
         create: '2023.06.27',
-        log: [],
+        update: '2023.06.30',
+        log: [{ date: '2023.06.30', text: '조회버튼 크기 수정' }],
       },
       {
         depth2: '내구재할부',
@@ -547,7 +560,10 @@ const datas = () => [
         status: 'end',
         create: '2023.06.27',
         update: '2023.06.30',
-        log: [{ date: '2023.06.30', text: '항목별 타이틀 간격 수정' }],
+        log: [
+          { date: '2023.06.30', text: '항목별 타이틀 간격 수정' },
+          { date: '2023.06.30', text: '조회버튼 크기 수정' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -562,6 +578,7 @@ const datas = () => [
         log: [
           { date: '2023.06.29', text: '검색 간격수정' },
           { date: '2023.06.30', text: '항목별 타이틀 간격 수정' },
+          { date: '2023.06.30', text: '조회버튼 크기 수정' },
         ],
       },
       {
@@ -641,12 +658,16 @@ const datas = () => [
         path: '/agent/Agent_P03_l003',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.24',
+        update: '2023.06.30',
         log: [
           { date: '2023.06.22', text: '닫기 버튼 활성화' },
           {
             date: '2023.06.24',
             text: '텍스트 필드 글자수 추가, 전화번호 input 크기 수정',
+          },
+          {
+            date: '2023.06.30',
+            text: 'Btye 표기 변경',
           },
         ],
       },
@@ -659,10 +680,11 @@ const datas = () => [
         path: '/agent/Agent_P03_l004',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.24',
+        update: '2023.06.30',
         log: [
           { date: '2023.06.22', text: '닫기 버튼 활성화' },
           { date: '2023.06.24', text: '전화번호 input 크기 수정' },
+          { date: '2023.06.30', text: '라디오 버튼 크기 수정' },
         ],
       },
       {
