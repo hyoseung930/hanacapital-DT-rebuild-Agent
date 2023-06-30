@@ -302,13 +302,10 @@ table {
 
     &.table-type-04 {
         margin-bottom: 60px;
+		border-top: 2px solid #8f8f8f;
 
         &:first-child {
             margin-bottom: 0;
-        }
-
-        &.bt {
-            border-top: 2px solid #8f8f8f;
         }
 
         &:last-child {

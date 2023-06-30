@@ -45,7 +45,7 @@ export default {
             </thead>
           </table>
           <div class="scroll-container mxh-770 w25p bdrrt">
-            <table class="table-type-04 w100p">
+            <table class="table-type-04 body w100p">
               <tbody>
                 <tr class="on">
                   <td class="txt-center">S36_기타채널</td>
@@ -87,7 +87,7 @@ export default {
             </table>
           </div>
           <div class="scroll-container mxh-770 w25p bdrlf">
-            <table class="table-type-04 w100p">
+            <table class="table-type-04 body w100p">
               <tbody class="scroll-container mxh-678">
                 <tr class="on">
                   <td class="txt-center">소분류</td>
@@ -123,7 +123,7 @@ export default {
             </table>
           </div>
           <div class="scroll-container mxh-770 w25p bdrlf bdrrt">
-            <table class="table-type-04 w100p">
+            <table class="table-type-04 body w100p">
               <tbody>
                 <tr>
                   <td class="txt-center">S36_기타채널</td>
@@ -171,7 +171,7 @@ export default {
             </table>
           </div>
           <div class="scroll-container mxh-770 w25p bdrlf">
-            <table class="table-type-04 w100p">
+            <table class="table-type-04 body w100p">
               <tbody>
                 <tr class="on">
                   <td class="txt-center">S36_기타채널</td>

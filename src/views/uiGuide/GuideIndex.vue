@@ -136,7 +136,10 @@ const datas = () => [
         path: '/agent/Agent_P00_l002',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.30', text: '파일이 5개 넘어갈 경우 스크롤 생성' },
+        ],
       },
       {
         depth2: '팝업',
@@ -147,8 +150,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l003',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: 'fadeout 변경, 스크롤 추가' }],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.24', text: 'fadeout 변경, 스크롤 추가' },
+          { date: '2023.06.30', text: '페이지네이션 간격 조절 (공통)' },
+        ],
       },
       {
         depth2: '팝업',
@@ -233,7 +239,10 @@ const datas = () => [
         update: '2023.06.24',
         log: [
           { date: '2023.06.24', text: '테이블 간격 조정' },
-          { date: '2023.06.30', text: '검색 제목 불릿 추가' },
+          {
+            date: '2023.06.30',
+            text: '검색 제목 불릿 추가, 위치조정(공통처리)',
+          },
         ],
       },
       {
@@ -336,10 +345,15 @@ const datas = () => [
         path: '/agent/Agent_P01_p001',
         status: 'end',
         create: '2023.06.29',
+        update: '2023.06.30',
         log: [
           {
             date: '2023.06.30',
             text: '각 타이틀 변경 및 타이틀과 컨텐츠 간격 수정',
+          },
+          {
+            date: '2023.06.30',
+            text: '오류페이지 작업',
           },
         ],
       },
@@ -352,7 +366,13 @@ const datas = () => [
         path: '/agent/Agent_P01_l001',
         status: 'end',
         create: '2023.06.29',
-        log: [],
+        update: '2023.06.30',
+        log: [
+          {
+            date: '2023.06.30',
+            text: '타이틀과 컨텐츠 간격 수정',
+          },
+        ],
       },
       {
         depth2: '메인\nAgent_P01_p001',
@@ -484,7 +504,10 @@ const datas = () => [
         log: [
           { date: '2023.06.29', text: '상담등록 버튼 디자인 수정' },
           { date: '2023.06.29', text: '하단 디자인 수정' },
-          { date: '2023.06.30', text: '성명(상호) input 추가' },
+          {
+            date: '2023.06.30',
+            text: '성명(상호) input 추가, AG손배조건부 타이틀 추가',
+          },
         ],
       },
       {
@@ -561,8 +584,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p008',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.29',
-        log: [{ date: '2023.06.29', text: '검색 간격수정' }],
+        update: '2023.06.30',
+        log: [
+          { date: '2023.06.29', text: '검색 간격수정' },
+          { date: '2023.06.30', text: '등록일 > 등록일자 변경' },
+        ],
       },
       {
         depth2: '내구재할부',

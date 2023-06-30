@@ -117,6 +117,19 @@ export default {
           </div>
         </div>
       </div>
+
+      <div class="flex-container">
+        <div class="error-box flex-container fw">
+          <img src="@/assets/images/illustration/img-error.png" />
+          <div class="error-box-title">
+            죄송합니다.<br />페이지 오류가 발생했습니다
+          </div>
+          <div class="error-box-content">MCI.RQS.ERROR.0000000</div>
+          <div class="btn-container">
+            <button class="btn btn-s01">홈으로</button>
+          </div>
+        </div>
+      </div>
     </div>
   </PageContents>
 

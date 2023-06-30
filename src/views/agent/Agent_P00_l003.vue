@@ -140,7 +140,7 @@ export default {
                 <td class="txt-center">케이네트웍스케이네트웍스케이네트웍스</td>
                 <td class="txt-center">식기세척기</td>
                 <td class="txt-center">
-                  <button class="btn btn-s03">SMS전송</button>
+                  <button class="btn btn-s05">SMS전송</button>
                 </td>
               </tr>
               <tr>

@@ -49,27 +49,50 @@ export default {
           </div>
         </div>
 
-        <div class="file-list">
-          <div class="flex-container jcsb">
-            <div class="flex-container jcfs">
-              <i class="ico ico-image"></i>
-              파일명.jpg
+        <div class="scroll-container over-w mxh-350">
+          <div class="file-list">
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
             </div>
-            <button class="btn btn-s05">삭제</button>
-          </div>
-          <div class="flex-container jcsb">
-            <div class="flex-container jcfs">
-              <i class="ico ico-image"></i>
-              파일명.jpg
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
             </div>
-            <button class="btn btn-s05">삭제</button>
-          </div>
-          <div class="flex-container jcsb">
-            <div class="flex-container jcfs">
-              <i class="ico ico-image"></i>
-              파일명.jpg
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
             </div>
-            <button class="btn btn-s05">삭제</button>
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
+            </div>
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
+            </div>
+            <div class="flex-container jcsb">
+              <div class="flex-container jcfs">
+                <i class="ico ico-image"></i>
+                파일명.jpg
+              </div>
+              <button class="btn btn-s05">삭제</button>
+            </div>
           </div>
         </div>
 

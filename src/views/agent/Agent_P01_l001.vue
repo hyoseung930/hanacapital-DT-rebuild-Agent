@@ -23,7 +23,9 @@ export default {
 <template>
   <AgentPopup :isAgent="agentPopup" :isClassList="classList">
     <template #title>
-      <div class="agent--container__title min-padding-bottom">공지팝업 제목</div>
+      <div class="agent--container__title min-padding-bottom">
+        공지팝업 제목
+      </div>
     </template>
     <template #contents>
       <div class="container none-image-container">

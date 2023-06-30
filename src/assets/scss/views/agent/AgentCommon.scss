@@ -202,6 +202,10 @@ ul {
     height: auto;
   }
 
+  &.over-w {
+    overflow-y: auto;
+  }
+
   > .table-type-04 {
     width: auto;
     table-layout: unset;
@@ -456,6 +460,9 @@ ul {
 .mxh-378 {
   max-height: 378px;
 }
+.mxh-350 {
+  max-height: 350px;
+}
 
 .mxh-300 {
   max-height: 300px;
@@ -608,4 +615,36 @@ ul {
   > .flex-container {
     width: 100%;
   }
+}
+
+.error-box {
+	width: 100%;
+	max-width: 600px;
+
+	img {
+		width: 300px;
+		margin: 60px;
+	}
+
+	&-title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: bold;
+		color: var(--black-color);
+		margin-bottom: 8px;
+	}
+
+	&-content {
+		font-size: 18px;
+		color: var(--black-color);
+		font-weight: 300;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	button {
+		font-size: 20px;
+		padding: 22px 120px;
+	}
 }
