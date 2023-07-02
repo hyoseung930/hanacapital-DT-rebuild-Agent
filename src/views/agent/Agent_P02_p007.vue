@@ -29,40 +29,28 @@ export default {
     </PageHead>
 
     <div className="container">
-      <div className="search-container">
-        <table className="table-type-search">
-          <colgroup>
-            <col width="5%" />
-            <col width="20%" />
-            <col width="6%" />
-            <col width="60%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td className="title">지급일자</td>
-              <td>
-                <div className="flex-container">
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td className="title">검색조건</td>
-              <td>
-                <div className="flex-container jcfs">
-                  <div className="select-container w20p">
-                    <select>
-                      <option>선택</option>
-                    </select>
-                  </div>
-                  <input type="text" class="w60p" />
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">지급일자</div>
+            <div class="search--container__list-contents">
+              <input type="date" v-model="startDate" />
+              <span>~</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">검색조건</div>
+            <div class="search--container__list-contents w50p">
+              <div class="select-container w50p">
+                <select>
+                  <option>선택</option>
+                </select>
+              </div>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
 
-        <div className="btn-container">
+        <div class="btn-container">
           <button class="btn btn-primary btn-search-02">조회</button>
         </div>
       </div>

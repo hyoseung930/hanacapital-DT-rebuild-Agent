@@ -401,10 +401,11 @@ const datas = () => [
         path: '/agent/Agent_P02_l002',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.29',
+        update: '2023.07.02',
         log: [
           { date: '2023.06.29', text: '검색 간격수정' },
           { date: '2023.06.29', text: '타이틀 추가 및 버튼 추가' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
         ],
       },
       {
@@ -520,8 +521,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p003',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.30',
-        log: [{ date: '2023.06.30', text: '조회버튼 크기 수정' }],
+        update: '2023.07.02',
+        log: [
+          { date: '2023.06.30', text: '조회버튼 크기 수정' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
+        ],
       },
       {
         depth2: '내구재할부',
@@ -559,10 +563,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p006',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.30',
+        update: '2023.07.02',
         log: [
           { date: '2023.06.30', text: '항목별 타이틀 간격 수정' },
           { date: '2023.06.30', text: '조회버튼 크기 수정' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
         ],
       },
       {
@@ -574,11 +579,12 @@ const datas = () => [
         path: '/agent/Agent_P02_p007',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.30',
+        update: '2023.07.02',
         log: [
           { date: '2023.06.29', text: '검색 간격수정' },
           { date: '2023.06.30', text: '항목별 타이틀 간격 수정' },
           { date: '2023.06.30', text: '조회버튼 크기 수정' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
         ],
       },
       {
@@ -605,10 +611,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p009',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.29',
+        update: '2023.07.02',
         log: [
           { date: '2023.06.29', text: '검색 간격수정' },
           { date: '2023.06.29', text: '엑셀 버튼 삭제 및 민원상태 색상 추가' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
         ],
       },
       {
@@ -631,8 +638,11 @@ const datas = () => [
         path: '/agent/Agent_P03_l001',
         status: 'end',
         create: '2023.06.21',
-        update: '2023.06.22',
-        log: [{ date: '2023.06.22', text: '닫기 버튼 활성화' }],
+        update: '2023.07.02',
+        log: [
+          { date: '2023.06.22', text: '닫기 버튼 활성화' },
+          { date: '2023.07.02', text: '조회 스타일 변경' },
+        ],
       },
       {
         depth2: '할부승계',

@@ -29,129 +29,107 @@ export default {
     </PageHead>
 
     <div class="container">
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="6%" />
-            <col width="20%" />
-            <col width="7%" />
-            <col width="20%" />
-            <col width="7%" />
-            <col width="40%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">일자선택</td>
-              <td colspan="3">
-                <div class="flex-container jcfs">
-                  <div class="radio-container w60p">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a3" checked />
-                      <span class="small"></span>
-                      품의일자
-                    </label>
-                  </div>
-                  <div class="radio-container w60p">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a3" />
-                      <span class="small"></span>
-                      실행일자
-                    </label>
-                  </div>
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td class="title">고객구분</td>
-              <td>
-                <div class="flex-container">
-                  <div class="select-container">
-                    <select>
-                      <option>선택</option>
-                    </select>
-                  </div>
-                  <input type="text" />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="title" colspan="2">
-                <div class="flex-container jcfs">
-                  품목&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="text" class="w70p" />
-                </div>
-              </td>
-              <td class="title" colspan="2">
-                <div class="flex-container jcfs">
-                  판매점&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="text" class="w80p" />
-                </div>
-              </td>
-              <td class="title">결제상태</td>
-              <td>
-                <div class="flex-container jcfs">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" checked />
-                      <span class="small"></span>
-                      전체
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" />
-                      <span class="small"></span>
-                      완료
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" />
-                      <span class="small"></span>
-                      미완료
-                    </label>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="title">진행상태</td>
-              <td colspan="3">
-                <div class="flex-container jcfs">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a2" checked />
-                      <span class="small"></span>
-                      전체
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a2" />
-                      <span class="small"></span>
-                      작성중
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a2" />
-                      <span class="small"></span>
-                      미실행취소
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a2" />
-                      <span class="small"></span>
-                      승인
-                    </label>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">일자선택</div>
+            <div class="search--container__list-contents w40p">
+              <div class="radio-container w60p">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a3" checked />
+                  <span class="small"></span>
+                  품의일자
+                </label>
+              </div>
+              <div class="radio-container w60p">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a3" />
+                  <span class="small"></span>
+                  실행일자
+                </label>
+              </div>
+              <input type="date" v-model="startDate" />
+              <span>~</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">고객구분</div>
+            <div class="search--container__list-contents w30p">
+              <div class="select-container w50p">
+                <select>
+                  <option>선택</option>
+                </select>
+              </div>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="search--container__list">
+            <div class="search--container__list-title">품목</div>
+            <div class="search--container__list-contents w18p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">판매점</div>
+            <div class="search--container__list-contents w18p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">결제상태</div>
+            <div class="search--container__list-contents w18p">
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" checked />
+                  <span class="small"></span>
+                  전체
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" />
+                  <span class="small"></span>
+                  완료
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" />
+                  <span class="small"></span>
+                  미완료
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search--container__list">
+            <div class="search--container__list-title">진행상태</div>
+            <div class="search--container__list-contents">
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a2" checked />
+                  <span class="small"></span>
+                  전체
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a2" />
+                  <span class="small"></span>
+                  작성중
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a2" />
+                  <span class="small"></span>
+                  미실행취소
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a2" />
+                  <span class="small"></span>
+                  승인
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="btn-container">
           <button class="btn btn-primary btn-search-02">조회</button>

@@ -24,130 +24,90 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="search-container">
-          <div class="title">상환정보입력</div>
-          <table class="table-type-search">
-            <colgroup>
-              <col width="8%" />
-              <col width="4%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="7%" />
-              <col width="13%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">할부원금</td>
-                <td colspan="3">
-                  <div class="flex-container">
-                    <input type="text" class="rt" />원
-                  </div>
-                </td>
-                <td class="title">대출일자</td>
-                <td colspan="2">
-                  <input type="date" />
-                </td>
-                <td class="title">초회납입일자</td>
-                <td colspan="2">
-                  <input type="date" />
-                </td>
-              </tr>
-              <tr>
-                <td class="title" colspan="2">상환기간/금리</td>
-                <td colspan="3">
-                  <div class="flex-container jcfs">
-                    <input type="text" class="rt w40p" />개월
-                    <input type="text" class="rt w35p" />%
-                  </div>
-                </td>
-                <td class="title">내구재이자부과구분</td>
-                <td colspan="3">
-                  <div class="flex-container jcfs">
-                    <div class="radio-container">
-                      <label class="flex-container jcfs">
-                        <input type="radio" name="type" checked />
-                        <span class="small"></span>
-                        이자부과
-                      </label>
-                    </div>
-                    <div class="radio-container">
-                      <label class="flex-container jcfs">
-                        <input type="radio" name="type" />
-                        <span class="small"></span>
-                        부분이자
-                      </label>
-                    </div>
-                    <div class="radio-container">
-                      <label class="flex-container jcfs">
-                        <input type="radio" name="type" />
-                        <span class="small"></span>
-                        무이자
-                      </label>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="title" colspan="2">내구재선취수수료율</td>
-                <td colspan="2">
-                  <div class="flex-container">
-                    <input type="text" class="rt" />%
-                  </div>
-                </td>
-                <td class="title">결제일자</td>
-                <td>
-                  <div class="flex-container">
-                    <div class="select-container">
-                      <select>
-                        <option>선택</option>
-                      </select>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="title">상환정보입력</div>
+            <div class="search--container__list">
+              <div class="search--container__list-title">할부원금</div>
+              <div class="search--container__list-contents">
+                <input type="text" class="rt" />원
+              </div>
+              <div class="search--container__list-title">대출일자</div>
+              <div class="search--container__list-contents">
+                <input type="date" />
+              </div>
+              <div class="search--container__list-title">초회납입일자</div>
+              <div class="search--container__list-contents">
+                <input type="date" />
+              </div>
+            </div>
+            <div class="search--container__list">
+              <div class="search--container__list-title">상환기간/금리</div>
+              <div class="search--container__list-contents w30p">
+                <input type="text" class="rt w40p" />개월
+                <input type="text" class="rt w35p" />%
+              </div>
+              <div class="search--container__list-title">
+                내구재이자부과구분
+              </div>
+              <div class="search--container__list-contents">
+                <div class="radio-container">
+                  <label class="flex-container jcfs">
+                    <input type="radio" name="type" checked />
+                    <span class="small"></span>
+                    이자부과
+                  </label>
+                </div>
+                <div class="radio-container">
+                  <label class="flex-container jcfs">
+                    <input type="radio" name="type" />
+                    <span class="small"></span>
+                    부분이자
+                  </label>
+                </div>
+                <div class="radio-container">
+                  <label class="flex-container jcfs">
+                    <input type="radio" name="type" />
+                    <span class="small"></span>
+                    무이자
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="search--container__list mb40">
+              <div class="search--container__list-title">
+                내구재선취수수료율
+              </div>
+              <div class="search--container__list-contents w15p">
+                <input type="text" class="rt" />%
+              </div>
+              <div class="search--container__list-title">결제일자</div>
+              <div class="search--container__list-contents w10p">
+                <div class="select-container">
+                  <select>
+                    <option>선택</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-          <div class="title">선취수수료</div>
-          <table class="table-type-search">
-            <colgroup>
-              <col width="8%" />
-              <col width="2%" />
-              <col width="10%" />
-              <col width="3%" />
-              <col width="5%" />
-              <col width="4%" />
-              <col width="6%" />
-              <col width="5%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title" colspan="2">내구재선취수수료율</td>
-                <td colspan="2">
-                  <div class="flex-container">
-                    <input type="text" class="rt" disabled />%
-                  </div>
-                </td>
-                <td class="title" colspan="2">내구재선취수수료율</td>
-                <td colspan="2">
-                  <div class="flex-container">
-                    <input type="text" class="rt" disabled />원
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="title">선취수수료</div>
+            <div class="search--container__list">
+              <div class="search--container__list-title">
+                내구재선취수수료율
+              </div>
+              <div class="search--container__list-contents w15p">
+                <input type="text" class="rt" disabled />%
+              </div>
+              <div class="search--container__list-title">내구재선취수수료</div>
+              <div class="search--container__list-contents w15p">
+                <input type="text" class="rt" disabled />원
+              </div>
+            </div>
+          </div>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">산출</button>
+            <button class="btn btn-primary btn-search-02">산출</button>
           </div>
         </div>
 

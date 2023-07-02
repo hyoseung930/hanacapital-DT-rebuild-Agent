@@ -29,83 +29,67 @@ export default {
     </PageHead>
 
     <div class="container">
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="6%" />
-            <col width="27%" />
-            <col width="6%" />
-            <col width="27%" />
-            <col width="6%" />
-            <col width="27%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">상담일자</td>
-              <td>
-                <div class="flex-container">
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td class="title">검색조건</td>
-              <td>
-                <div class="flex-container">
-                  <div class="select-container">
-                    <select>
-                      <option>고객명</option>
-                    </select>
-                  </div>
-                  <input type="text" />
-                </div>
-              </td>
-              <td class="title">판매점</td>
-              <td>
-                <input type="text" />
-              </td>
-            </tr>
-            <tr>
-              <td class="title">사업자번호</td>
-              <td>
-                <input type="text" />
-              </td>
-              <td class="title">상담결과</td>
-              <td>
-                <div class="flex-container jcfs">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" checked />
-                      <span class="small"></span>
-                      전체
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" />
-                      <span class="small"></span>
-                      접수
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" />
-                      <span class="small"></span>
-                      심사중
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="a1" />
-                      <span class="small"></span>
-                      승인
-                    </label>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">상담일자</div>
+            <div class="search--container__list-contents w25p">
+              <input type="date" v-model="startDate" />
+              <span>~</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">검색조건</div>
+            <div class="search--container__list-contents w30p">
+              <div class="select-container w50p">
+                <select>
+                  <option>고객명</option>
+                </select>
+              </div>
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">판매점</div>
+            <div class="search--container__list-contents w15p">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="search--container__list">
+            <div class="search--container__list-title">사업자번호</div>
+            <div class="search--container__list-contents w18p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">상담결과</div>
+            <div class="search--container__list-contents">
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" checked />
+                  <span class="small"></span>
+                  전체
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" />
+                  <span class="small"></span>
+                  접수
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" />
+                  <span class="small"></span>
+                  심사중
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="a1" />
+                  <span class="small"></span>
+                  승인
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="btn-container">
           <button class="btn btn-primary btn-search-02">조회</button>

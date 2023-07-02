@@ -24,38 +24,26 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="search-container">
-          <table class="table-type-search">
-            <colgroup>
-              <col width="7%" />
-              <col width="26%" />
-              <col width="10%" />
-              <col width="23%" />
-              <col width="6%" />
-              <col width="27%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>성명/상호</td>
-                <td>
-                  <div class="flex-container">
-                    <input type="text" />
-                  </div>
-                </td>
-                <td>주민/사업자번호</td>
-                <td>
-                  <input type="text" />
-                </td>
-                <td>연락처</td>
-                <td>
-                  <input type="text" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="search--container__list">
+              <div class="search--container__list-title">성명/상호</div>
+              <div class="search--container__list-contents w20p">
+                <input type="text" />
+              </div>
+              <div class="search--container__list-title">주민/사업자번호</div>
+              <div class="search--container__list-contents w20p">
+                <input type="text" />
+              </div>
+              <div class="search--container__list-title">연락처</div>
+              <div class="search--container__list-contents w20p">
+                <input type="text" />
+              </div>
+            </div>
+          </div>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">조회</button>
+            <button class="btn btn-primary btn-search-02">조회</button>
           </div>
         </div>
 
