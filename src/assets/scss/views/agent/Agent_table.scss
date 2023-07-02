@@ -458,6 +458,11 @@ table {
                     transition: transformY(-50%);
                     border-radius: 50%;
                 }
+                padding-right: 8px;
+
+                &:nth-child(2n) {
+                    padding-right: 8px;
+                }
             }
 
             &:nth-child(2n) {

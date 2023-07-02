@@ -1,5 +1,4 @@
 <script>
-import { ref } from 'vue';
 // Agent_P03_p001
 import PageContents from '@/components/ui/agent/PageContents.vue';
 import PageHead from '@/components/ui/text/PageHead.vue';
@@ -14,12 +13,10 @@ export default {
   setup() {
     const startDate = '2022-01-01';
     const endDate = '2022-01-01';
-    const isType = ref('1');
 
     return {
       startDate,
       endDate,
-      isType,
     };
   },
 };
@@ -28,7 +25,7 @@ export default {
 <template>
   <PageContents>
     <PageHead>
-      <PageTitle>심사승인내역</PageTitle>
+      <PageTitle>사전동의내역</PageTitle>
     </PageHead>
 
     <div class="container">
@@ -37,13 +34,14 @@ export default {
           <colgroup>
             <col width="5%" />
             <col width="20%" />
-            <col width="5%" />
-            <col width="35%" />
+            <col width="15%" />
+            <col width="6%" />
             <col width="25%" />
+            <col width="10%" />
           </colgroup>
           <tbody>
             <tr>
-              <td class="title">수신일자</td>
+              <td class="title">동의일자</td>
               <td>
                 <div class="flex-container">
                   <input type="date" v-model="startDate" />
@@ -51,40 +49,34 @@ export default {
                   <input type="date" v-model="endDate" />
                 </div>
               </td>
+              <td class="title">
+                <div class="flex-container jcfs">
+                  동의여부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a1" checked />
+                      <span class="small"></span>
+                      Y
+                    </label>
+                  </div>
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a1" />
+                      <span class="small"></span>
+                      N
+                    </label>
+                  </div>
+                </div>
+              </td>
               <td class="title">검색조건</td>
               <td>
-                <div class="flex-container jcfs">
-                  <div class="select-container w35p">
-                    <select v-model="isType">
-                      <option value="1">고객명</option>
-                      <option value="2">승인여부</option>
+                <div class="flex-container">
+                  <div class="select-container w80p">
+                    <select>
+                      <option>고객명</option>
                     </select>
                   </div>
-                  <input
-                    type="text"
-                    :class="{ on: isType === '1', off: isType !== '1' }"
-                  />
-                  <div
-                    class="w100p ml20"
-                    :class="{ on: isType === '2', off: isType !== '2' }"
-                  >
-                    <div class="flex-container jcfs">
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a1" checked />
-                          <span class="small"></span>
-                          Y
-                        </label>
-                      </div>
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a1" />
-                          <span class="small"></span>
-                          N
-                        </label>
-                      </div>
-                    </div>
-                  </div>
+                  <input type="text" />
                 </div>
               </td>
             </tr>
@@ -115,8 +107,8 @@ export default {
           <tr>
             <th>항목</th>
             <th>전체</th>
-            <th>승인</th>
-            <th>부결</th>
+            <th>동의</th>
+            <th>미동의</th>
           </tr>
         </thead>
         <tbody>
@@ -125,12 +117,6 @@ export default {
             <td class="txt-center">368</td>
             <td class="txt-center">368</td>
             <td class="txt-center">368</td>
-          </tr>
-          <tr>
-            <td class="txt-center cDisabled">금액</td>
-            <td class="txt-center">2,152,580,000</td>
-            <td class="txt-center">2,152,580,000</td>
-            <td class="txt-center">2,152,580,000</td>
           </tr>
         </tbody>
       </table>
@@ -148,39 +134,27 @@ export default {
         <table class="table-type-04">
           <colgroup>
             <col width="4%" />
-            <col width="8%" />
-            <col width="12%" />
-            <col width="12%" />
-            <col width="5%" />
-            <col width="12%" />
-            <col width="12%" />
-            <col width="12%" />
-            <col width="12%" />
+            <col width="20%" />
+            <col width="20%" />
+            <col width="20%" />
+            <col width="20%" />
           </colgroup>
           <thead>
             <tr>
               <th>순번</th>
-              <th>수신일자</th>
+              <th>동의일자</th>
+              <th>동의여부</th>
               <th>고객명</th>
-              <th>채널명</th>
-              <th>승인여부</th>
-              <th>승인일자</th>
-              <th>한도금액</th>
-              <th>제휴사 ID</th>
-              <th>채널 ID</th>
+              <th>생년월일</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="txt-center">1</td>
               <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">김하나</td>
-              <td class="txt-center">에이블리</td>
               <td class="txt-center">N</td>
+              <td class="txt-center">김하나</td>
               <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">999,999,999</td>
-              <td class="txt-center">471860200</td>
-              <td class="txt-center">hanajoah</td>
             </tr>
           </tbody>
         </table>

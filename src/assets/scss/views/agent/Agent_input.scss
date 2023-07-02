@@ -104,6 +104,7 @@ input {
         height: 24px;
         border: 1px solid var(--gray-color);
         border-radius: 50%;
+        background-color: var(--white-color);
 
         &.small {
             width: 18px;
@@ -183,4 +184,12 @@ input {
     border: 1px solid var(--gray-color);
     border-radius: 8px;
     padding: 10px;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
 }
