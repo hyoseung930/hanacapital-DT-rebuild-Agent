@@ -1,5 +1,5 @@
 <script>
-import LayoutSetting from '@/layouts/LayoutSetting.vue';
+import LayoutSetting from '@/layouts_agent/LayoutSetting.vue';
 
 export default {
   components: {

@@ -1,17 +1,17 @@
 <script>
 // Agent_P07_p001
-import PageContents from '@/components/ui/layout/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
-import InputBlock from '@/components/ui/form/InputBlock.vue';
-import InputBlockCell from '@/components/ui/form/InputBlockCell.vue';
-import BasicInput from '@/components/ui/form/BasicInput.vue';
-import BasicSelect from '@/components/ui/form/BasicSelect.vue';
-import SearchButton from '@/components/ui/button/SearchButton.vue';
-import PaginationNav from '@/components/ui/pagination/PaginationNav.vue';
-import PaginationNavArrow from '@/components/ui/pagination/PaginationNavArrow.vue';
-import PaginationNavEllipsis from '@/components/ui/pagination/PaginationNavEllipsis.vue';
-import PaginationNavNumber from '@/components/ui/pagination/PaginationNavNumber.vue';
+import PageContents from '@/components_agent/ui/layout/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
+import InputBlock from '@/components_agent/ui/form/InputBlock.vue';
+import InputBlockCell from '@/components_agent/ui/form/InputBlockCell.vue';
+import BasicInput from '@/components_agent/ui/form/BasicInput.vue';
+import BasicSelect from '@/components_agent/ui/form/BasicSelect.vue';
+import SearchButton from '@/components_agent/ui/button/SearchButton.vue';
+import PaginationNav from '@/components_agent/ui/pagination/PaginationNav.vue';
+import PaginationNavArrow from '@/components_agent/ui/pagination/PaginationNavArrow.vue';
+import PaginationNavEllipsis from '@/components_agent/ui/pagination/PaginationNavEllipsis.vue';
+import PaginationNavNumber from '@/components_agent/ui/pagination/PaginationNavNumber.vue';
 
 export default {
   components: {
@@ -170,5 +170,5 @@ export default {
 </template>
 
 <style lang="scss" module>
-@import '@/assets/scss/views/agent/Agent_P07_p001.scss';
+@import '@/assets_agent/scss/views/agent/Agent_P07_p001.scss';
 </style>

@@ -1,8 +1,8 @@
 <script>
 // Agent_P03_p001
-import PageContents from '@/components/ui/agent/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
+import PageContents from '@/components_agent/ui/agent/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
 
 export default {
   components: {
@@ -88,14 +88,6 @@ export default {
         </div>
       </div>
 
-      <table class="table-type-01 none-search">
-        <tbody>
-          <tr>
-            <td>조회된 내용이 없습니다.</td>
-          </tr>
-        </tbody>
-      </table>
-
       <table class="table-type-01">
         <colgroup>
           <col width="7%" />
@@ -130,35 +122,41 @@ export default {
         </div>
       </div>
 
-      <div class="scroll-container over-h">
-        <table class="table-type-04">
-          <colgroup>
-            <col width="4%" />
-            <col width="20%" />
-            <col width="20%" />
-            <col width="20%" />
-            <col width="20%" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>순번</th>
-              <th>동의일자</th>
-              <th>동의여부</th>
-              <th>고객명</th>
-              <th>생년월일</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="txt-center">1</td>
-              <td class="txt-center">2023.01.01</td>
-              <td class="txt-center">N</td>
-              <td class="txt-center">김하나</td>
-              <td class="txt-center">2023.01.01</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="table-type-01 none-search">
+        <tbody>
+          <tr>
+            <td>조회된 내용이 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table-type-04">
+        <colgroup>
+          <col width="4%" />
+          <col width="20%" />
+          <col width="20%" />
+          <col width="20%" />
+          <col width="20%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>순번</th>
+            <th>동의일자</th>
+            <th>동의여부</th>
+            <th>고객명</th>
+            <th>생년월일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="txt-center">1</td>
+            <td class="txt-center">2023.01.01</td>
+            <td class="txt-center">N</td>
+            <td class="txt-center">김하나</td>
+            <td class="txt-center">2023.01.01</td>
+          </tr>
+        </tbody>
+      </table>
 
       <ul class="paging">
         <li class="first">&lt;</li>
@@ -179,5 +177,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/AgentCommon.scss';
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
 </style>

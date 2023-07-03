@@ -3,7 +3,7 @@ import { onMounted } from 'vue';
 
 import { useUiLoadingStore } from '@/stores/ui/loading';
 
-import PageContents from '@/components/ui/layout/PageContents.vue';
+import PageContents from '@/components_agent/ui/layout/PageContents.vue';
 
 export default {
   components: {

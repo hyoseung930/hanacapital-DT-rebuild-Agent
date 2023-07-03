@@ -1,14 +1,14 @@
 <script>
 // Agent_P04_p002
-import PageContents from '@/components/ui/layout/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
-import TextButton from '@/components/ui/button/TextButton.vue';
+import PageContents from '@/components_agent/ui/layout/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
+import BasicButton from '@/components_agent/ui/button/BasicButton.vue';
+import ButtonList from '@/components_agent/ui/button/ButtonList.vue';
+import ButtonListItem from '@/components_agent/ui/button/ButtonListItem.vue';
+import TextButton from '@/components_agent/ui/button/TextButton.vue';
 
-import IconDownloadSmall from '@/assets/images/icon/download-small.svg?component';
+import IconDownloadSmall from '@/assets_agent/images/icon/download-small.svg?component';
 
 export default {
   components: {
@@ -108,5 +108,5 @@ export default {
 </template>
 
 <style lang="scss" module>
-@import '@/assets/scss/views/agent/Agent_P04_p002.scss';
+@import '@/assets_agent/scss/views/agent/Agent_P04_p002.scss';
 </style>

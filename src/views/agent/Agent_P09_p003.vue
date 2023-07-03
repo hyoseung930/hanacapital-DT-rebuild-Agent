@@ -1,9 +1,9 @@
 <script>
 import { ref } from 'vue';
 // Agent_P03_p001
-import PageContents from '@/components/ui/agent/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
+import PageContents from '@/components_agent/ui/agent/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
 
 export default {
   components: {
@@ -137,14 +137,6 @@ export default {
         </div>
       </div>
 
-      <table class="table-type-01 none-search">
-        <tbody>
-          <tr>
-            <td>조회된 내용이 없습니다.</td>
-          </tr>
-        </tbody>
-      </table>
-
       <table class="table-type-01">
         <colgroup>
           <col width="7%" />
@@ -197,6 +189,14 @@ export default {
         </div>
       </div>
 
+      <table class="table-type-01 none-search">
+        <tbody>
+          <tr>
+            <td>조회된 내용이 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
       <table class="table-type-04">
         <colgroup>
           <col width="5%" />
@@ -238,7 +238,7 @@ export default {
             <td class="txt-center">Y</td>
           </tr>
           <tr>
-            <td class="txt-center">1</td>
+            <td class="txt-center">2</td>
             <td class="txt-center">2023.01.01</td>
             <td class="txt-center">1234567891234</td>
             <td class="txt-center">C12345678901234</td>
@@ -250,7 +250,7 @@ export default {
             <td class="txt-center">Y</td>
           </tr>
           <tr>
-            <td class="txt-center">1</td>
+            <td class="txt-center">3</td>
             <td class="txt-center">2023.01.01</td>
             <td class="txt-center">1234567891234</td>
             <td class="txt-center">C12345678901234</td>
@@ -262,7 +262,7 @@ export default {
             <td class="txt-center">Y</td>
           </tr>
           <tr>
-            <td class="txt-center">1</td>
+            <td class="txt-center">4</td>
             <td class="txt-center">2023.01.01</td>
             <td class="txt-center">1234567891234</td>
             <td class="txt-center">C12345678901234</td>
@@ -274,7 +274,7 @@ export default {
             <td class="txt-center">Y</td>
           </tr>
           <tr>
-            <td class="txt-center">1</td>
+            <td class="txt-center">5</td>
             <td class="txt-center">2023.01.01</td>
             <td class="txt-center">1234567891234</td>
             <td class="txt-center">C12345678901234</td>
@@ -286,7 +286,7 @@ export default {
             <td class="txt-center">Y</td>
           </tr>
           <tr>
-            <td class="txt-center">1</td>
+            <td class="txt-center">6</td>
             <td class="txt-center">2023.01.01</td>
             <td class="txt-center">1234567891234</td>
             <td class="txt-center">C12345678901234</td>
@@ -319,5 +319,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/AgentCommon.scss';
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
 </style>

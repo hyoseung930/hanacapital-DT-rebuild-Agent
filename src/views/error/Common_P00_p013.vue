@@ -1,14 +1,14 @@
 <script>
 // Common_P00_p013
-import PageContents from '@/components/ui/layout/PageContents.vue';
-import IllustObject from '@/components/ui/common/IllustObject.vue';
-import IllustInfo from '@/components/ui/common/IllustInfo.vue';
-import IllustInfoTitle from '@/components/ui/common/IllustInfoTitle.vue';
-import IllustInfoText from '@/components/ui/common/IllustInfoText.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
-import IconCustomer from '@/assets/images/icon/customer-center.svg?component';
+import PageContents from '@/components_agent/ui/layout/PageContents.vue';
+import IllustObject from '@/components_agent/ui/common/IllustObject.vue';
+import IllustInfo from '@/components_agent/ui/common/IllustInfo.vue';
+import IllustInfoTitle from '@/components_agent/ui/common/IllustInfoTitle.vue';
+import IllustInfoText from '@/components_agent/ui/common/IllustInfoText.vue';
+import BasicButton from '@/components_agent/ui/button/BasicButton.vue';
+import ButtonList from '@/components_agent/ui/button/ButtonList.vue';
+import ButtonListItem from '@/components_agent/ui/button/ButtonListItem.vue';
+import IconCustomer from '@/assets_agent/images/icon/customer-center.svg?component';
 
 export default {
   components: {
@@ -60,5 +60,5 @@ export default {
 </template>
 
 <style lang="scss" module>
-@import '@/assets/scss/views/error/Common_P00_p013.scss';
+@import '@/assets_agent/scss/views/error/Common_P00_p013.scss';
 </style>

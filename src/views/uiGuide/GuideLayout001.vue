@@ -3,12 +3,12 @@ import { onMounted, onUnmounted } from 'vue';
 
 import { useUiCommonStore } from '@/stores/ui/common';
 
-import PageContents from '@/components/ui/layout/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageHeadRow from '@/components/ui/text/PageHeadRow.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
-import PageMainText from '@/components/ui/text/PageMainText.vue';
-import PageSubText from '@/components/ui/text/PageSubText.vue';
+import PageContents from '@/components_agent/ui/layout/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageHeadRow from '@/components_agent/ui/text/PageHeadRow.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
+import PageMainText from '@/components_agent/ui/text/PageMainText.vue';
+import PageSubText from '@/components_agent/ui/text/PageSubText.vue';
 
 export default {
   components: {

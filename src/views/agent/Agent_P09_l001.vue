@@ -2,14 +2,14 @@
 // Agent_P09_l001
 import { ref } from 'vue';
 
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
+import UiLayer from '@/components_agent/ui/layer/UiLayer.vue';
+import PopupTitle from '@/components_agent/ui/layer/PopupTitle.vue';
+import PopupButton from '@/components_agent/ui/layer/PopupButton.vue';
+import ModalPopup from '@/components_agent/ui/layer/ModalPopup.vue';
+import ModalPopupHead from '@/components_agent/ui/layer/ModalPopupHead.vue';
+import BasicButton from '@/components_agent/ui/button/BasicButton.vue';
+import ButtonList from '@/components_agent/ui/button/ButtonList.vue';
+import ButtonListItem from '@/components_agent/ui/button/ButtonListItem.vue';
 
 export default {
   components: {

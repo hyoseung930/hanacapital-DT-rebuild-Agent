@@ -1,8 +1,8 @@
 <script>
 // Agent_P03_p001
-import PageContents from '@/components/ui/agent/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
+import PageContents from '@/components_agent/ui/agent/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
 
 export default {
   components: {
@@ -39,14 +39,6 @@ export default {
           <button class="btn btn-primary btn-search-02">조회</button>
         </div>
       </div>
-
-      <table class="table-type-01 none-search">
-        <tbody>
-          <tr>
-            <td>조회된 내용이 없습니다.</td>
-          </tr>
-        </tbody>
-      </table>
 
       <table class="table-type-01">
         <colgroup>
@@ -114,25 +106,10 @@ export default {
           </tr>
         </tbody>
       </table>
-
-      <ul class="paging">
-        <li class="first">&lt;</li>
-        <li class="on">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li class="dot"></li>
-        <li>25</li>
-        <li class="last">&gt;</li>
-      </ul>
     </div>
   </PageContents>
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/AgentCommon.scss';
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
 </style>

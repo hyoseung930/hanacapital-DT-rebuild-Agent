@@ -2,94 +2,94 @@
 import { ref, reactive } from 'vue';
 import { RouterLink } from 'vue-router';
 
-import BasicButton from '@/components/ui/button/BasicButton.vue';
-import ButtonList from '@/components/ui/button/ButtonList.vue';
-import ButtonListItem from '@/components/ui/button/ButtonListItem.vue';
-import TextButton from '@/components/ui/button/TextButton.vue';
-import UiLayer from '@/components/ui/layer/UiLayer.vue';
-import PopupTitle from '@/components/ui/layer/PopupTitle.vue';
-import PopupSubTitle from '@/components/ui/layer/PopupSubTitle.vue';
-import PopupText from '@/components/ui/layer/PopupText.vue';
-import PopupButton from '@/components/ui/layer/PopupButton.vue';
-import ModalPopup from '@/components/ui/layer/ModalPopup.vue';
-import ModalPopupHead from '@/components/ui/layer/ModalPopupHead.vue';
-import AlertPopup from '@/components/ui/layer/AlertPopup.vue';
-import CheckBox from '@/components/ui/form/CheckBox.vue';
-import CheckBoxLabelText from '@/components/ui/form/CheckBoxLabelText.vue';
-import CheckBoxObject from '@/components/ui/form/CheckBoxObject.vue';
-import RadioButton from '@/components/ui/form/RadioButton.vue';
-import RadioButtonLabelText from '@/components/ui/form/RadioButtonLabelText.vue';
-import RadioButtonObject from '@/components/ui/form/RadioButtonObject.vue';
-import InputBlock from '@/components/ui/form/InputBlock.vue';
-import InputBlockCell from '@/components/ui/form/InputBlockCell.vue';
-import FormList from '@/components/ui/form/FormList.vue';
-import FormListItem from '@/components/ui/form/FormListItem.vue';
-import FormInvalid from '@/components/ui/form/FormInvalid.vue';
-import FormInvalidMessage from '@/components/ui/form/FormInvalidMessage.vue';
-import FormHelpText from '@/components/ui/form/FormHelpText.vue';
-import BasicInput from '@/components/ui/form/BasicInput.vue';
-import BasicSelect from '@/components/ui/form/BasicSelect.vue';
-import BasicDatepicker from '@/components/ui/form/BasicDatepicker.vue';
-import BasicTextarea from '@/components/ui/form/BasicTextarea.vue';
-import SecurityInput from '@/components/ui/form/SecurityInput.vue';
-import PartInput from '@/components/ui/form/PartInput.vue';
-import SecurityKeypadButton from '@/components/ui/button/SecurityKeypadButton.vue';
-import SearchButton from '@/components/ui/button/SearchButton.vue';
-import BoxCheck from '@/components/ui/form/BoxCheck.vue';
-import BoxCheckLabel from '@/components/ui/form/BoxCheckLabel.vue';
-import BoxCheckObject from '@/components/ui/form/BoxCheckObject.vue';
-import BoxCheckList from '@/components/ui/form/BoxCheckList.vue';
-import BoxCheckListItem from '@/components/ui/form/BoxCheckListItem.vue';
-import RoundStatus from '@/components/ui/text/RoundStatus.vue';
-import NoticeText from '@/components/ui/text/NoticeText.vue';
-import UiTab from '@/components/ui/tab/UiTab.vue';
-import UiTabList from '@/components/ui/tab/UiTabList.vue';
-import UiTabButton from '@/components/ui/tab/UiTabButton.vue';
-import UiTabPanel from '@/components/ui/tab/UiTabPanel.vue';
-import NavTab from '@/components/ui/tab/NavTab.vue';
-import NavTabButton from '@/components/ui/tab/NavTabButton.vue';
-import FilterTab from '@/components/ui/tab/FilterTab.vue';
-import FilterTabButton from '@/components/ui/tab/FilterTabButton.vue';
-import SubTab from '@/components/ui/tab/SubTab.vue';
-import SubTabButton from '@/components/ui/tab/SubTabButton.vue';
-import RoundTab from '@/components/ui/tab/RoundTab.vue';
-import RoundTabButton from '@/components/ui/tab/RoundTabButton.vue';
-import UiAccordion from '@/components/ui/accordion/UiAccordion.vue';
-import UiAccordionItem from '@/components/ui/accordion/UiAccordionItem.vue';
-import UiAccordionLayer from '@/components/ui/accordion/UiAccordionLayer.vue';
-import UiAccordionOpener from '@/components/ui/accordion/UiAccordionOpener.vue';
-import BasicHr from '@/components/ui/common/BasicHr.vue';
-import KeyValue from '@/components/ui/text/KeyValue.vue';
-import KeyValueItem from '@/components/ui/text/KeyValueItem.vue';
-import KeyValueTitle from '@/components/ui/text/KeyValueTitle.vue';
-import KeyValueText from '@/components/ui/text/KeyValueText.vue';
-import ContentsButton from '@/components/ui/button/ContentsButton.vue';
-import IllustObject from '@/components/ui/common/IllustObject.vue';
-import IllustInfo from '@/components/ui/common/IllustInfo.vue';
-import IllustInfoTitle from '@/components/ui/common/IllustInfoTitle.vue';
-import IllustInfoText from '@/components/ui/common/IllustInfoText.vue';
-import UnitText from '@/components/ui/text/UnitText.vue';
-import BankLogo from '@/components/ui/imageData/BankLogo.vue';
-import PaginationNav from '@/components/ui/pagination/PaginationNav.vue';
-import PaginationNavArrow from '@/components/ui/pagination/PaginationNavArrow.vue';
-import PaginationNavEllipsis from '@/components/ui/pagination/PaginationNavEllipsis.vue';
-import PaginationNavNumber from '@/components/ui/pagination/PaginationNavNumber.vue';
-import CarThumb from '@/components/ui/imageData/CarThumb.vue';
-import CarEmblem from '@/components/ui/imageData/CarEmblem.vue';
-import ColorChip from '@/components/ui/imageData/ColorChip.vue';
-import BasicTooltip from '@/components/ui/tooltip/BasicTooltip.vue';
-import SelectTable from '@/components/ui/table/SelectTable.vue';
-import SelectTableRow from '@/components/ui/table/SelectTableRow.vue';
-import UiScroller from '@/components/ui/common/UiScroller.vue';
+import BasicButton from '@/components_agent/ui/button/BasicButton.vue';
+import ButtonList from '@/components_agent/ui/button/ButtonList.vue';
+import ButtonListItem from '@/components_agent/ui/button/ButtonListItem.vue';
+import TextButton from '@/components_agent/ui/button/TextButton.vue';
+import UiLayer from '@/components_agent/ui/layer/UiLayer.vue';
+import PopupTitle from '@/components_agent/ui/layer/PopupTitle.vue';
+import PopupSubTitle from '@/components_agent/ui/layer/PopupSubTitle.vue';
+import PopupText from '@/components_agent/ui/layer/PopupText.vue';
+import PopupButton from '@/components_agent/ui/layer/PopupButton.vue';
+import ModalPopup from '@/components_agent/ui/layer/ModalPopup.vue';
+import ModalPopupHead from '@/components_agent/ui/layer/ModalPopupHead.vue';
+import AlertPopup from '@/components_agent/ui/layer/AlertPopup.vue';
+import CheckBox from '@/components_agent/ui/form/CheckBox.vue';
+import CheckBoxLabelText from '@/components_agent/ui/form/CheckBoxLabelText.vue';
+import CheckBoxObject from '@/components_agent/ui/form/CheckBoxObject.vue';
+import RadioButton from '@/components_agent/ui/form/RadioButton.vue';
+import RadioButtonLabelText from '@/components_agent/ui/form/RadioButtonLabelText.vue';
+import RadioButtonObject from '@/components_agent/ui/form/RadioButtonObject.vue';
+import InputBlock from '@/components_agent/ui/form/InputBlock.vue';
+import InputBlockCell from '@/components_agent/ui/form/InputBlockCell.vue';
+import FormList from '@/components_agent/ui/form/FormList.vue';
+import FormListItem from '@/components_agent/ui/form/FormListItem.vue';
+import FormInvalid from '@/components_agent/ui/form/FormInvalid.vue';
+import FormInvalidMessage from '@/components_agent/ui/form/FormInvalidMessage.vue';
+import FormHelpText from '@/components_agent/ui/form/FormHelpText.vue';
+import BasicInput from '@/components_agent/ui/form/BasicInput.vue';
+import BasicSelect from '@/components_agent/ui/form/BasicSelect.vue';
+import BasicDatepicker from '@/components_agent/ui/form/BasicDatepicker.vue';
+import BasicTextarea from '@/components_agent/ui/form/BasicTextarea.vue';
+import SecurityInput from '@/components_agent/ui/form/SecurityInput.vue';
+import PartInput from '@/components_agent/ui/form/PartInput.vue';
+import SecurityKeypadButton from '@/components_agent/ui/button/SecurityKeypadButton.vue';
+import SearchButton from '@/components_agent/ui/button/SearchButton.vue';
+import BoxCheck from '@/components_agent/ui/form/BoxCheck.vue';
+import BoxCheckLabel from '@/components_agent/ui/form/BoxCheckLabel.vue';
+import BoxCheckObject from '@/components_agent/ui/form/BoxCheckObject.vue';
+import BoxCheckList from '@/components_agent/ui/form/BoxCheckList.vue';
+import BoxCheckListItem from '@/components_agent/ui/form/BoxCheckListItem.vue';
+import RoundStatus from '@/components_agent/ui/text/RoundStatus.vue';
+import NoticeText from '@/components_agent/ui/text/NoticeText.vue';
+import UiTab from '@/components_agent/ui/tab/UiTab.vue';
+import UiTabList from '@/components_agent/ui/tab/UiTabList.vue';
+import UiTabButton from '@/components_agent/ui/tab/UiTabButton.vue';
+import UiTabPanel from '@/components_agent/ui/tab/UiTabPanel.vue';
+import NavTab from '@/components_agent/ui/tab/NavTab.vue';
+import NavTabButton from '@/components_agent/ui/tab/NavTabButton.vue';
+import FilterTab from '@/components_agent/ui/tab/FilterTab.vue';
+import FilterTabButton from '@/components_agent/ui/tab/FilterTabButton.vue';
+import SubTab from '@/components_agent/ui/tab/SubTab.vue';
+import SubTabButton from '@/components_agent/ui/tab/SubTabButton.vue';
+import RoundTab from '@/components_agent/ui/tab/RoundTab.vue';
+import RoundTabButton from '@/components_agent/ui/tab/RoundTabButton.vue';
+import UiAccordion from '@/components_agent/ui/accordion/UiAccordion.vue';
+import UiAccordionItem from '@/components_agent/ui/accordion/UiAccordionItem.vue';
+import UiAccordionLayer from '@/components_agent/ui/accordion/UiAccordionLayer.vue';
+import UiAccordionOpener from '@/components_agent/ui/accordion/UiAccordionOpener.vue';
+import BasicHr from '@/components_agent/ui/common/BasicHr.vue';
+import KeyValue from '@/components_agent/ui/text/KeyValue.vue';
+import KeyValueItem from '@/components_agent/ui/text/KeyValueItem.vue';
+import KeyValueTitle from '@/components_agent/ui/text/KeyValueTitle.vue';
+import KeyValueText from '@/components_agent/ui/text/KeyValueText.vue';
+import ContentsButton from '@/components_agent/ui/button/ContentsButton.vue';
+import IllustObject from '@/components_agent/ui/common/IllustObject.vue';
+import IllustInfo from '@/components_agent/ui/common/IllustInfo.vue';
+import IllustInfoTitle from '@/components_agent/ui/common/IllustInfoTitle.vue';
+import IllustInfoText from '@/components_agent/ui/common/IllustInfoText.vue';
+import UnitText from '@/components_agent/ui/text/UnitText.vue';
+import BankLogo from '@/components_agent/ui/imageData/BankLogo.vue';
+import PaginationNav from '@/components_agent/ui/pagination/PaginationNav.vue';
+import PaginationNavArrow from '@/components_agent/ui/pagination/PaginationNavArrow.vue';
+import PaginationNavEllipsis from '@/components_agent/ui/pagination/PaginationNavEllipsis.vue';
+import PaginationNavNumber from '@/components_agent/ui/pagination/PaginationNavNumber.vue';
+import CarThumb from '@/components_agent/ui/imageData/CarThumb.vue';
+import CarEmblem from '@/components_agent/ui/imageData/CarEmblem.vue';
+import ColorChip from '@/components_agent/ui/imageData/ColorChip.vue';
+import BasicTooltip from '@/components_agent/ui/tooltip/BasicTooltip.vue';
+import SelectTable from '@/components_agent/ui/table/SelectTable.vue';
+import SelectTableRow from '@/components_agent/ui/table/SelectTableRow.vue';
+import UiScroller from '@/components_agent/ui/common/UiScroller.vue';
 
-import IconAdd from '@/assets/images/icon/add.svg?component';
-import IconCustomer from '@/assets/images/icon/customer-center.svg?component';
-import IconImgColor from '@/assets/images/icon/img-color.svg?component';
-import IconImg from '@/assets/images/icon/img.svg?component';
-import IconTooltip from '@/assets/images/icon/tooltip.svg?component';
-import IconDownloadSmall from '@/assets/images/icon/download-small.svg?component';
+import IconAdd from '@/assets_agent/images/icon/add.svg?component';
+import IconCustomer from '@/assets_agent/images/icon/customer-center.svg?component';
+import IconImgColor from '@/assets_agent/images/icon/img-color.svg?component';
+import IconImg from '@/assets_agent/images/icon/img.svg?component';
+import IconTooltip from '@/assets_agent/images/icon/tooltip.svg?component';
+import IconDownloadSmall from '@/assets_agent/images/icon/download-small.svg?component';
 
-import ImgMainSample from '@/assets/images/_dummy/main-sample.svg?component';
+import ImgMainSample from '@/assets_agent/images/_dummy/main-sample.svg?component';
 
 export default {
   components: {
@@ -3984,7 +3984,7 @@ export default {
         <h3 class="test-section-sub-title">Default</h3>
 
         <div :class="$style['image-view']">
-          <img src="@/assets/images/_dummy/box-detail.png" alt="샘플 이미지" />
+          <img src="@/assets_agent/images/_dummy/box-detail.png" alt="샘플 이미지" />
         </div>
       </div>
     </section>
@@ -4719,9 +4719,9 @@ export default {
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/views/uiGuide/GuideComponent.scss';
+@import '@/assets_agent/scss/views/uiGuide/GuideComponent.scss';
 </style>
 
 <style lang="scss" module>
-@import '@/assets/scss/views/uiGuide/GuideComponentModule.scss';
+@import '@/assets_agent/scss/views/uiGuide/GuideComponentModule.scss';
 </style>

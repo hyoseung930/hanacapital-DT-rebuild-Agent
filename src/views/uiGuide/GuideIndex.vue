@@ -847,7 +847,8 @@ const datas = () => [
         path: '/agent/Agent_P09_p001',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '자산양수도',
@@ -858,7 +859,8 @@ const datas = () => [
         path: '/agent/Agent_P09_p002',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '자산양수도',
@@ -869,7 +871,8 @@ const datas = () => [
         path: '/agent/Agent_P09_p003',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '자산양수도',
@@ -880,7 +883,8 @@ const datas = () => [
         path: '/agent/Agent_P09_p005',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정 및 페이징 삭제' }],
       },
       {
         depth2: '자산양수도',
@@ -891,7 +895,8 @@ const datas = () => [
         path: '/agent/Agent_P09_p006',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '선정산',
@@ -902,7 +907,8 @@ const datas = () => [
         path: '/agent/Agent_P10_p001',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '선정산',
@@ -913,7 +919,8 @@ const datas = () => [
         path: '/agent/Agent_P10_p002',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '선정산',
@@ -924,7 +931,8 @@ const datas = () => [
         path: '/agent/Agent_P10_p003',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '선정산',
@@ -935,7 +943,8 @@ const datas = () => [
         path: '/agent/Agent_P10_p004',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
       {
         depth2: '선정산',
@@ -946,7 +955,8 @@ const datas = () => [
         path: '/agent/Agent_P10_p005',
         status: 'end',
         create: '2023.07.02',
-        log: [],
+        update: '2023.07.03',
+        log: [{ date: '2023.07.03', text: '조회된 내역이 없을 경우 나오는 테이블 위치 수정' }],
       },
     ],
   },
@@ -1257,5 +1267,5 @@ export default {
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/views/uiGuide/GuideIndex.scss';
+@import '@/assets_agent/scss/views/uiGuide/GuideIndex.scss';
 </style>

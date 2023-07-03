@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 // Agent_P00_l003
 
-import AgentPopup from '@/components/ui/popup/AgentPopup.vue';
+import AgentPopup from '@/components_agent/ui/popup/AgentPopup.vue';
 
 export default {
   components: {

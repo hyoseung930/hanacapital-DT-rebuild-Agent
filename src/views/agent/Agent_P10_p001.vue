@@ -1,9 +1,9 @@
 <script>
 import { ref } from 'vue';
 // Agent_P03_p001
-import PageContents from '@/components/ui/agent/PageContents.vue';
-import PageHead from '@/components/ui/text/PageHead.vue';
-import PageTitle from '@/components/ui/text/PageTitle.vue';
+import PageContents from '@/components_agent/ui/agent/PageContents.vue';
+import PageHead from '@/components_agent/ui/text/PageHead.vue';
+import PageTitle from '@/components_agent/ui/text/PageTitle.vue';
 
 export default {
   components: {
@@ -13,8 +13,7 @@ export default {
   },
   setup() {
     const startDate = '2022-01-01';
-    const endDate = '2022-01-01';
-    const isType = ref('1');
+    const endDate = '2022-01-01'; 
 
     return {
       startDate,
@@ -132,14 +131,6 @@ export default {
         </div>
       </div>
 
-      <table class="table-type-01 none-search">
-        <tbody>
-          <tr>
-            <td>조회된 내용이 없습니다.</td>
-          </tr>
-        </tbody>
-      </table>
-
       <table class="table-type-01">
         <colgroup>
           <col width="7%" />
@@ -187,6 +178,14 @@ export default {
           </button>
         </div>
       </div>
+
+      <table class="table-type-01 none-search">
+        <tbody>
+          <tr>
+            <td>조회된 내용이 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="scroll-container over-h">
         <table class="table-type-04">
@@ -270,5 +269,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/AgentCommon.scss';
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
 </style>

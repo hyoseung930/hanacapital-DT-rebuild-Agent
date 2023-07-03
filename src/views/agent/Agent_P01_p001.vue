@@ -1,6 +1,6 @@
 <script>
 // Agent_P03_p001
-import PageContents from '@/components/ui/agent/PageContents.vue';
+import PageContents from '@/components_agent/ui/agent/PageContents.vue';
 
 export default {
   components: {
@@ -124,5 +124,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/views/agent/AgentCommon.scss';
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
 </style>
