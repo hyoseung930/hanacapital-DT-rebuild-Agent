@@ -32,51 +32,38 @@ export default {
     </PageHead>
 
     <div class="container">
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="5%" />
-            <col width="20%" />
-            <col width="5%" />
-            <col width="35%" />
-            <col width="25%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">수신일자</td>
-              <td>
-                <div class="flex-container">
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td class="title">검색조건</td>
-              <td>
-                <div class="flex-container jcfs">
-                  <div class="select-container w35p">
-                    <select v-model="isType">
-                      <option value="1">고객명</option>
-                      <option value="2">채널명</option>
-                    </select>
-                  </div>
-                  <input
-                    type="text"
-                    :class="{ on: isType === '1', off: isType !== '1' }"
-                  />
-                  <div
-                    class="select-container"
-                    :class="{ on: isType === '2', off: isType !== '2' }"
-                  >
-                    <select>
-                      <option>선택</option>
-                    </select>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">수신일자</div>
+            <div class="search--container__list-contents w25p">
+              <input type="date" v-model="startDate" />
+              <span>-</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">검색조건</div>
+            <div class="search--container__list-contents w45p">
+              <div class="select-container w35p">
+                <select v-model="isType">
+                  <option value="1">고객명</option>
+                  <option value="2">채널명</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                :class="{ on: isType === '1', off: isType !== '1' }"
+              />
+              <div
+                class="select-container"
+                :class="{ on: isType === '2', off: isType !== '2' }"
+              >
+                <select>
+                  <option>선택</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="btn-container">
           <button class="btn btn-primary btn-search-02">조회</button>

@@ -27,31 +27,23 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="search-container">
-          <table class="table-type-search">
-            <colgroup>
-              <col width="10%" />
-              <col width="90%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">조회조건</td>
-                <td>
-                  <div class="flex-container">
-                    <div class="select-container w40p">
-                      <select>
-                        <option>주민/사업번호</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="search--container__list">
+              <div class="search--container__list-title">조회조건</div>
+              <div class="search--container__list-contents w85p">
+                <div class="select-container w20p">
+                  <select>
+                    <option>성명/상호</option>
+                  </select>
+                </div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">검색</button>
+            <button class="btn btn-primary btn-search-02">검색</button>
           </div>
         </div>
 

@@ -151,10 +151,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l003',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.30',
+        update: '2023.07.04',
         log: [
           { date: '2023.06.24', text: 'fadeout 변경, 스크롤 추가' },
           { date: '2023.06.30', text: '페이지네이션 간격 조절 (공통)' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
         ],
       },
       {
@@ -166,8 +167,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l004',
         status: 'end',
         create: '2023.06.20',
-        update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: '테이블 수정' }],
+        update: '2023.07.04',
+        log: [
+          { date: '2023.06.24', text: '테이블 수정' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
+        ],
       },
       {
         depth2: '팝업',
@@ -178,8 +182,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l005',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: '승인 컬러 변경' }],
+        update: '2023.07.04',
+        log: [
+          { date: '2023.06.24', text: '승인 컬러 변경' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
+        ],
       },
       {
         depth2: '팝업',
@@ -202,8 +209,11 @@ const datas = () => [
         path: '/agent/Agent_P00_l007',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.24',
-        log: [{ date: '2023.06.24', text: '스크롤 추가' }],
+        update: '2023.07.04',
+        log: [
+          { date: '2023.06.24', text: '스크롤 추가' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
+        ],
       },
       {
         depth2: '팝업',
@@ -214,7 +224,8 @@ const datas = () => [
         path: '/agent/Agent_P00_l008',
         status: 'end',
         create: '2023.06.22',
-        log: [],
+        update: '2023.07.04',
+        log: [{ date: '2023.07.04', text: '조회 섹션 수정 (공통)' }],
       },
       {
         depth2: '팝업',
@@ -240,13 +251,14 @@ const datas = () => [
         path: '/agent/Agent_P00_l010',
         status: 'end',
         create: '2023.06.22',
-        update: '2023.06.24',
+        update: '2023.07.04',
         log: [
           { date: '2023.06.24', text: '테이블 간격 조정' },
           {
             date: '2023.06.30',
             text: '검색 제목 불릿 추가, 위치조정(공통처리)',
           },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
         ],
       },
       {
@@ -482,11 +494,12 @@ const datas = () => [
         path: '/agent/Agent_P02_p001',
         status: 'end',
         create: '2023.06.27',
-        update: '2023.06.30',
+        update: '2023.07.04',
         log: [
           { date: '2023.06.29', text: '설명 위치 변경' },
           { date: '2023.06.30', text: '타이틀 변경 및 조회 버튼 추가' },
           { date: '2023.06.30', text: '조회버튼 크기 수정' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
         ],
       },
       {
@@ -596,10 +609,11 @@ const datas = () => [
         path: '/agent/Agent_P02_p008',
         status: 'end',
         create: '2023.06.29',
-        update: '2023.06.30',
+        update: '2023.07.04',
         log: [
           { date: '2023.06.29', text: '검색 간격수정' },
           { date: '2023.06.30', text: '등록일 > 등록일자 변경' },
+          { date: '2023.07.04', text: '조회 섹션 수정 (공통)' },
         ],
       },
       {

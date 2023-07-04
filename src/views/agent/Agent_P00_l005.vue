@@ -29,53 +29,39 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="search-container">
-          <table class="table-type-search">
-            <colgroup>
-              <col width="7%" />
-              <col width="26%" />
-              <col width="10%" />
-              <col width="23%" />
-              <col width="6%" />
-              <col width="27%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">상품코드</td>
-                <td>
-                  <div class="select-container">
-                    <select>
-                      <option>선택</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="title">승인일자</td>
-                <td>
-                  <div class="flex-container">
-                    <input type="date" v-model="startDate" />
-                    <span>-</span>
-                    <input type="date" v-model="endDate" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="title">검색조건</td>
-                <td colspan="3">
-                  <div class="flex-container jcfs">
-                    <div class="select-container w20p">
-                      <select>
-                        <option>이용자</option>
-                      </select>
-                    </div>
-                    <input type="text" class="w40p" />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="search--container__list">
+              <div class="search--container__list-title">상품코드</div>
+              <div class="search--container__list-contents w15p">
+                <div class="select-container">
+                  <select>
+                    <option>선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search--container__list-title">승인일자</div>
+              <div class="search--container__list-contents w30p">
+                <input type="date" v-model="startDate" />
+                <span>~</span>
+                <input type="date" v-model="endDate" />
+              </div>
+            </div>
+            <div class="search--container__list">
+              <div class="search--container__list-title">검색조건</div>
+              <div class="search--container__list-contents w35p">
+                <div class="select-container w85p">
+                  <select>
+                    <option>고객명</option>
+                  </select>
+                </div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">조회</button>
+            <button class="btn btn-primary btn-search-02">조회</button>
           </div>
         </div>
 

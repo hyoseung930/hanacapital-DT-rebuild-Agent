@@ -31,100 +31,87 @@ export default {
     </PageHead>
 
     <div class="container">
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="5%" />
-            <col width="35%" />
-            <col width="5%" />
-            <col width="40%" />
-            <col width="15%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">일자조건</td>
-              <td>
-                <div class="flex-container">
-                  <div class="select-container">
-                    <select>
-                      <option>수신일자</option>
-                    </select>
-                  </div>
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td class="title">검색조건</td>
-              <td>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">일자조건</div>
+            <div class="search--container__list-contents w35p">
+              <div class="select-container">
+                <select>
+                  <option>수신일자</option>
+                </select>
+              </div>
+              <input type="date" v-model="startDate" />
+              <span>-</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">검색조건</div>
+            <div class="search--container__list-contents w45p">
+              <div class="select-container w35p">
+                <select v-model="isType">
+                  <option value="1">고객명</option>
+                  <option value="2">채널명</option>
+                  <option value="3">실행여부</option>
+                  <option value="4">지급여부</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                :class="{ on: isType === '1', off: isType !== '1' }"
+              />
+              <div
+                class="select-container"
+                :class="{ on: isType === '2', off: isType !== '2' }"
+              >
+                <select>
+                  <option>선택</option>
+                </select>
+              </div>
+              <div
+                class="w100p ml20"
+                :class="{ on: isType === '3', off: isType !== '3' }"
+              >
                 <div class="flex-container jcfs">
-                  <div class="select-container w35p">
-                    <select v-model="isType">
-                      <option value="1">고객명</option>
-                      <option value="2">채널명</option>
-                      <option value="3">실행여부</option>
-                      <option value="4">지급여부</option>
-                    </select>
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a1" checked />
+                      <span class="small"></span>
+                      Y
+                    </label>
                   </div>
-                  <input
-                    type="text"
-                    :class="{ on: isType === '1', off: isType !== '1' }"
-                  />
-                  <div
-                    class="select-container"
-                    :class="{ on: isType === '2', off: isType !== '2' }"
-                  >
-                    <select>
-                      <option>선택</option>
-                    </select>
-                  </div>
-                  <div
-                    class="w100p ml20"
-                    :class="{ on: isType === '3', off: isType !== '3' }"
-                  >
-                    <div class="flex-container jcfs">
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a1" checked />
-                          <span class="small"></span>
-                          Y
-                        </label>
-                      </div>
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a1" />
-                          <span class="small"></span>
-                          N
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="w100p ml20"
-                    :class="{ on: isType === '4', off: isType !== '4' }"
-                  >
-                    <div class="flex-container jcfs">
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a2" checked />
-                          <span class="small"></span>
-                          Y
-                        </label>
-                      </div>
-                      <div class="radio-container">
-                        <label class="flex-container jcfs">
-                          <input type="radio" name="a2" />
-                          <span class="small"></span>
-                          N
-                        </label>
-                      </div>
-                    </div>
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a1" />
+                      <span class="small"></span>
+                      N
+                    </label>
                   </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+              <div
+                class="w100p ml20"
+                :class="{ on: isType === '4', off: isType !== '4' }"
+              >
+                <div class="flex-container jcfs">
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a2" checked />
+                      <span class="small"></span>
+                      Y
+                    </label>
+                  </div>
+                  <div class="radio-container">
+                    <label class="flex-container jcfs">
+                      <input type="radio" name="a2" />
+                      <span class="small"></span>
+                      N
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="btn-container">
           <button class="btn btn-primary btn-search-02">조회</button>

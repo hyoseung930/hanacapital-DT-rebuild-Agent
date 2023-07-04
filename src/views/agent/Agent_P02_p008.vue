@@ -20,29 +20,25 @@ export default {
     </PageHead>
 
     <div className="container">
-      <div className="search-container">
-        <table className="table-type-search">
-          <colgroup>
-            <col width="7%" />
-            <col width="20%" />
-            <col width="4%" />
-            <col width="60%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td className="title">사업자번호</td>
-              <td><input type="text" /></td>
-              <td className="title">품목</td>
-              <td><input type="text" class="w60p" /></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">사업자번호</div>
+            <div class="search--container__list-contents w15p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">품목</div>
+            <div class="search--container__list-contents w45p">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
 
-        <div className="btn-container">
-          <button className="btn btn-s03 btn-search">
+        <div class="btn-container">
+          <button class="btn btn-s03 btn-search-02">
             신규판매점 신용정보 SMS발송
           </button>
-          <button className="btn btn-primary btn-search">조회</button>
+          <button class="btn btn-primary btn-search-02">조회</button>
         </div>
       </div>
 

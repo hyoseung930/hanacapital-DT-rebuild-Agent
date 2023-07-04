@@ -29,47 +29,35 @@ export default {
     </template>
     <template #contents>
       <div class="container">
-        <div class="search-container">
-          <table class="table-type-search">
-            <colgroup>
-              <col width="6%" />
-              <col width="44%" />
-              <col width="6%" />
-              <col width="44%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">상담일자</td>
-                <td>
-                  <div class="flex-container">
-                    <input type="date" v-model="startDate" />
-                    <span>-</span>
-                    <input type="date" v-model="endDate" />
-                  </div>
-                </td>
-                <td class="title">검색조건</td>
-                <td>
-                  <div class="flex-container">
-                    <div class="select-container">
-                      <select>
-                        <option>고객명</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="title">판매점</td>
-                <td>
-                  <input type="text" class="w50p" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="search--container__list">
+              <div class="search--container__list-title">상담일자</div>
+              <div class="search--container__list-contents w30p">
+                <input type="date" v-model="startDate" />
+                <span>~</span>
+                <input type="date" v-model="endDate" />
+              </div>
+              <div class="search--container__list-title">검색조건</div>
+              <div class="search--container__list-contents w40p">
+                <div class="select-container w60p">
+                  <select>
+                    <option>고객명</option>
+                  </select>
+                </div>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="search--container__list">
+              <div class="search--container__list-title">판매점</div>
+              <div class="search--container__list-contents w25p">
+                <input type="text" />
+              </div>
+            </div>
+          </div>
 
           <div class="btn-container">
-            <button class="btn btn-primary btn-search">조회</button>
+            <button class="btn btn-primary btn-search-02">조회</button>
           </div>
         </div>
 

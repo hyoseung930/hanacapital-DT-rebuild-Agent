@@ -29,87 +29,74 @@ export default {
     </PageHead>
 
     <div class="container">
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="7%" />
-            <col width="20%" />
-            <col width="2%" />
-            <col width="6%" />
-            <col width="10%" />
-            <col width="4%" />
-            <col width="5%" />
-            <col width="20%" />
-            <col width="6%" />
-            <col width="7%" />
-            <col width="20%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">조회조건</td>
-              <td colspan="2">
-                <div class="flex-container">
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
-                </div>
-              </td>
-              <td class="title">동의방법</td>
-              <td colspan="3">
-                <div class="select-container">
-                  <select>
-                    <option>선택</option>
-                  </select>
-                </div>
-              </td>
-              <td class="title" colspan="3">
-                제휴점&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" class="w80p" />
-              </td>
-            </tr>
-            <tr>
-              <td class="title">휴대폰번호</td>
-              <td><input type="tel" /></td>
-              <td class="title">상태</td>
-              <td colspan="3">
-                <div class="flex-container jcfs">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" checked />
-                      <span class="small"></span>
-                      전체
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span class="small"></span>
-                      동의
-                    </label>
-                  </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span class="small"></span>
-                      미동의
-                    </label>
-                  </div>
-                </div>
-              </td>
-              <td class="title">고객명</td>
-              <td><input type="text" /></td>
-              <td class="title">생년월일</td>
-              <td colspan="2"><input type="text" class="w70p" /></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="search--container">
+        <div class="search--container__box">
+          <div class="search--container__list">
+            <div class="search--container__list-title">조회조건</div>
+            <div class="search--container__list-contents w25p">
+              <input type="date" v-model="startDate" />
+              <span>-</span>
+              <input type="date" v-model="endDate" />
+            </div>
+            <div class="search--container__list-title">동의방법</div>
+            <div class="search--container__list-contents w10p">
+              <div class="select-container">
+                <select>
+                  <option>선택</option>
+                </select>
+              </div>
+            </div>
+            <div class="search--container__list-title">제휴점</div>
+            <div class="search--container__list-contents w30p">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="search--container__list">
+            <div class="search--container__list-title">휴대폰번호</div>
+            <div class="search--container__list-contents w18p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">상태</div>
+            <div class="search--container__list-contents">
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="type" checked />
+                  <span class="small"></span>
+                  전체
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="type" />
+                  <span class="small"></span>
+                  동의
+                </label>
+              </div>
+              <div class="radio-container">
+                <label class="flex-container jcfs">
+                  <input type="radio" name="type" />
+                  <span class="small"></span>
+                  미동의
+                </label>
+              </div>
+            </div>
+            <div class="search--container__list-title">고객명</div>
+            <div class="search--container__list-contents w18p">
+              <input type="text" />
+            </div>
+            <div class="search--container__list-title">생년월일</div>
+            <div class="search--container__list-contents w10p">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
         <div class="explan">
           <i class="ico ico-explan"></i>
           모바일 웹 ARS : 1800-9559, ARS : 1800-9550
         </div>
 
         <div class="btn-container">
-          <button class="btn btn-primary btn-search-02">조회</button>
+          <button class="btn btn-primary btn-search-02">검색</button>
         </div>
       </div>
 
