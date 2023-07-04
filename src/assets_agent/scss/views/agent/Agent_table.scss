@@ -37,6 +37,8 @@ table {
 
         tr {
             &.on {
+				display: table-row;
+
                 td {
                     background-color: rgba(20, 59, 117, 0.08);
                 }
