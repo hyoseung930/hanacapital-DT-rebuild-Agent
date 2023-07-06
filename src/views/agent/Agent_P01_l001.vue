@@ -1,36 +1,46 @@
 <script>
 import { ref } from 'vue';
-// Agent_P00_l003
 
-import AgentPopup from '@/components_agent/ui/popup/AgentPopup.vue';
+import UiLayerLittle from '@/components_agent/ui/layer/UiLayerLittle.vue';
+import PopupTitle from '@/components_agent/ui/layer/PopupTitle.vue';
+import PopupButton from '@/components_agent/ui/layer/PopupButton.vue';
+import ModalPopup from '@/components_agent/ui/layer/ModalPopup.vue';
+import ModalPopupHead from '@/components_agent/ui/layer/ModalPopupHead.vue';
 
 export default {
   components: {
-    AgentPopup,
+    UiLayerLittle,
+    PopupTitle,
+    PopupButton,
+    ModalPopup,
+    ModalPopupHead,
   },
   setup() {
-    const agentPopup = ref(true);
-    const classList = ref('little');
+    const layer = ref(null);
 
     return {
-      agentPopup,
-      classList,
+      layer,
     };
   },
 };
 </script>
 
 <template>
-  <AgentPopup :isAgent="agentPopup" :isClassList="classList">
-    <template #title>
-      <div class="agent--container__title min-padding-bottom">
-        공지팝업 제목
-      </div>
-    </template>
-    <template #contents>
-      <div class="container none-image-container">
-        <div class="none-image">Img area</div>
-      </div>
-    </template>
-  </AgentPopup>
+  <UiLayerLittle ref="layer" v-slot="layerSlotProps">
+    <ModalPopup>
+      <template v-slot:head>
+        <ModalPopupHead>
+          <template v-slot:right>
+            <PopupButton @click="layerSlotProps.close()" />
+          </template>
+          <PopupTitle>공지팝업 제목</PopupTitle>
+        </ModalPopupHead>
+      </template>
+      <section>
+        <div class="container none-image-container">
+          <div class="none-image">Img area</div>
+        </div>
+      </section>
+    </ModalPopup>
+  </UiLayerLittle>
 </template>

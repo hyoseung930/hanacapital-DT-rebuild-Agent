@@ -2,6 +2,7 @@
 @import './Agent_table.scss';
 @import './Agent_input.scss';
 @import './Agent_icon.scss';
+@import './AgentPopup.scss';
 
 ul {
   list-style-type: none;
@@ -66,6 +67,7 @@ ul {
           font-weight: bold;
           color: var(--black-color);
           margin-bottom: 16px;
+          text-align: left;
         }
       }
 
@@ -656,6 +658,10 @@ ul {
   color: var(--disabled-color);
   font-size: 16px;
   font-weight: 500;
+}
+
+.none-image-container {
+  height: 100%;
 }
 
 .file-send {

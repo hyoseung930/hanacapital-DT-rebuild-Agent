@@ -101,6 +101,12 @@ const routes = [
     component: () => import('@/views/agent/Agent_P01_p001.vue'),
   },
   {
+    path: '/guide/agent-002',
+    name: '/agent-002',
+    component: () => import('@/views/uiGuide/GuideAgent002.vue'),
+    meta: { layout: 'NoneLayout' },
+  },
+  {
     path: '/agent/Agent_P02_l002',
     name: '/agent/Agent_P02_l002',
     component: () => import('@/views/agent/Agent_P02_l002.vue'),
@@ -174,6 +180,12 @@ const routes = [
     path: '/agent/Agent_P02_p009',
     name: '/agent/Agent_P02_p009',
     component: () => import('@/views/agent/Agent_P02_p009.vue'),
+  },
+  {
+    path: '/guide/agent-003',
+    name: '/agent-003',
+    component: () => import('@/views/uiGuide/GuideAgent003.vue'),
+    meta: { layout: 'NoneLayout' },
   },
   {
     path: '/agent/Agent_P03_p001',

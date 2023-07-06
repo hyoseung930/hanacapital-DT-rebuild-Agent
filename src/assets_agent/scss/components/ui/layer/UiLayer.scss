@@ -23,11 +23,28 @@
   }
 
   &__container {
-    display: inline-block;
+    width: 100%;
+    max-width: 1240px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     vertical-align: middle;
     @include font-size-default(16);
     white-space: normal;
-    text-align: left;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &.small {
+      max-width: 800px;
+    }
+
+    &.little {
+      max-width: 500px;
+      max-height: 600px;
+    }
   }
 
   &__loop {

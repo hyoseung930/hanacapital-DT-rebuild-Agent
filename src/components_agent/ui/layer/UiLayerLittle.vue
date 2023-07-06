@@ -428,7 +428,11 @@ export default {
     ></div>
     <div
       ref="layerContainer"
-      :class="[$style['layer__container'], customClassNames.container]"
+      :class="[
+        $style['layer__container'],
+        customClassNames.container,
+        $style['little'],
+      ]"
       :style="`transition-duration: ${state.speed}ms;`"
       :tabindex="state.opened ? '0' : null"
       @click="containerClick"
@@ -450,8 +454,4 @@ export default {
 
 <style lang="scss" module>
 @import '@/assets_agent/scss/components/ui/layer/UiLayer.scss';
-</style>
-
-<style lang="scss">
-@import '@/assets_agent/scss/views/agent/AgentCommon';
 </style>

@@ -3,6 +3,10 @@ table {
     border-collapse: collapse;
     font-size: 14px;
 
+    td {
+        text-align: left;
+    }
+
 	.flex-container {
 		&.cDisabled {
 			font-size: 12px;
@@ -324,6 +328,8 @@ table {
 
         tr {
             &.on {
+                display: table-row;
+
                 td {
                     background-color: rgba(20, 59, 117, 0.08);
                 }

@@ -1,140 +1,153 @@
 <script>
-// Agent_P00_l003
 import { ref } from 'vue';
 
-import AgentPopup from '@/components_agent/ui/popup/AgentPopup.vue';
+import UiLayer from '@/components_agent/ui/layer/UiLayer.vue';
+import PopupTitle from '@/components_agent/ui/layer/PopupTitle.vue';
+import PopupButton from '@/components_agent/ui/layer/PopupButton.vue';
+import ModalPopup from '@/components_agent/ui/layer/ModalPopup.vue';
+import ModalPopupHead from '@/components_agent/ui/layer/ModalPopupHead.vue';
 
 export default {
   components: {
-    AgentPopup,
+    UiLayer,
+    PopupTitle,
+    PopupButton,
+    ModalPopup,
+    ModalPopupHead,
   },
   setup() {
-    const agentPopup = ref(true);
+    const layer = ref(null);
+
     return {
-      agentPopup,
+      layer,
     };
   },
 };
 </script>
 
 <template>
-  <AgentPopup :isAgent="agentPopup">
-    <template #title>
-      <div class="agent--container__title">
-        판매점 제휴 협약을 위한 개인(신용)정보동의 URL발송
-      </div>
-    </template>
-    <template #contents>
-      <div class="container">
-        <div class="title">발신자정보</div>
-        <table class="table-type-01">
-          <colgroup>
-            <col width="15%" />
-            <col width="35%" />
-            <col width="15%" />
-            <col width="35%" />
-            <col />
-            <col />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">발신자</td>
-              <td>
-                <input type="text" disabled />
-              </td>
-              <td class="title">대표전화</td>
-              <td>
-                <input type="tel" />
-              </td>
-            </tr>
-            <tr>
-              <td class="title">부서명</td>
-              <td colspan="3">
-                <input type="text" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  <UiLayer ref="layer" v-slot="layerSlotProps">
+    <ModalPopup>
+      <template v-slot:head>
+        <ModalPopupHead>
+          <template v-slot:right>
+            <PopupButton @click="layerSlotProps.close()" />
+          </template>
+          <PopupTitle>판매점 제휴 협약을 위한 개인(신용)정보동의 URL발송</PopupTitle>
+        </ModalPopupHead>
+      </template>
+      <section>
+        <div class="container">
+          <div class="title">발신자정보</div>
+          <table class="table-type-01">
+            <colgroup>
+              <col width="15%" />
+              <col width="35%" />
+              <col width="15%" />
+              <col width="35%" />
+              <col />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title">발신자</td>
+                <td>
+                  <input type="text" disabled />
+                </td>
+                <td class="title">대표전화</td>
+                <td>
+                  <input type="tel" />
+                </td>
+              </tr>
+              <tr>
+                <td class="title">부서명</td>
+                <td colspan="3">
+                  <input type="text" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div class="title">수신처정보</div>
-        <table class="table-type-01">
-          <colgroup>
-            <col width="15%" />
-            <col width="35%" />
-            <col width="15%" />
-            <col width="35%" />
-            <col />
-            <col />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">수신인</td>
-              <td>
-                <input type="text" />
-              </td>
-              <td class="title">생년월일</td>
-              <td>
-                <input type="text" />
-              </td>
-            </tr>
-            <tr>
-              <td class="title">전화번호</td>
-              <td colspan="3">
-                <input type="tel" class="w25p" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="title">수신처정보</div>
+          <table class="table-type-01">
+            <colgroup>
+              <col width="15%" />
+              <col width="35%" />
+              <col width="15%" />
+              <col width="35%" />
+              <col />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title">수신인</td>
+                <td>
+                  <input type="text" />
+                </td>
+                <td class="title">생년월일</td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td class="title">전화번호</td>
+                <td colspan="3">
+                  <input type="tel" class="w25p" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div class="title">발송정보</div>
+          <div class="title">발송정보</div>
 
-        <table class="table-type-01">
-          <colgroup>
-            <col width="15%" />
-            <col width="85%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">동의 방식</td>
-              <td>
-                <div class="flex-container jcfs">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" checked />
-                      <span class="small"></span>
-                      URL 동의
-                    </label>
+          <table class="table-type-01">
+            <colgroup>
+              <col width="15%" />
+              <col width="85%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="title">동의 방식</td>
+                <td>
+                  <div class="flex-container jcfs">
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" checked />
+                        <span class="small"></span>
+                        URL 동의
+                      </label>
+                    </div>
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" />
+                        <span class="small"></span>
+                        ARS 동의
+                      </label>
+                    </div>
                   </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span class="small"></span>
-                      ARS 동의
-                    </label>
+                </td>
+              </tr>
+              <tr>
+                <td class="title">제목</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td class="title">내용</td>
+                <td>
+                  <textarea class="textarea"></textarea>
+                  <div class="flex-container jcfe cDisabled">
+                    <strong>0</strong>Byte
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="title">제목</td>
-              <td><input type="text" /></td>
-            </tr>
-            <tr>
-              <td class="title">내용</td>
-              <td>
-                <textarea class="textarea"></textarea>
-                <div class="flex-container jcfe cDisabled">
-                  <strong>0</strong>Byte
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div class="btn-container fixed">
-          <button class="btn btn-send">전송하기</button>
+          <div class="btn-container fixed">
+            <button class="btn btn-send">전송하기</button>
+          </div>
         </div>
-      </div>
-    </template>
-  </AgentPopup>
+      </section>
+    </ModalPopup>
+  </UiLayer>
 </template>
