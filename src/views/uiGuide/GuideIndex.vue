@@ -40,6 +40,17 @@ const datas = () => [
         log: [],
       },
       {
+        depth2: '팝업',
+        depth3: '',
+        depth4: '',
+        depth5: '',
+        depth6: '',
+        path: '/guide-popup',
+        status: '',
+        create: '',
+        log: [],
+      },
+      {
         depth2: '레이아웃',
         depth3: 'Type 1',
         depth4: '',

@@ -13,6 +13,12 @@ const routes = [
     meta: { layout: 'NoneLayout' },
   },
   {
+    path: '/guide-popup',
+    name: '/guide-popup',
+    component: () => import('@/views/uiGuide/GuideAgent001.vue'),
+    meta: { layout: 'NoneLayout' },
+  },
+  {
     path: '/business/LM_P01_l001',
     name: '/business/LM_P01_l001',
     component: () => import('@/views/business/LM_P01_l001.vue'),
