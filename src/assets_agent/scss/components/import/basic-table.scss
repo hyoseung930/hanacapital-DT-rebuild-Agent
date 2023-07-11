@@ -15,7 +15,6 @@
           font-weight: 400;
           @include font-size-default(15);
           vertical-align: middle;
-          text-align: center;
 
           &:first-child {
             border-left: none;
@@ -47,10 +46,32 @@
           word-break: break-all;
           @include font-size-default(16);
           vertical-align: middle;
-          text-align: center;
 
           &:first-child {
             border-left: none;
+          }
+
+          &.title {
+            color: $color-gray-30;
+            background-color: #f5f6f6;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &.required {
+              position: relative;
+
+              &:after {
+                content: '';
+                position: absolute;
+                margin-left: 4px;
+                width: 4px;
+                height: 4px;
+                background-color: var(--red-color);
+                border-radius: 50%;
+              }
+            }
           }
         }
       }

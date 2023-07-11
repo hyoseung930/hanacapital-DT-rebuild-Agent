@@ -5,6 +5,29 @@ table {
 
     td {
         text-align: left;
+
+        &.title {
+            color: var(--table-title);
+            background-color: #f5f6f6;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &.required {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    margin-left: 4px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: var(--red-color);
+                    border-radius: 50%;
+                }
+            }
+        }
     }
 
 	.flex-container {
