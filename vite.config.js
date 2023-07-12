@@ -35,7 +35,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: '8080',
+    port: '8889',
     proxy: {
       '/api': {
         target: 'https://api.test.com:9090',

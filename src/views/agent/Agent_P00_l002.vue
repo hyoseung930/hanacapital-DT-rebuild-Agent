@@ -38,7 +38,7 @@ export default {
 
 <template>
   <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
+    <ModalPopup size="large">
       <template v-slot:head>
         <ModalPopupHead>
           <template v-slot:right>
@@ -47,15 +47,6 @@ export default {
           <PopupTitle>서류등록</PopupTitle>
         </ModalPopupHead>
       </template>
-      <div class="container pb80">
-        <table class="table-type-04 none-search-small bt">
-          <tbody>
-          <tr>
-            <td>등록된 게시글이 없습니다.</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
       <ul class="reset-list">
         <li class="row-margin-container-medium">
           <div :class="[$style['upload-button'], 'row-margin-contents']">
@@ -155,4 +146,10 @@ export default {
 <style lang="scss" module>
 @import '@/assets_agent/scss/components/import/upload-button.scss';
 @import '@/assets_agent/scss/components/import/upload-file.scss';
+@import '@/assets_agent/scss/components/import/basic-table.scss';
 </style>
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+

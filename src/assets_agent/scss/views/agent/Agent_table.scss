@@ -331,7 +331,7 @@ table {
 
     &.table-type-04 {
         margin-bottom: 40px;
-		border-top: 2px solid #8f8f8f;
+		    border-top: 2px solid #8f8f8f;
 
         &:first-child {
             margin-bottom: 0;
@@ -360,7 +360,8 @@ table {
         }
 
         td {
-            padding: 24px;
+            padding: 24px 15px;
+			      font-size: 14px;
             color: var(--black-color);
             border-bottom: 1px solid var(--gray-color);
             border-right: 1px solid var(--gray-color);
@@ -434,6 +435,7 @@ table {
         }
 
         th {
+			font-size: 14px;
             font-weight: normal;
             color: #757575;
             padding: 12px;
