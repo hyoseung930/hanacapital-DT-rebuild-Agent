@@ -84,10 +84,10 @@ export default {
         </section>
       </section>
 
-      <section class="row-margin-block-small">
-        <section class="row-margin-block-small">
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
           <div :class="$style['basic-table']">
-            <table class="table-type-01 none-search">
+            <table :class="$style['none-search']">
               <tbody>
                 <tr>
                   <td>조회된 내용이 없습니다.</td>
@@ -97,7 +97,7 @@ export default {
           </div>
 
           <div :class="$style['basic-table']">
-            <table class="table-type-04 bt">
+            <table>
               <colgroup>
                 <col width="10%" />
                 <col width="8%" />
@@ -217,4 +217,3 @@ export default {
 <style lang="scss" module>
 @import '@/assets_agent/scss/components/import/basic-table.scss';
 </style>
-

@@ -36,25 +36,27 @@ export default {
           <PopupTitle>품목 선택</PopupTitle>
         </ModalPopupHead>
       </template>
-      <section>
-        <div class="container">
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
           <div class="flex-container aifs no-gap fw bdrbt">
-            <table class="table-type-04 w100p bt">
-              <colgroup>
-                <col width="25%" />
-                <col width="25%" />
-                <col width="25%" />
-                <col width="25%" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>품목 중분류</th>
-                  <th>품목 소분류</th>
-                  <th>품목 상세분류</th>
-                  <th>품목명</th>
-                </tr>
-              </thead>
-            </table>
+            <div :class="$style['basic-table']">
+              <table class="table-type-04 w100p bt">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>품목 중분류</th>
+                    <th>품목 소분류</th>
+                    <th>품목 상세분류</th>
+                    <th>품목명</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
             <div class="scroll-container mxh-770 w25p bdrrt">
               <table class="table-type-04 body w100p">
                 <tbody>
@@ -218,8 +220,16 @@ export default {
               </table>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </ModalPopup>
   </UiLayerSmall>
 </template>
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+
+<style lang="scss" module>
+@import '@/assets_agent/scss/components/import/basic-table.scss';
+</style>

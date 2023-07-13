@@ -113,7 +113,9 @@ export default {
                 <div class="search--container__list-contents w15p">
                   <input type="text" class="rt" disabled />%
                 </div>
-                <div class="search--container__list-title">내구재선취수수료</div>
+                <div class="search--container__list-title">
+                  내구재선취수수료
+                </div>
                 <div class="search--container__list-contents w15p">
                   <input type="text" class="rt" disabled />원
                 </div>

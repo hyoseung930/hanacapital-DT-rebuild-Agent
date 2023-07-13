@@ -4,11 +4,10 @@ table {
     font-size: 14px;
 
     td {
-        text-align: left;
-
         &.title {
             color: var(--table-title);
             background-color: #f5f6f6;
+            text-align: left !important;
 
             &:first-child {
                 border-left: none;
@@ -515,6 +514,7 @@ table {
             font-size: 14px;
             color: var(--black-color);
             font-weight: 300;
+            text-align: center;
 
 			&:last-child {
 				border-right: none;
@@ -525,7 +525,6 @@ table {
         &-small {
             td {
                 padding: 50px 0;
-                text-align: center;
             }
         }
     }
