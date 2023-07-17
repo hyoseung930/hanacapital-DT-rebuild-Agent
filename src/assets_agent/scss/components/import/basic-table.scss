@@ -56,6 +56,18 @@
   table {
     @include reset-table;
 
+    &.txt-center {
+      td {
+        text-align: center !important;
+      }
+    }
+
+    &.txt-left {
+      td {
+        text-align: left !important;
+      }
+    }
+
     > thead {
       > tr {
         > th {

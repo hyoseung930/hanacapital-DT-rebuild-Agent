@@ -27,7 +27,7 @@ export default {
 
 <template>
   <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
+    <ModalPopup size="large">
       <template v-slot:head>
         <ModalPopupHead>
           <template v-slot:right>
@@ -36,118 +36,133 @@ export default {
           <PopupTitle>하나캐피탈 전자 약정 URL발송</PopupTitle>
         </ModalPopupHead>
       </template>
-      <section>
-        <div class="container">
-          <div class="title">발신자정보</div>
-          <table class="table-type-01">
-            <colgroup>
-              <col width="15%" />
-              <col width="35%" />
-              <col width="15%" />
-              <col width="35%" />
-              <col />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">발신자</td>
-                <td>
-                  <input type="text" disabled />
-                </td>
-                <td class="title">대표전화</td>
-                <td>
-                  <input type="tel" />
-                </td>
-              </tr>
-              <tr>
-                <td class="title">부서명</td>
-                <td colspan="3">
-                  <input type="text" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <h3 class="text-title-1 row-margin-contents">발신자정보</h3>
 
-          <div class="title">수신처정보</div>
-          <table class="table-type-01">
-            <colgroup>
-              <col width="15%" />
-              <col width="35%" />
-              <col width="15%" />
-              <col width="35%" />
-              <col />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">수신인</td>
-                <td>
-                  <input type="text" />
-                </td>
-                <td class="title">생년월일</td>
-                <td>
-                  <input type="text" />
-                </td>
-              </tr>
-              <tr>
-                <td class="title">전화번호</td>
-                <td colspan="3">
-                  <input type="tel" class="w25p" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div :class="$style['basic-table']">
+            <table :class="$style['txt-left']">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="35%" />
+                <col />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="title">발신자</td>
+                  <td>
+                    <input type="text" disabled />
+                  </td>
+                  <td class="title">대표전화</td>
+                  <td>
+                    <input type="tel" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">부서명</td>
+                  <td colspan="3">
+                    <input type="text" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-          <div class="title">발송정보</div>
+          <h3 class="text-title-1 row-margin-contents">수신처정보</h3>
 
-          <table class="table-type-01">
-            <colgroup>
-              <col width="15%" />
-              <col width="85%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td class="title">동의 방식</td>
-                <td>
-                  <div class="flex-container jcfs">
-                    <div class="radio-container">
-                      <label class="flex-container jcfs">
-                        <input type="radio" name="type" checked />
-                        <span class="small"></span>
-                        URL 동의
-                      </label>
+          <div :class="$style['basic-table']">
+            <table :class="$style['txt-left']">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="35%" />
+                <col />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="title">수신인</td>
+                  <td>
+                    <input type="text" />
+                  </td>
+                  <td class="title">생년월일</td>
+                  <td>
+                    <input type="text" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">전화번호</td>
+                  <td colspan="3">
+                    <input type="tel" class="w25p" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 class="text-title-1 row-margin-contents">발송정보</h3>
+
+          <div :class="$style['basic-table']">
+            <table :class="$style['txt-left']">
+              <colgroup>
+                <col width="15%" />
+                <col width="85%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="title">동의 방식</td>
+                  <td>
+                    <div class="flex-container jcfs">
+                      <div class="radio-container">
+                        <label class="flex-container jcfs">
+                          <input type="radio" name="type" checked />
+                          <span class="small"></span>
+                          URL 동의
+                        </label>
+                      </div>
+                      <div class="radio-container">
+                        <label class="flex-container jcfs">
+                          <input type="radio" name="type" />
+                          <span class="small"></span>
+                          ARS 동의
+                        </label>
+                      </div>
                     </div>
-                    <div class="radio-container">
-                      <label class="flex-container jcfs">
-                        <input type="radio" name="type" />
-                        <span class="small"></span>
-                        ARS 동의
-                      </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">제목</td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td class="title">내용</td>
+                  <td>
+                    <textarea class="textarea"></textarea>
+                    <div class="flex-container jcfe cDisabled">
+                      <strong>0</strong>Byte
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="title">제목</td>
-                <td><input type="text" /></td>
-              </tr>
-              <tr>
-                <td class="title">내용</td>
-                <td>
-                  <textarea class="textarea"></textarea>
-                  <div class="flex-container jcfe cDisabled">
-                    <strong>0</strong>Byte
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div class="btn-container fixed">
             <button class="btn btn-send">전송하기</button>
           </div>
-        </div>
+        </section>
       </section>
     </ModalPopup>
   </UiLayer>
 </template>
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+
+<style lang="scss" module>
+@import '@/assets_agent/scss/components/import/basic-table.scss';
+</style>

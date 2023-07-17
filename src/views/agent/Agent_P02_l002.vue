@@ -27,7 +27,7 @@ export default {
 
 <template>
   <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
+    <ModalPopup size="large">
       <template v-slot:head>
         <ModalPopupHead>
           <template v-slot:right>
@@ -36,98 +36,100 @@ export default {
           <PopupTitle>상환스케줄 시뮬레이터</PopupTitle>
         </ModalPopupHead>
       </template>
-      <section>
-        <div class="container">
-          <div class="search--container">
-            <div class="search--container__box">
-              <div class="title">상환정보입력</div>
-              <div class="search--container__list">
-                <div class="search--container__list-title">할부원금</div>
-                <div class="search--container__list-contents">
-                  <input type="text" class="rt" />원
-                </div>
-                <div class="search--container__list-title">대출일자</div>
-                <div class="search--container__list-contents">
-                  <input type="date" />
-                </div>
-                <div class="search--container__list-title">초회납입일자</div>
-                <div class="search--container__list-contents">
-                  <input type="date" />
-                </div>
-              </div>
-              <div class="search--container__list">
-                <div class="search--container__list-title">상환기간/금리</div>
-                <div class="search--container__list-contents w30p">
-                  <input type="text" class="rt w40p" />개월
-                  <input type="text" class="rt w35p" />%
-                </div>
-                <div class="search--container__list-title">
-                  내구재이자부과구분
-                </div>
-                <div class="search--container__list-contents">
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" checked />
-                      <span class="small"></span>
-                      이자부과
-                    </label>
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <div class="container">
+            <div class="search--container">
+              <div class="search--container__box">
+                <div class="title">상환정보입력</div>
+                <div class="search--container__list">
+                  <div class="search--container__list-title">할부원금</div>
+                  <div class="search--container__list-contents">
+                    <input type="text" class="rt" />원
                   </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span class="small"></span>
-                      부분이자
-                    </label>
+                  <div class="search--container__list-title">대출일자</div>
+                  <div class="search--container__list-contents">
+                    <input type="date" />
                   </div>
-                  <div class="radio-container">
-                    <label class="flex-container jcfs">
-                      <input type="radio" name="type" />
-                      <span class="small"></span>
-                      무이자
-                    </label>
+                  <div class="search--container__list-title">초회납입일자</div>
+                  <div class="search--container__list-contents">
+                    <input type="date" />
                   </div>
                 </div>
-              </div>
-              <div class="search--container__list mb40">
-                <div class="search--container__list-title">
-                  내구재선취수수료율
+                <div class="search--container__list">
+                  <div class="search--container__list-title">상환기간/금리</div>
+                  <div class="search--container__list-contents w30p">
+                    <input type="text" class="rt w40p" />개월
+                    <input type="text" class="rt w35p" />%
+                  </div>
+                  <div class="search--container__list-title">
+                    내구재이자부과구분
+                  </div>
+                  <div class="search--container__list-contents">
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" checked />
+                        <span class="small"></span>
+                        이자부과
+                      </label>
+                    </div>
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" />
+                        <span class="small"></span>
+                        부분이자
+                      </label>
+                    </div>
+                    <div class="radio-container">
+                      <label class="flex-container jcfs">
+                        <input type="radio" name="type" />
+                        <span class="small"></span>
+                        무이자
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="search--container__list-contents w15p">
-                  <input type="text" class="rt" />%
+                <div class="search--container__list mb40">
+                  <div class="search--container__list-title">
+                    내구재선취수수료율
+                  </div>
+                  <div class="search--container__list-contents w15p">
+                    <input type="text" class="rt" />%
+                  </div>
+                  <div class="search--container__list-title">결제일자</div>
+                  <div class="search--container__list-contents w10p">
+                    <div class="select-container">
+                      <select>
+                        <option>선택</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <div class="search--container__list-title">결제일자</div>
-                <div class="search--container__list-contents w10p">
-                  <div class="select-container">
-                    <select>
-                      <option>선택</option>
-                    </select>
+
+                <div class="title">선취수수료</div>
+                <div class="search--container__list">
+                  <div class="search--container__list-title">
+                    내구재선취수수료율
+                  </div>
+                  <div class="search--container__list-contents w15p">
+                    <input type="text" class="rt" disabled />%
+                  </div>
+                  <div class="search--container__list-title">
+                    내구재선취수수료
+                  </div>
+                  <div class="search--container__list-contents w15p">
+                    <input type="text" class="rt" disabled />원
                   </div>
                 </div>
               </div>
 
-              <div class="title">선취수수료</div>
-              <div class="search--container__list">
-                <div class="search--container__list-title">
-                  내구재선취수수료율
-                </div>
-                <div class="search--container__list-contents w15p">
-                  <input type="text" class="rt" disabled />%
-                </div>
-                <div class="search--container__list-title">
-                  내구재선취수수료
-                </div>
-                <div class="search--container__list-contents w15p">
-                  <input type="text" class="rt" disabled />원
-                </div>
+              <div class="btn-container">
+                <button class="btn btn-primary btn-search-02">산출</button>
               </div>
-            </div>
-
-            <div class="btn-container">
-              <button class="btn btn-primary btn-search-02">산출</button>
             </div>
           </div>
 
-          <div class="title">
+          <div class="text-title-1 row-margin-contents flex-container jcsb">
             상한스케줄
             <div class="btn-container">
               <button class="btn btn-s03">
@@ -137,16 +139,18 @@ export default {
             </div>
           </div>
 
-          <table class="table-type-01 none-search">
-            <tbody>
-              <tr>
-                <td>조회된 내용이 없습니다.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div :class="$style['basic-table']">
+            <table :class="$style['none-search']">
+              <tbody>
+                <tr>
+                  <td>조회된 내용이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-          <div class="scroll-container over-h">
-            <table class="table-type-01">
+          <div :class="$style['basic-table']">
+            <table :class="$style['txt-center']">
               <colgroup>
                 <col width="6%" />
                 <col width="9%" />
@@ -183,8 +187,17 @@ export default {
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
       </section>
     </ModalPopup>
   </UiLayer>
 </template>
+
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+
+<style lang="scss" module>
+@import '@/assets_agent/scss/components/import/basic-table.scss';
+</style>

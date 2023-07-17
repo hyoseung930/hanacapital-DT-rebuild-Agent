@@ -6,6 +6,9 @@ import PopupTitle from '@/components_agent/ui/layer/PopupTitle.vue';
 import PopupButton from '@/components_agent/ui/layer/PopupButton.vue';
 import ModalPopup from '@/components_agent/ui/layer/ModalPopup.vue';
 import ModalPopupHead from '@/components_agent/ui/layer/ModalPopupHead.vue';
+import PaginationNav from '@/components_agent/ui/pagination/PaginationNav.vue';
+import PaginationNavArrow from '@/components_agent/ui/pagination/PaginationNavArrow.vue';
+import PaginationNavNumber from '@/components_agent/ui/pagination/PaginationNavNumber.vue';
 
 export default {
   components: {
@@ -14,6 +17,9 @@ export default {
     PopupButton,
     ModalPopup,
     ModalPopupHead,
+    PaginationNav,
+    PaginationNavArrow,
+    PaginationNavNumber,
   },
   setup() {
     const layer = ref(null);
@@ -27,7 +33,7 @@ export default {
 
 <template>
   <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
+    <ModalPopup size="large">
       <template v-slot:head>
         <ModalPopupHead>
           <template v-slot:right>
@@ -36,47 +42,59 @@ export default {
           <PopupTitle>승계 전 이용자 조회</PopupTitle>
         </ModalPopupHead>
       </template>
-      <section>
-        <div class="container">
-          <div class="search--container">
-            <div class="search--container__box">
-              <div class="search--container__list">
-                <div class="search--container__list-title">성명/상호</div>
-                <div class="search--container__list-contents w20p">
-                  <input type="text" />
-                </div>
-                <div class="search--container__list-title">주민/사업자번호</div>
-                <div class="search--container__list-contents w20p">
-                  <input type="text" />
-                </div>
-                <div class="search--container__list-title">연락처</div>
-                <div class="search--container__list-contents w20p">
-                  <input type="text" />
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <div class="container">
+            <div class="search--container">
+              <div class="search--container__box">
+                <div class="search--container__list">
+                  <div class="search--container__list-title">성명/상호</div>
+                  <div class="search--container__list-contents w20p">
+                    <input type="text" />
+                  </div>
+                  <div class="search--container__list-title">주민/사업자번호</div>
+                  <div class="search--container__list-contents w20p">
+                    <input type="text" />
+                  </div>
+                  <div class="search--container__list-title">연락처</div>
+                  <div class="search--container__list-contents w20p">
+                    <input type="text" />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="btn-container">
-              <button class="btn btn-primary btn-search-02">조회</button>
+              <div class="btn-container">
+                <button class="btn btn-primary btn-search-02">조회</button>
+              </div>
             </div>
           </div>
+        </section>
+      </section>
 
-          <table class="table-type-01 none-search">
-            <tbody>
-              <tr>
-                <td>조회된 내용이 없습니다.</td>
-              </tr>
-            </tbody>
-          </table>
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <div :class="$style['basic-table']">
+            <table :class="$style['none-search']">
+              <tbody>
+                <tr>
+                  <td>조회된 내용이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
 
-          <div class="scroll-container over-h">
-            <table class="table-type-01">
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <div :class="$style['basic-table']">
+            <table>
               <colgroup>
                 <col width="8%" />
                 <col width="9%" />
                 <col width="13%" />
                 <col width="11%" />
-                <col width="7%" />
+                <col width="11%" />
                 <col width="12%" />
                 <col width="8%" />
                 <col />
@@ -144,22 +162,30 @@ export default {
             </table>
           </div>
 
-          <ul class="paging">
-            <li class="first">&lt;</li>
-            <li class="on">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li class="dot"></li>
-            <li>25</li>
-            <li class="last">&gt;</li>
-          </ul>
-        </div>
+          <!-- Pagination -->
+          <PaginationNav
+            :classNames="{
+              wrap: 'row-margin-contents',
+            }"
+          >
+            <PaginationNavArrow type="prev" :disabled="true" />
+            <PaginationNavNumber :active="true">1</PaginationNavNumber>
+            <PaginationNavNumber>2</PaginationNavNumber>
+            <PaginationNavNumber>3</PaginationNavNumber>
+            <PaginationNavNumber>4</PaginationNavNumber>
+            <PaginationNavNumber>5</PaginationNavNumber>
+            <PaginationNavArrow type="next" />
+          </PaginationNav>
+        </section>
       </section>
     </ModalPopup>
   </UiLayer>
 </template>
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+
+<style lang="scss" module>
+@import '@/assets_agent/scss/components/import/basic-table.scss';
+</style>

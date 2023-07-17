@@ -7,6 +7,7 @@ import ButtonList from '@/components_agent/ui/button/ButtonList.vue';
 import ButtonListItem from '@/components_agent/ui/button/ButtonListItem.vue';
 
 // import layer from '@/views/';
+import Agent_P09_l001 from '@/views/agent/Agent_P09_l001.vue';
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     BasicButton,
     ButtonList,
     ButtonListItem,
+    Agent_P09_l001,
     // layer,
   },
   setup() {
@@ -41,7 +43,7 @@ export default {
     >
       <ButtonListItem>
         <BasicButton @click="layer001Open">
-          ㅇㅇㅇㅇㅇ<br />ㅁㅁㅁㅁㅁㅁ
+          SGI 가입정보<br />Agent_P09_l001
         </BasicButton>
       </ButtonListItem>
     </ButtonList>
@@ -49,5 +51,6 @@ export default {
     <!--
     <layer ref="layer001" />
     -->
+    <Agent_P09_l001 ref="layer001" />
   </PageContents>
 </template>

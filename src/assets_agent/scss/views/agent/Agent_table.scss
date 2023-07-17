@@ -4,6 +4,8 @@ table {
     font-size: 14px;
 
     td {
+        text-align: left;
+
         &.title {
             color: var(--table-title);
             background-color: #f5f6f6;

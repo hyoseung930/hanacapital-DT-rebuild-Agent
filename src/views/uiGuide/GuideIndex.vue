@@ -558,6 +558,17 @@ const datas = () => [
       },
       {
         depth2: '자산양수도',
+        depth3: '팝업\nagent-04',
+        depth4: '',
+        depth5: '',
+        depth6: '',
+        path: '/agent/agent-04',
+        status: 'end',
+        create: '',
+        log: [],
+      },
+      {
+        depth2: '자산양수도',
         depth3: '매입진행내역\nAgent_P09_p001',
         depth4: '',
         depth5: '',

@@ -34,36 +34,85 @@ export default {
 
 <template>
   <UiLayer ref="layer" v-slot="layerSlotProps">
-    <ModalPopup>
+    <ModalPopup size="large">
       <template v-slot:head>
         <ModalPopupHead>
           <template v-slot:right>
             <PopupButton @click="layerSlotProps.close()" />
           </template>
-          <PopupTitle>타이틀</PopupTitle>
+          <PopupTitle>SGI 가입정보</PopupTitle>
         </ModalPopupHead>
       </template>
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
+          <h3 class="text-title-1 row-margin-contents">발송정보</h3>
 
-      <section>// contents</section>
-
-      <template v-slot:foot>
-        <ButtonList
-          :wrap="true"
-          align="center"
-          :classNames="{
-            wrap: 'row-margin-none',
-          }"
-        >
-          <ButtonListItem>
-            <BasicButton size="regular" :line="true" theme="quaternary"
-              >Button 1</BasicButton
-            >
-          </ButtonListItem>
-          <ButtonListItem>
-            <BasicButton size="regular">Button 2</BasicButton>
-          </ButtonListItem>
-        </ButtonList>
-      </template>
+          <div :class="$style['basic-table']">
+            <table :class="$style['txt-left']">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="35%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="title">제휴사주문번호</td>
+                  <td>12345@678901</td>
+                  <td class="title">상담번호</td>
+                  <td>C12345678901234</td>
+                </tr>
+                <tr>
+                  <td class="title">고객명</td>
+                  <td><input type="text" /></td>
+                  <td class="title">가입금액</td>
+                  <td>
+                    <div class="flex-container">
+                      <input type="text" class="rt" value="2,000,000" />원
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">시작일</td>
+                  <td>
+                    <input type="date" value="2022-01-01" />
+                  </td>
+                  <td class="title">종료일</td>
+                  <td>
+                    <input type="date" value="2022-01-01" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">SGI 담당지점</td>
+                  <td><input type="text" /></td>
+                  <td class="title">SGI담당자명</td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td class="title">SGI증권번호</td>
+                  <td><input type="text" /></td>
+                  <td class="title">SGI담당자번호</td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td class="title">사서함번호(전)</td>
+                  <td><input type="text" /></td>
+                  <td class="title">사서함번호(후)</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
     </ModalPopup>
   </UiLayer>
 </template>
+
+<style lang="scss" scoped>
+@import '@/assets_agent/scss/views/agent/AgentCommon.scss';
+</style>
+
+<style lang="scss" module>
+@import '@/assets_agent/scss/components/import/basic-table.scss';
+</style>
