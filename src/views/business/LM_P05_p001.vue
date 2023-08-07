@@ -56,41 +56,31 @@ export default {
           </div>
         </div>
       </div>
-      <div class="search-container">
-        <table class="table-type-search">
-          <colgroup>
-            <col width="5%" />
-            <col width="25%" />
-            <col width="5%" />
-            <col width="15%" />
-            <col width="7%" />
-            <col width="25%" />
-          </colgroup>
-          <tbody>
-            <tr>
-              <td class="title">조회기간</td>
-              <td>
-                <div class="flex-container">
-                  <div class="select-container">
-                    <select>
-                      <option>직접입력</option>
-                    </select>
-                  </div>
-                  <input type="date" v-model="startDate" />
-                  <span>-</span>
-                  <input type="date" v-model="endDate" />
+      <div class="container">
+        <div class="search--container">
+          <div class="search--container__box">
+            <div class="search--container__list">
+              <div class="search--container__list-title">조회기간</div>
+              <div class="search--container__list-contents w35p">
+                <div class="select-container w70p">
+                  <select>
+                    <option>직접입력</option>
+                  </select>
                 </div>
-              </td>
-              <td class="title">신청자명</td>
-              <td>
+                <input type="date" v-model="startDate" />
+                <span>~</span>
+                <input type="date" v-model="endDate" />
+              </div>
+              <div class="search--container__list-title">이름</div>
+              <div class="search--container__list-contents w20p">
                 <input type="text" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </div>
+          </div>
 
-        <div class="btn-container">
-          <button class="btn btn-primary btn-search btn-middle">조회</button>
+          <div class="btn-container">
+            <button class="btn btn-primary btn-search-02">조회</button>
+          </div>
         </div>
       </div>
 
