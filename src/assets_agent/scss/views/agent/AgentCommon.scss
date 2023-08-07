@@ -474,6 +474,9 @@ ul {
 .mxh-578 {
   max-height: 578px;
 }
+.mxh-550 {
+  max-height: 550px;
+}
 
 .mxh-680 {
   max-height: 680px;
@@ -491,6 +494,13 @@ ul {
 }
 .mxh-640 {
   max-height: 640px;
+}
+.mxh-600 {
+  max-height: 600px;
+}
+
+.mxh-scroll {
+  max-height: calc(100% - 50px);
 }
 
 .mt40 {
