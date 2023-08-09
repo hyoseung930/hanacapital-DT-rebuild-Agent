@@ -48,7 +48,10 @@ const datas = () => [
         path: '/guide-popup',
         status: 'end',
         create: '2023.07.07',
-        log: [],
+        update: '2023.08.08',
+        log: [
+          {data: '2023.08.08', text: 'Agent_P00_l011 품목선택 팝업 깨짐 현상 수정'}
+        ],
       },
       {
         depth2: '레이아웃',
@@ -565,7 +568,10 @@ const datas = () => [
         path: '/agent/agent-04',
         status: 'end',
         create: '',
-        log: [],
+        update: '2023.08.08',
+        log: [
+          {data: '2023.08.08', text: '조회 팝업 추가'}
+        ],
       },
       {
         depth2: '자산양수도',
