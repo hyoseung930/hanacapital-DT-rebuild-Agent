@@ -41,6 +41,10 @@ table {
         border-top: 2px solid #8f8f8f;
         margin-bottom: 60px;
 
+        .hoverBgGray:hover {
+          background-color: rgba(20, 59, 117, 0.08);
+        }
+
         & + .title {
             margin-bottom: 20px;
         }

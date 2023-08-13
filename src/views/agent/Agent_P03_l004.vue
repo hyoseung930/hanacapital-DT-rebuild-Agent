@@ -17,9 +17,23 @@ export default {
   },
   setup() {
     const layer = ref(null);
+    const byte = ref(0);
+    const textarea = ref('');
+
+    function byteLength(s, b, i, c) {
+      for (
+        b = i = 0;
+        (c = s.charCodeAt(i++));
+        b += c >> 11 ? 3 : c >> 7 ? 2 : 1
+      );
+      byte.value = b;
+    }
 
     return {
       layer,
+      byte,
+      textarea,
+      byteLength,
     };
   },
 };
@@ -33,7 +47,7 @@ export default {
           <template v-slot:right>
             <PopupButton @click="layerSlotProps.close()" />
           </template>
-          <PopupTitle>하나캐피탈 채무승계 확약 URL 발송</PopupTitle>
+          <PopupTitle>하나캐피탈 채무승계 확약 URL 전송</PopupTitle>
         </ModalPopupHead>
       </template>
       <section class="row-margin-container-medium">
@@ -145,11 +159,18 @@ export default {
                   <td><input type="text" /></td>
                 </tr>
                 <tr>
-                  <td class="title">사전신용정보조회<br />동의 녹취 스크립트</td>
+                  <td class="title">
+                    사전신용정보조회<br />동의 녹취 스크립트
+                  </td>
                   <td>
-                    <textarea class="textarea"></textarea>
+                    <textarea
+                      class="textarea"
+                      v-model="textarea"
+                      @keyup="byteLength(textarea)"
+                    ></textarea>
                     <div class="flex-container jcfe cDisabled">
-                      <strong>0</strong>Byte
+                      <strong>{{ byte }}</strong
+                      >Byte
                     </div>
                   </td>
                 </tr>

@@ -68,6 +68,22 @@ export default {
 
       <section class="row-margin-container-medium">
         <section class="row-margin-container-medium">
+          <div class="flex-container">
+            <div :class="$style['basic-table']">
+              <table :class="$style['none-search']">
+                <tbody>
+                  <tr>
+                    <td class="txt-center">조회된 내역이 없습니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="row-margin-container-medium">
+        <section class="row-margin-container-medium">
           <div class="scroll-container">
             <div class="scroll-container">
               <div class="flex-container">
